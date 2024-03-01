@@ -6,7 +6,12 @@ export default {
   ],
   darkMode:"class",
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Phudu: ["Phudu"],
+        Tilt_Prism:["Tilt Prism"]
+      },
+    },
   },
   plugins: [],
 }

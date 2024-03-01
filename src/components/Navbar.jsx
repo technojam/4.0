@@ -57,7 +57,7 @@ const Navbar = () => {
     <>
       <nav
         ref={comp}
-        className="px-5 w-screen z-20 dark:text-white text-black gap-8 absolute top-0 left-0 h-[11vh] bg-transparent flex items-center justify-between navbar"
+        className="px-5 w-screen border border-b border-[#ffffff2c] z-20 backdrop-blur text-white gap-8 absolute top-0 left-0 h-[11vh] bg-transparent flex items-center justify-between navbar"
       >
         {/* Technojam Logo */}
         <div className="logo">
@@ -141,21 +141,21 @@ const Navbar = () => {
           >
             Contact Us
           </div>
-          <div
+          {/* <div
             onClick={() => setTheme(theme == "dark" ? "light" : "dark")}
             className="cursor-pointer font-Phudu rounded-xl"
           >
             {theme == "dark" ? <FaSun /> : <FaMoon className="text-black" />}
-          </div>
+          </div> */}
         </div>
         {/* Mobile Optimization */}
         <div className="flex lg:hidden gap-5 items-center">
-          <div
+          {/* <div
             onClick={() => setTheme(theme == "dark" ? "light" : "dark")}
             className="text-lg md:text-2xl cursor-pointer font-Phudu rounded-xl"
           >
             {theme == "dark" ? <FaSun /> : <FaMoon className="text-black" />}
-          </div>
+          </div> */}
           <IoMenu
             onClick={() => setSidebar(!sidebar)}
             className="text-2xl md:text-3xl"
@@ -166,7 +166,7 @@ const Navbar = () => {
       <div
         className={`${
           sidebar ? "top-0 right-0" : "top-0 right-[-400px]"
-        } duration-300 lg:hidden flex flex-col justify-start pt-[11vh] items-start px-8 z-10 text-xl md:text-2xl gap-2 dark:text-white text-black absolute min-w-fit h-screen`}
+        } duration-300 lg:hidden flex flex-col border border-l border-[#ffffff2c] backdrop-blur bg-transparent justify-start pt-[12vh] items-start px-8 z-10 text-xl md:text-2xl gap-2 dark:text-white text-black absolute max-w-fit h-screen`}
       >
         <div
           onClick={() =>

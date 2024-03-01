@@ -1,11 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
-.font-Phudu{
-    font-family: 'Phudu' !important;
-}
-.font-Tilt_Prism{
-    font-family: 'Tilt Prism' !important;
-}
+@import url("https://fonts.googleapis.com/css2?family=Phudu:wght@300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
