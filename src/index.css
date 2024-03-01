@@ -3,5 +3,5 @@
 @tailwind components;
 @tailwind utilities;
 .font-Phudu{
-    font-family: 'Phudu';
+    font-family: 'Phudu' !important;
 }
