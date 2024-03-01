@@ -77,7 +77,7 @@ const Navbar = () => {
                 behavior: "smooth",
               })
             }
-            className={`cursor-pointer duration-200 hover:scale-110`}
+            className={`cursor-pointer font-Phudu duration-200 hover:scale-110`}
           >
             About
           </div>
@@ -89,7 +89,7 @@ const Navbar = () => {
                 behavior: "smooth",
               })
             }
-            className={`cursor-pointer duration-200 hover:scale-110`}
+            className={`cursor-pointer font-Phudu duration-200 hover:scale-110`}
           >
             Schedule
           </div>
@@ -101,7 +101,7 @@ const Navbar = () => {
                 behavior: "smooth",
               })
             }
-            className={`cursor-pointer duration-200 hover:scale-110`}
+            className={`cursor-pointer font-Phudu duration-200 hover:scale-110`}
           >
             Events
           </div>
@@ -113,7 +113,7 @@ const Navbar = () => {
                 behavior: "smooth",
               })
             }
-            className={`cursor-pointer duration-200 hover:scale-110`}
+            className={`cursor-pointer font-Phudu duration-200 hover:scale-110`}
           >
             Sponsors
           </div>
@@ -125,7 +125,7 @@ const Navbar = () => {
                 behavior: "smooth",
               })
             }
-            className={`cursor-pointer duration-200 hover:scale-110`}
+            className={`cursor-pointer font-Phudu duration-200 hover:scale-110`}
           >
             FAQs
           </div>
@@ -137,13 +137,13 @@ const Navbar = () => {
                 behavior: "smooth",
               })
             }
-            className={`cursor-pointer duration-200 hover:scale-110`}
+            className={`cursor-pointer font-Phudu duration-200 hover:scale-110`}
           >
             Contact Us
           </div>
           <div
             onClick={() => setTheme(theme == "dark" ? "light" : "dark")}
-            className="cursor-pointer rounded-xl"
+            className="cursor-pointer font-Phudu rounded-xl"
           >
             {theme == "dark" ? <FaSun /> : <FaMoon className="text-black" />}
           </div>
@@ -152,7 +152,7 @@ const Navbar = () => {
         <div className="flex lg:hidden gap-5 items-center">
           <div
             onClick={() => setTheme(theme == "dark" ? "light" : "dark")}
-            className="text-lg md:text-2xl cursor-pointer rounded-xl"
+            className="text-lg md:text-2xl cursor-pointer font-Phudu rounded-xl"
           >
             {theme == "dark" ? <FaSun /> : <FaMoon className="text-black" />}
           </div>
@@ -176,7 +176,7 @@ const Navbar = () => {
               behavior: "smooth",
             })
           }
-          className={`cursor-pointer duration-200 hover:scale-110`}
+          className={`cursor-pointer font-Phudu duration-200 hover:scale-110`}
         >
           About
         </div>
@@ -188,7 +188,7 @@ const Navbar = () => {
               behavior: "smooth",
             })
           }
-          className={`cursor-pointer duration-200 hover:scale-110`}
+          className={`cursor-pointer font-Phudu duration-200 hover:scale-110`}
         >
           Schedule
         </div>
@@ -200,7 +200,7 @@ const Navbar = () => {
               behavior: "smooth",
             })
           }
-          className={`cursor-pointer duration-200 hover:scale-110`}
+          className={`cursor-pointer font-Phudu duration-200 hover:scale-110`}
         >
           Events
         </div>
@@ -212,7 +212,7 @@ const Navbar = () => {
               behavior: "smooth",
             })
           }
-          className={`cursor-pointer duration-200 hover:scale-110`}
+          className={`cursor-pointer font-Phudu duration-200 hover:scale-110`}
         >
           Sponsors
         </div>
@@ -224,7 +224,7 @@ const Navbar = () => {
               behavior: "smooth",
             })
           }
-          className={`cursor-pointer duration-200 hover:scale-110`}
+          className={`cursor-pointer font-Phudu duration-200 hover:scale-110`}
         >
           FAQs
         </div>
@@ -236,7 +236,7 @@ const Navbar = () => {
               behavior: "smooth",
             })
           }
-          className={`cursor-pointer duration-200 hover:scale-110`}
+          className={`cursor-pointer font-Phudu duration-200 hover:scale-110`}
         >
           Contact Us
         </div>

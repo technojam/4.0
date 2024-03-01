@@ -1,11 +1,14 @@
+import LandingAnimation from "./components/LandingAnimation";
 import Navbar from "./components/Navbar";
-
-
+import SocialMedia from "./components/SocialMedia";
 const App = () => {
   return (
-    <div className="relative overflow-hidden font-Phudu">
+    <div className="relative overflow-hidden">
       <Navbar />
-      <div className="min-h-screen dark:bg-[#0C0D0E] dark:text-white text-black bg-white"></div>
+      <div className="min-h-screen dark:text-white text-black dark:bg-transparent bg-transparent">
+        {/* <SocialMedia/> */}
+        <LandingAnimation/>
+      </div>
     </div>
   );
 };
