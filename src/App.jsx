@@ -8,18 +8,20 @@ const App = () => {
   const t1 = gsap.timeline({ paused: true });
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      t1.to(
-        ".typo",
-        {
-          x: 500,
-          y: 100,
-          duration: 2,
-          rotation: 800,
-          opacity: 0,
-          ease: Power3.easeOut,
-        },
-        "start"
-      ).to(
+      t1
+      // .to(
+      //   ".typo",
+      //   {
+      //     x: 500,
+      //     y: 100,
+      //     duration: 2,
+      //     rotation: 800,
+      //     opacity: 0,
+      //     ease: Power3.easeOut,
+      //   },
+      //   "start"
+      // )
+      .to(
           ".bg_rocket",
           {
             scale: `${isSmallScreen?40:55}`,
@@ -36,7 +38,6 @@ const App = () => {
   }, []);
   return (
     <div className="relative font-Phudu overflow-hidden">
-      <Navbar />
       <div className="relative bg-transparent">
         {/* Animation Page */}
         <div ref={comp} className="relative h-screen">
@@ -53,6 +54,7 @@ const App = () => {
             alt="bg_interior"
           />
           <div className="d-block block">
+            <Navbar />
             <Hero />
           </div>
           {/* Typography */}
