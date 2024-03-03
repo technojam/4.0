@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="flex flex-col justify-center">
         <h1
           className="text-[#82aea4]
-              md:text-6xl sm:text-5xl text-3xl font-bold md:py-3 "
+            md:text-6xl sm:text-5xl text-3xl font-bold md:py-3"
         >
           Dexterix 4.0
         </h1>
