@@ -57,7 +57,7 @@ const Navbar = () => {
     <>
       <nav
         ref={comp}
-        className="px-5 w-screen border border-b border-[#ffffff2c] z-20 backdrop-blur text-white gap-8 absolute top-0 left-0 h-[11vh] bg-transparent flex items-center justify-between navbar"
+        className="px-10 w-screen z-20 transparent text-white gap-8 absolute top-0 left-0 h-[11vh] bg-transparent flex items-center justify-between navbar"
       >
         {/* Technojam Logo */}
         <div className="logo">
@@ -158,7 +158,7 @@ const Navbar = () => {
           </div> */}
           <IoMenu
             onClick={() => setSidebar(!sidebar)}
-            className="text-2xl md:text-3xl"
+            className="text-2xl md:text-3xl mr-5"
           />
         </div>
       </nav>

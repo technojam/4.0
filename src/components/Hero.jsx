@@ -1,6 +1,5 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
-import Navbar from "./Navbar";
 import {
   FaLinkedinIn,
   FaInstagram,
@@ -12,7 +11,7 @@ const Hero = () => {
   return (
     <div className="text-white pt-[12vh] lg:pt-0 realtive z-10 h-screen lg:flex-row flex-col flex px-5 items-center justify-between">
       {/*Left SECTION DIV  */}
-      <div className="flex flex-col justify-center">
+      <div className="flex flex-col justify-center my-auto">
         <h1
           className="text-[#82aea4]
             md:text-6xl sm:text-5xl text-3xl font-bold md:py-3"
