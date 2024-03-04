@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ReactTyped } from "react-typed";
 import {
   FaLinkedinIn,
@@ -7,13 +7,19 @@ import {
   FaDiscord,
 } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
+import { Application } from "@splinetool/runtime";
 const Hero = () => {
+  useEffect(() => {
+    const canvas = document.getElementById("canvas3d");
+    const app = new Application(canvas);
+    app.load('https://prod.spline.design/L2SPbAuWZ7OwKVxh/scene.splinecode');
+  }, []);
   return (
-    <div className="text-white pt-[12vh] lg:pt-0 realtive z-10 h-screen lg:flex-row flex-col flex px-5 items-center justify-between">
-      {/*Left SECTION DIV  */}
-      <div className="flex flex-col justify-center">
+    <div className="text-white pt-[12vh] lg:pt-0 realtive z-10 h-screen lg:flex-row flex-col flex w-screen px-5 items-center justify-between">
+      {/*Left DIV  */}
+      <div className="flex flex-col w-1/2 justify-center">
         <h1
-          className="text-[#82aea4]
+          className="text-[#39A8DC]
              md:text-6xl sm:text-5xl text-3xl font-bold md:py-3"
         >
           Dexterix 4.0
@@ -37,7 +43,7 @@ const Hero = () => {
         </p>
 
         {/*REGISTER BUTTON */}
-        <button className="bg-[#5e887e] w-[150px] rounded-md font-medium text-xl my-4 py-3 hover:bg-[#486961] ease-in-out duration-200 transform hover:scale-95">
+        <button className="bg-[#39A8DC] w-[150px] rounded-md font-medium text-xl my-4 py-3 hover:bg-[#57c1f2] ease-in-out duration-200 transform hover:scale-95">
           Register
         </button>
         {/* Social Media */}
@@ -72,9 +78,9 @@ const Hero = () => {
           </li>
         </ul>
       </div>
-      {/* Right SECTION DIV */}
-      <div className="flex text-6xl py-8 items-center">
-        <h1 className="font-Tilt_Prism">3d Model Here</h1>
+      {/* Right DIV 3D Model */}
+      <div className="w-1/2">
+        <canvas id="canvas3d"></canvas>
       </div>
     </div>
   );
