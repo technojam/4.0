@@ -1,7 +1,5 @@
 import { IoMenu } from "react-icons/io5";
-// import gsap, { Power3 } from "gsap";
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
-import { FaMoon, FaSun } from "react-icons/fa";
+import React, { useEffect, useRef, useState } from "react";
 const Navbar = () => {
   // Animation Using Gsap
   const comp = useRef();
@@ -24,40 +22,11 @@ const Navbar = () => {
       document.documentElement.classList.remove("dark");
     }
   }, [theme]);
-  // useLayoutEffect(() => {
-  //   const ctx = gsap.context(() => {
-  //     const t1 = gsap.timeline();
-  //     t1.to(".navbar", { opacity: 100 })
-  //       .from(".logo", { x: -150, duration: 0.6, ease: Power3.easeOut }, "-=.4")
-  //       .from(
-  //         ".page",
-  //         {
-  //           x: -200,
-  //           y: -60,
-  //           stagger: 0.15,
-  //           ease: Power3.easeOut,
-  //           duration: 0.7,
-  //         },
-  //         "-=.4"
-  //       )
-  //       .from(
-  //         ".github",
-  //         {
-  //           x: -200,
-  //           y: -60,
-  //           ease: Power3.easeOut,
-  //           duration: 0.4,
-  //         },
-  //         "-=.2"
-  //       );
-  //   }, comp);
-  //   return () => ctx.revert();
-  // }, []);
   return (
     <>
       <nav
         ref={comp}
-        className="px-5 w-screen border border-b border-[#ffffff2c] z-20 backdrop-blur text-white gap-8 absolute top-0 left-0 h-[11vh] bg-transparent flex items-center justify-between navbar"
+        className="px-5 w-screen border-b border-[#ffffff2c] z-20 backdrop-blur text-white gap-8 absolute top-0 left-0 h-[11vh] bg-transparent flex items-center justify-between navbar"
       >
         {/* Technojam Logo */}
         <div className="logo">

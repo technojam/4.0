@@ -49,7 +49,7 @@ const App = () => {
         <Navbar />
       </div>
       {/* Background Sky */}
-      <div class="sky fixed top-0 left-0 -z-20 w-screen h-screen">
+      <div className="sky fixed top-0 left-0 -z-20 w-screen h-screen">
         <div class="stars"></div>
         <div class="stars1"></div>
         <div class="stars2"></div>
@@ -61,7 +61,7 @@ const App = () => {
         {/* Background Rocket Image */}
         <img
           className="fixed object-cover top-0 left-0 w-screen -z-10 h-screen bg_rocket d-none"
-          src="/bg_rocket.jpeg"
+          src="/bg_rocket.jpg"
           alt="bg_rocket"
         />
         {/* Typography */}
