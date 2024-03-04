@@ -1,6 +1,5 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import ScrollSmoother from "gsap-trial/ScrollSmoother";
 import MotionPathPlugin from "gsap/MotionPathPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import React, { useRef } from "react";
@@ -9,17 +8,12 @@ const Timeline = () => {
   const timeline = useRef();
   useGSAP(
     () => {
-      // ScrollSmoother.create({
-      //   smooth:1,
-      //   effects:true,
-      //   smoothTouch:0.1
-      // })
       const tl = gsap.timeline();
       tl.to("#rocket", {
         scrollTrigger: {
           trigger: "#path",
           start: "top 40%",
-          end: "120% 90%",
+          end: "bottom 90%",
           scrub: 1,
           // markers: true,
         },
@@ -78,11 +72,8 @@ const Timeline = () => {
       <div className="absolute text-center p-5 top-[550px] left-[400px] w-80 h-40 rounded timeContent opacity-100 text-white border border-gray-500">
         Third Timeline Info
       </div>
-      <div className="absolute text-center p-5 top-[750px] right-20 w-80 h-40 rounded timeContent opacity-100 text-white border border-gray-500">
-        Fourth Timeline Info
-      </div>
       <div className="absolute text-center p-5 bottom-12 right-60 w-80 h-40 rounded timeContent opacity-100 text-white border border-gray-500">
-        Fifth Timeline Info
+        Fourth Timeline Info
       </div>
     </div>
   );
