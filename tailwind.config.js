@@ -4,12 +4,13 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode:"class",
   theme: {
     extend: {
       fontFamily: {
         Phudu: ["Phudu"],
-        Tilt_Prism:["Tilt Prism"]
+        Tilt_Prism:["Tilt Prism"],
+        Kode_Mono:["Kode Mono"],
+        Orbitron:["Orbitron"],
       },
     },
   },
