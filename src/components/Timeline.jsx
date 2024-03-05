@@ -63,18 +63,26 @@ const Timeline = () => {
           stroke="white"
         />
       </svg>
-      <div className="absolute text-center p-5 top-5 left-64 w-80 h-40 rounded timeContent opacity-100 text-white border border-gray-500">
+      {/* <div className="absolute text-center p-5 top-5 left-64 w-80 h-40 rounded timeContent opacity-100 text-white border border-gray-500">
         First Timeline Info
-      </div>
-      <div className="absolute text-center p-5 top-32 right-48 w-80 h-40 rounded timeContent opacity-100 text-white border border-gray-500">
+      </div> */}
+      <img  className="absolute top-5 left-64 w-56 h-56" src="/cartoon-2026994_1280.png" alt="planet"  />
+
+      {/* <div className="absolute text-center p-5 top-32 right-48 w-80 h-40 rounded timeContent opacity-100 text-white border border-gray-500">
         Second Timeline Info
-      </div>
-      <div className="absolute text-center p-5 top-[550px] left-[400px] w-80 h-40 rounded timeContent opacity-100 text-white border border-gray-500">
+      </div> */}
+            <img className="absolute top-32 right-48 w-56 h-56" src="/2e5a53a1-1dc7-4999-a943-bd0506845793.png" alt="planet2" />
+
+      {/* <div className="absolute text-center p-5 top-[550px] left-[400px] w-80 h-40 rounded timeContent opacity-100 text-white border border-gray-500">
         Third Timeline Info
-      </div>
-      <div className="absolute text-center p-5 bottom-12 right-60 w-80 h-40 rounded timeContent opacity-100 text-white border border-gray-500">
+      </div> */}
+            <img className="absolute top-[550px] left-[350px] w-56 h-56" src="/gite_d9x3_210520.png" alt="planet3" />
+
+      {/* <div className="absolute text-center p-5 bottom-12 right-60 w-80 h-40 rounded timeContent opacity-100 text-white border border-gray-500">
         Fourth Timeline Info
-      </div>
+      </div> */}
+            <img className="absolute right-28 bottom-12 w-56 h-56" src="/400b6abd-8bdb-4ff3-82fa-0ddfbb45bed8.png" alt="planet4" />
+
     </div>
   );
 };

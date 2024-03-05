@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { ReactTyped } from "react-typed";
-import Navbar from "./Navbar";
 import {
   FaLinkedinIn,
   FaInstagram,
