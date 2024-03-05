@@ -47,16 +47,15 @@ const App = () => {
     >
       {/* Navbar */}
       <div className="d-block">
-        <Navbar />
       </div>
       {/* Background Sky */}
       <div className="sky fixed top-0 left-0 -z-20 w-screen h-screen">
-        <div class="stars"></div>
-        <div class="stars1"></div>
-        <div class="stars2"></div>
-        <div class="shooting-stars absolute bottom-0 right-0"></div>
-        <div class="shooting-stars absolute bottom-10 right-32"></div>
-        <div class="shooting-stars absolute bottom-20 right-72"></div>
+        <div className="stars"></div>
+        <div className="stars1"></div>
+        <div className="stars2"></div>
+        <div className="shooting-stars absolute bottom-0 right-0"></div>
+        <div className="shooting-stars absolute bottom-10 right-32"></div>
+        <div className="shooting-stars absolute bottom-20 right-72"></div>
       </div>
       {/* Animation Page */}
         {/* Background Rocket Image */}
@@ -66,7 +65,7 @@ const App = () => {
           alt="bg_rocket"
         />
         {/* Typography */}
-        <div className="pt-40 mx-auto fixed z-50 lg:mx-0 lg:pl-96 max-w-fit typo d-none">
+        <div className="pt-40 ml-20 fixed z-50 lg:mx-0 lg:pl-96 max-w-fit typo d-none">
           <h1 className="md:text-7xl text-5xl font-semibold font-Tilt_Prism">
             Dexterix
           </h1>
@@ -78,13 +77,14 @@ const App = () => {
           </div>
           <button
             onClick={() => t1.play()}
-            className="mt-5 px-4 py-2 md:float-right rounded-md bg-[#974BD0] hover:scale-110 duration-150 hover:bg-[#aa55eb]"
+            className="mt-5 px-4 py-2 sm:float-right md:float-right rounded-md bg-[#974BD0] hover:scale-110 duration-150 hover:bg-[#aa55eb]"
           >
             Start
           </button>
         </div>
       {/* Pages */}
       <div className="d-block  opacity-100">
+        <Navbar />
         <Hero />
         <Timeline />
         <TimerCounter/>

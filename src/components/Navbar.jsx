@@ -127,7 +127,7 @@ const Navbar = () => {
           </div> */}
           <IoMenu
             onClick={() => setSidebar(!sidebar)}
-            className="text-2xl md:text-3xl"
+            className="text-2xl md:text-3xl mr-5"
           />
         </div>
       </nav>
