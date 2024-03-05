@@ -4,6 +4,7 @@ import { useRef } from "react";
 import Timeline from "./components/Timeline";
 import { useGSAP } from "@gsap/react";
 import gsap, { Power3 } from "gsap";
+import TimerCounter from  "./components/TimerCounter"
 const App = () => {
   const isSmallScreen = window.innerWidth <= 1024;
   const comp = useRef();
@@ -60,7 +61,7 @@ const App = () => {
         {/* Background Rocket Image */}
         <img
           className="fixed object-cover top-0 left-0 w-screen -z-10 h-screen bg_rocket d-none"
-          src="/bg_rocket.jpeg"
+          src="/bg_rocket.jpg"
           alt="bg_rocket"
         />
         {/* Typography */}
@@ -86,7 +87,9 @@ const App = () => {
         <Navbar />
         <Hero />
         <Timeline />
+        <TimerCounter/>
       </div>
+
     </div>
   );
 };
