@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;500;700;800;900;1000&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Phudu:wght@300..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Orbitron:wght@400..900&family=Tilt+Prism&family=Phudu:wght@300..900&family=Nunito:wght@200;500;700;800;900;1000&display=swap');
 /* svg {
   width: auto;
   height: auto;
@@ -11,13 +9,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.parent {
-  height: 400px;
-  width: 300px;
-  padding: 20px;
+/* Card Animation */
+.perspective{
   perspective: 1000px;
 }
-
+.preserve-3d{
+  transform-style: preserve-3d;
+}
+.preserve-3d:hover{
+  background-position: 80% 20%;
+  transform: rotate3d(0.5, 1, 0, 30deg);
+}
+.content-box{
+  background-color: rgba(0, 0, 0, 0.811);
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: rgba(0, 115, 255, 0.925) 0px 20px 50px -25px;
+  transition: all 0.5s ease-in-out;
+  padding: 50px 25px 25px 25px;
+  transform-style: preserve-3d;
+}
+.transform-3d{
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(0px, 0px, 20px);
+}
+.transform-3d:hover {
+  transform: translate3d(0px, 0px, 50px);
+}
+.box-shadow{
+  box-shadow: rgb(0, 102, 255) 0px 20px 60px 0px, rgb(0, 200, 255) 0px 18px 36px -18px;
+  transform: translate3d(0px, 0px, 50px);
+}
 /* Background Animataion */
 .sky {
   background: linear-gradient(to bottom, #060606 0%, #060606 100%);
@@ -1445,4 +1466,4 @@
     opacity: 1;
     height: 800px;
   }
-} 
+}
