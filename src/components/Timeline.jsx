@@ -41,7 +41,7 @@ const Timeline = () => {
     <div
       ref={timeline}
       id="main"
-      className="relative z-10 text-3xl flex justify-center overflow-hidden h-screen items-center"
+      className="relative z-10 text-3xl flex justify-center min-h-screen items-center"
     >
       {/* Rocket Image */}
       <img

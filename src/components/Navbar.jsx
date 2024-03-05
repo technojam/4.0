@@ -26,7 +26,7 @@ const Navbar = () => {
     <>
       <nav
         ref={comp}
-        className="px-5 w-screen border-b border-[#ffffff2c] z-20 backdrop-blur text-white gap-8 absolute top-0 left-0 h-[11vh] bg-transparent flex items-center justify-between navbar"
+        className="px-5 w-screen border-b border-[#ffffff2c] z-20 text-white gap-8 absolute top-0 left-0 h-[11vh] bg-transparent flex items-center justify-between navbar"
       >
         {/* Technojam Logo */}
         <div className="logo">
