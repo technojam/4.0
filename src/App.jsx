@@ -52,13 +52,7 @@ const App = () => {
       <div className="d-block">
       </div>
       {/* Background Sky */}
-      <div className="sky fixed top-0 left-0 -z-20 w-screen h-screen">
-        <div className="stars"></div>
-        <div className="stars1"></div>
-        <div className="stars2"></div>
-        <div className="shooting-stars absolute bottom-0 right-0"></div>
-        <div className="shooting-stars absolute bottom-10 right-32"></div>
-        <div className="shooting-stars absolute bottom-20 right-72"></div>
+      <div className="sky fixed top-0 left-0 -z-20 w-screen h-screen">     
         <div className="stars"></div>
         <div className="stars1"></div>
         <div className="stars2"></div>
@@ -105,7 +99,9 @@ const App = () => {
         </div>
       </div>
       {/* Scroll To Top Button */}
-      <GoToTop />
+      <div className="d-block">
+        <GoToTop />
+      </div>
     </div>
   );
 };
