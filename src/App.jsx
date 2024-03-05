@@ -4,6 +4,7 @@ import { useRef } from "react";
 import Timeline from "./components/Timeline";
 import { useGSAP } from "@gsap/react";
 import gsap, { Power3 } from "gsap";
+import Card from "./components/Card";
 const App = () => {
   const isSmallScreen = window.innerWidth <= 1024;
   const comp = useRef();
