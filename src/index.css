@@ -1424,7 +1424,7 @@
   bottom: 0;
   right: 0; */
   background: linear-gradient(to top, rgba(255, 255, 255, 0), white);
-  animation: animShootingStar 10s linear infinite;
+  animation: animShootingStar 15s linear infinite;
 }
 @keyframes animStar {
   from {
