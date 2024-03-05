@@ -4,6 +4,7 @@ import { useRef } from "react";
 import Timeline from "./components/Timeline";
 import { useGSAP } from "@gsap/react";
 import gsap, { Power3 } from "gsap";
+import TimerCounter from  "./components/TimerCounter"
 const App = () => {
   const isSmallScreen = window.innerWidth <= 1024;
   const comp = useRef();
@@ -86,7 +87,9 @@ const App = () => {
       <div className="d-block  opacity-100">
         <Hero />
         <Timeline />
+        <TimerCounter/>
       </div>
+
     </div>
   );
 };
