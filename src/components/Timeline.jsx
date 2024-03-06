@@ -13,9 +13,8 @@ const Timeline = () => {
         scrollTrigger: {
           trigger: "#path",
           start: "top 40%",
-          end: "bottom 90%",
+          end: "bottom 70%",
           scrub: 1,
-          // markers: true,
         },
         motionPath: {
           path: "#path",
@@ -23,17 +22,33 @@ const Timeline = () => {
           alignOrigin: [0.5, 0.5],
           autoRotate: true,
         },
-      }).from(".timeContent", {
-        opacity: 0,
-        x: 1000,
-        stagger: 0.5,
-        scrollTrigger: {
-          trigger: "#path",
-          start: "top 90%",
-          end: "90% 85%",
-          scrub: 1,
-        },
-      });
+      })
+        .from(".rightPlanet", {
+          width:"60px",
+          opacity: 0.3,
+          x: 500,
+          rotate: 300,
+          stagger: 1,
+          scrollTrigger: {
+            trigger: "#path",
+            start: "top 75%",
+            end: "bottom 75%",
+            scrub: 1,
+          },
+        })
+        .from(".leftPlanet", {
+          width:"60px",
+          opacity: 0.3,
+          rotate: 300,
+          x: -500,
+          stagger: 1,
+          scrollTrigger: {
+            trigger: "#path",
+            start: "top 90%",
+            end: "bottom 95%",
+            scrub: 1,
+          },
+        });
     },
     { scope: timeline }
   );
@@ -63,26 +78,46 @@ const Timeline = () => {
           stroke="white"
         />
       </svg>
-      {/* <div className="absolute text-center p-5 top-5 left-64 w-80 h-40 rounded timeContent opacity-100 text-white border border-gray-500">
-        First Timeline Info
-      </div> */}
-      <img  className="absolute top-5 left-64 w-56 h-56" src="/cartoon-2026994_1280.png" alt="planet"  />
-
-      {/* <div className="absolute text-center p-5 top-32 right-48 w-80 h-40 rounded timeContent opacity-100 text-white border border-gray-500">
-        Second Timeline Info
-      </div> */}
-            <img className="absolute top-32 right-48 w-56 h-56" src="/2e5a53a1-1dc7-4999-a943-bd0506845793.png" alt="planet2" />
-
-      {/* <div className="absolute text-center p-5 top-[550px] left-[400px] w-80 h-40 rounded timeContent opacity-100 text-white border border-gray-500">
-        Third Timeline Info
-      </div> */}
-            <img className="absolute top-[550px] left-[350px] w-56 h-56" src="/gite_d9x3_210520.png" alt="planet3" />
-
-      {/* <div className="absolute text-center p-5 bottom-12 right-60 w-80 h-40 rounded timeContent opacity-100 text-white border border-gray-500">
-        Fourth Timeline Info
-      </div> */}
-            <img className="absolute right-28 bottom-12 w-56 h-56" src="/400b6abd-8bdb-4ff3-82fa-0ddfbb45bed8.png" alt="planet4" />
-
+      <img
+        className="absolute leftPlanet top-0 left-52 w-48 aspect-square"
+        src="/planet.png"
+        alt="planet"
+      />
+      <div className="absolute leftPlanet top-0 flex justify-center items-center text-white text-lg left-52 w-48 p-5 aspect-square text-center z-50">
+        <h1>Registration Starts</h1>
+      </div>
+      <img
+        className="absolute rightPlanet top-24 right-48 w-48 aspect-square"
+        src="/planet2.png"
+        alt="planet2"
+      />
+      <div className="absolute rightPlanet top-24 right-48 flex justify-center items-center text-white text-lg w-48 p-5 aspect-square text-center z-50">
+        <h1>Registration Starts</h1>
+      </div>
+      <img
+        className="absolute rightPlanet right-24 top-[430px] w-48 aspect-square"
+        src="/planet4.png"
+        alt="planet3"
+      />
+      <div className="absolute rightPlanet right-24 top-[430px] flex justify-center items-center text-white text-lg w-48 p-5 aspect-square text-center z-50">
+        <h1>Registration Starts</h1>
+      </div>
+      <img
+        className="absolute leftPlanet top-[430px] left-[250px] w-48 aspect-square"
+        src="/planet3.png"
+        alt="planet4"
+      />
+      <div className="absolute leftPlanet top-[430px] left-[250px] flex justify-center items-center text-white text-lg w-48 p-5 aspect-square text-center z-50">
+        <h1>Registration Starts</h1>
+      </div>
+      <img
+        className="absolute rightPlanet top-[600px] right-[350px] w-48 h-64"
+        src="/planet5.png"
+        alt="planet5"
+      />
+      <div className="absolute rightPlanet top-[600px] right-[350px] flex justify-center items-center text-white text-lg w-48 h-64 p-5 text-center z-50">
+        <h1>Registration End</h1>
+      </div>
     </div>
   );
 };
