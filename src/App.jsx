@@ -14,7 +14,7 @@ const App = () => {
   const t1 = gsap.timeline({ paused: true });
   useGSAP(
     () => {
-      t1.to(
+      t1.from(
         // to
         ".typo",
         {
@@ -27,7 +27,7 @@ const App = () => {
         },
         "start"
       )
-        .to(
+        .from(
           // to
           ".bg_rocket",
           {
@@ -38,8 +38,8 @@ const App = () => {
           },
           "start"
         )
-        .to(".d-none", { display: "none" }) // to
-        .from(".d-block", { opacity: 0 }); // from
+        .from(".d-none", { display: "none" }) // to
+        .to(".d-block", { opacity: 0 }); // from
     },
     { scope: comp }
   );
@@ -49,10 +49,9 @@ const App = () => {
       className="relative min-h-screen select-none font-Phudu overflow-x-hidden"
     >
       {/* Navbar */}
-      <div className="d-block">
-      </div>
+      <div className="d-block"></div>
       {/* Background Sky */}
-      <div className="sky fixed top-0 left-0 -z-20 w-screen h-screen">     
+      <div className="sky fixed top-0 left-0 -z-20 w-screen h-screen">
         <div className="stars"></div>
         <div className="stars1"></div>
         <div className="stars2"></div>
@@ -92,7 +91,7 @@ const App = () => {
         <Timeline />
         <TimerCounter />
         {/* Card Section */}
-        <div className="flex justify-center min-h-screen items-center text-white gap-[50px] flex-wrap">
+        <div className="flex justify-center min-h-screen py-5 items-center text-white gap-10 flex-wrap">
           {cardTheme.map((theme) => (
             <Card key={theme.hueDeg} theme={theme} />
           ))}
