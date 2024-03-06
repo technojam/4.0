@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import { useRef } from "react";
 import Timeline from "./components/Timeline";
 import cardTheme from "./components/cardTheme";
+import Footer from "./components/Footer";
 import { useGSAP } from "@gsap/react";
 import gsap, { Power3 } from "gsap";
 import TimerCounter from "./components/TimerCounter";
@@ -96,6 +97,7 @@ const App = () => {
             <Card key={theme.hueDeg} theme={theme} />
           ))}
         </div>
+        <Footer />
       </div>
       {/* Scroll To Top Button */}
       <div className="d-block">
