@@ -9,14 +9,14 @@ import {
 import { FaFacebookSquare } from "react-icons/fa";
 import { Application } from "@splinetool/runtime";
 const Hero = () => {
-  useEffect(() => {
-    const canvas = document.getElementById("canvas3d");
-    const app = new Application(canvas);
-    app.load("https://prod.spline.design/L2SPbAuWZ7OwKVxh/scene.splinecode");
-  }, []);
+  // useEffect(() => {
+  //   const canvas = document.getElementById("canvas3d");
+  //   const app = new Application(canvas);
+  //   app.load("https://prod.spline.design/L2SPbAuWZ7OwKVxh/scene.splinecode");
+  // }, []);
   return (
     <div className="text-white pt-[12vh] lg:pt-0 relative z-10 pb-20 h-screen flex-col flex w-screen px-5 lg:px-0 items-center justify-center">
-      <canvas id="canvas3d"></canvas>
+      {/* <canvas id="canvas3d"></canvas> */}
       <div className="flex justify-center gap-14">
         <div>
           <p className="text-[22px] font-bold">Organised by,</p>
