@@ -14,7 +14,8 @@ const Timeline = () => {
           trigger: "#path",
           start: "top 40%",
           end: "bottom 70%",
-          scrub: 1,
+          scrub: 2.5,
+          pin: '#main',
         },
         motionPath: {
           path: "#path",
