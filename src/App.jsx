@@ -9,6 +9,7 @@ import { useGSAP } from "@gsap/react";
 import gsap, { Power3 } from "gsap";
 import TimerCounter from "./components/TimerCounter";
 import GoToTop from "./components/GoToTop";
+import About from "./components/About";
 const App = () => {
   const isSmallScreen = window.innerWidth <= 1024;
   const comp = useRef();
@@ -89,6 +90,7 @@ const App = () => {
       <div className="d-block  opacity-100">
         <Navbar />
         <Hero />
+        <About/>
         <Timeline />
         <TimerCounter />
         {/* Card Section */}
