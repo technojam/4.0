@@ -9,6 +9,7 @@ import { useGSAP } from "@gsap/react";
 import gsap, { Power4 } from "gsap";
 import TimerCounter from "./components/TimerCounter";
 import GoToTop from "./components/GoToTop";
+import About from "./components/About";
 const App = () => {
   const comp = useRef();
   const t1 = gsap.timeline();
@@ -38,6 +39,7 @@ const App = () => {
       <div className="d-block opacity-100">
         <Navbar />
         <Hero />
+        <About/>
         <Timeline />
         <TimerCounter />
         {/* Card Section */}
