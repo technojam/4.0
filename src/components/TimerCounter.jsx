@@ -84,10 +84,10 @@ const Timer3 = () => {
   },{scope:timeCounter});
   return (
     <div ref={timeCounter} className="flex flex-col items-center justify-center h-screen gap-8 sm:gap-16">
-      <span className="text-2xl relative sm:text-3xl font-semibold text-white text-center tracking-widest px-2">
+      <div className="text-2xl relative sm:text-3xl font-semibold text-white text-center tracking-widest px-2">
         Registration Starts Dexterix 4.0
         <h1 className="absolute heading w-full h-full bg-cyan-400 top-0 right-0"></h1>
-      </span>
+      </div>
       <div className="flex justify-center gap-3 sm:gap-8 font-Orbitron">
         {/* Day Box */}
         <div className="flex flex-col gap-5 relative">

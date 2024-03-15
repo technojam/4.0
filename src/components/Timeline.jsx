@@ -20,8 +20,7 @@ const Timeline = ({ className }) => {
   const [svgHeight, setSvgHeight] = useState(0);
   useEffect(() => {
     if (contentRef.current) {
-      setSvgHeight(contentRef.current.offsetHeight - 60);
-      console.log(contentRef.current.offsetHeight);
+      setSvgHeight(contentRef.current.offsetHeight - 0);
     }
   }, []);
   const y1 = useSpring(
@@ -70,7 +69,7 @@ const Timeline = ({ className }) => {
   return (
     <motion.div
       ref={ref}
-      className={cn("relative w-10/12 mx-auto min-h-full", className)}
+      className={cn("relative w-10/12 mx-auto min-h-screen", className)}
     >
       <div className="absolute lg:left-1/2 left-5 top-5">
         <motion.div
@@ -104,7 +103,7 @@ const Timeline = ({ className }) => {
           viewBox={`0 0 20 ${svgHeight}`}
           width="20"
           height={svgHeight} // Set the SVG height
-          className=" ml-4 block"
+          className="ml-4 block"
           aria-hidden="true"
         >
           <motion.path
@@ -120,7 +119,7 @@ const Timeline = ({ className }) => {
             d={`M 1 0V -36 l 18 24 V ${svgHeight * 0.8} l -18 24V ${svgHeight}`}
             fill="none"
             stroke="url(#gradient)"
-            strokeWidth="1.25"
+            strokeWidth="5"
             className="motion-reduce:hidden"
             transition={{
               duration: 10,
@@ -170,7 +169,23 @@ const Timeline = ({ className }) => {
               background:
                 "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
             }}
-            className="max-w-fit leftBox rounded px-4 py-2 lg:p-3 md:p-1 mt-10 flex gap-12 items-center"
+            className="max-w-fit leftBox rounded px-4 py-2 lg:p-3 md:p-1 mt-16 flex gap-8 items-center"
+          >
+            <h6 className="font-bold text-xl hover:text-xl">
+              Registration Starts
+            </h6>
+            <FaHome />
+          </div>
+          <div className="max-w-fit leftBox rounded mt-9 h-20 p-3 ml-48 flex flex-col justify-around items-end">
+            <h1 className="text-xl text-white font-semibold ">13th April</h1>
+          </div>
+          <div
+            style={{
+              background:
+                "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
+            }}
+            className="max-w-fit leftBox rounded px-4 py-2 lg:p-3 md:p-1 mt-10 flex gap-8 items-center"
+
           >
             <h6 className="font-bold text-xl hover:text-xl">
               Registration Ends
@@ -195,6 +210,21 @@ const Timeline = ({ className }) => {
           >
             <FaGift />
             <h6 className="font-bold text-xl hover:text-xl">Bootcamp</h6>
+          </div>
+          <div className="max-w-fit rightBox rounded h-44 lg:ml-14 p-3 lg:mt-2 md:-mt-20 flex flex-col justify-center">
+            <h1 className="text-xl text-white font-semibold ">13th April</h1>
+          </div>
+          <div
+            style={{
+              background:
+                "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
+            }}
+            className="max-w-fit rightBox rounded px-5 py-2 lg:p-3 md:p-1 -mt-8 flex gap-8 ml-16 items-center"
+          >
+            <FaHome />
+            <h6 className="font-bold text-xl hover:text-xl">
+              Registration Start
+            </h6>
           </div>
           <div className="max-w-fit rightBox rounded lg:mt-6 ml-14 h-20 p-3 flex flex-col justify-center">
             <h1 className="text-xl text-white font-semibold ">10th April</h1>

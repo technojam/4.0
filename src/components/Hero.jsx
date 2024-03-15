@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useRef } from "react";
 import { ReactTyped } from "react-typed";
 import {
   FaLinkedinIn,
@@ -7,16 +7,37 @@ import {
   FaDiscord,
 } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
-import { Application } from "@splinetool/runtime";
-const Hero = () => {
-  // useEffect(() => {
-  //   const canvas = document.getElementById("canvas3d");
-  //   const app = new Application(canvas);
-  //   app.load("https://prod.spline.design/L2SPbAuWZ7OwKVxh/scene.splinecode");
-  // }, []);
+import { Canvas } from "@react-three/fiber";
+import Text_3D from "./Text_3D";
+import { OrbitControls } from "@react-three/drei";
+
+const Torus = () => {
   return (
-    <div className="text-white pt-[12vh] lg:pt-0 relative z-10 pb-20 h-screen flex-col flex w-screen px-5 lg:px-0 items-center justify-center">
-      {/* <canvas id="canvas3d"></canvas> */}
+    <mesh>
+      <torusGeometry rotateX={100} args={[1.5, 0.1, 2, 100]} />
+      <meshStandardMaterial color="white" />
+    </mesh>
+  );
+};
+const Hero = () => {
+  return (
+    <div className="text-white pt-[12vh] lg:pt-0 relative z-10 pb-20 h-screen overflow-hidden flex-col flex w-screen px-5 lg:px-0 items-center justify-center">
+      {/* 3D Design using Three JS */}
+      <div className="w-[80%] h-[65%]">
+        <Canvas shadows camera={{ position: [0, 0, 5], fov: 40 }}>
+          <OrbitControls enableZoom={false} />
+          <directionalLight position={[0, 0, 3]} />
+          <ambientLight />
+          <Text_3D />
+          <group position={[-0.085, 0, 0]}>
+            {/* <Torus/> */}
+            <mesh>
+              <sphereGeometry args={[1, 32, 40]} />
+              <meshStandardMaterial color="cyan" />
+            </mesh>
+          </group>
+        </Canvas>
+      </div>
       <div className="flex justify-center gap-14">
         <div>
           <p className="text-[22px] font-bold">Organised by,</p>
@@ -29,7 +50,7 @@ const Hero = () => {
           <div>
             <ReactTyped
               className="text-2xl font-bold"
-              strings={["Mar 11-12, 2024"]}
+              strings={["April 13-14, 2024"]}
               typeSpeed={40}
               backSpeed={50}
               loop
