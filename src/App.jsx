@@ -11,6 +11,7 @@ import GoToTop from "./components/GoToTop";
 import ImageSlider from "./components/ImageSlider";
 import About from "./components/About";
 import Footer1 from "./components/Footer1";
+import Sponsors from "./components/Sponsors";
 const App = () => {
   const comp = useRef();
   const t1 = gsap.timeline();
@@ -43,6 +44,7 @@ const App = () => {
         <About/>
         <Timeline />
         <TimerCounter />
+        <Sponsors/>
         <ImageSlider />
         {/* Card Section */}
         <h1 className="text-white text-4xl font-Phudu font-medium flex justify-center">Themes</h1>
