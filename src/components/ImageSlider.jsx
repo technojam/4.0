@@ -35,7 +35,7 @@ function ImageSlider() {
   };
 
   return (
-    <div className="max-w-[1000px] h-[600px] w-full m-auto px-4 relative group mb-36">
+    <div className="max-w-[900px] h-[500px] w-full m-auto px-4 relative group mb-52">
       <h1 className="text-white text-4xl font-Phudu font-medium flex justify-center mb-5">
         Our Past Events
       </h1>
