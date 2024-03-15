@@ -13,7 +13,7 @@ import { OrbitControls } from "@react-three/drei";
 
 const Torus = () => {
   return (
-    <mesh ref={ref}>
+    <mesh>
       <torusGeometry rotateX={100} args={[1.5, 0.1, 2, 100]} />
       <meshStandardMaterial color="white" />
     </mesh>
@@ -21,7 +21,7 @@ const Torus = () => {
 };
 const Hero = () => {
   return (
-    <div className="text-white pt-[12vh] lg:pt-0 relative z-10 pb-20 h-screen flex-col flex w-screen px-5 lg:px-0 items-center justify-center">
+    <div className="text-white pt-[12vh] lg:pt-0 relative z-10 pb-20 h-screen overflow-hidden flex-col flex w-screen px-5 lg:px-0 items-center justify-center">
       {/* 3D Design using Three JS */}
       <div className="w-[80%] h-[65%]">
         <Canvas shadows camera={{ position: [0, 0, 5], fov: 40 }}>
@@ -30,7 +30,7 @@ const Hero = () => {
           <ambientLight />
           <Text_3D />
           <group position={[-0.085, 0, 0]}>
-            <Torus/>
+            {/* <Torus/> */}
             <mesh>
               <sphereGeometry args={[1, 32, 40]} />
               <meshStandardMaterial color="cyan" />

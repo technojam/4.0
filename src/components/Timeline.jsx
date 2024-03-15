@@ -5,6 +5,7 @@ import { cn } from "./utils/cn";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { FaHome } from "react-icons/fa";
 
 const Timeline = ({ className }) => {
   const ref = useRef(null);
@@ -16,7 +17,7 @@ const Timeline = ({ className }) => {
   const [svgHeight, setSvgHeight] = useState(0);
   useEffect(() => {
     if (contentRef.current) {
-      setSvgHeight(contentRef.current.offsetHeight - 60);
+      setSvgHeight(contentRef.current.offsetHeight - 0);
     }
   }, []);
   const y1 = useSpring(
@@ -65,9 +66,9 @@ const Timeline = ({ className }) => {
   return (
     <motion.div
       ref={ref}
-      className={cn("relative w-10/12 mx-auto min-h-full", className)}
+      className={cn("relative w-10/12 mx-auto min-h-screen", className)}
     >
-      <div className="absolute left-1/2 top-5">
+      <div className="absolute lg:left-1/2 left-5 top-5">
         <motion.div
           transition={{
             duration: 0.2,
@@ -99,7 +100,7 @@ const Timeline = ({ className }) => {
           viewBox={`0 0 20 ${svgHeight}`}
           width="20"
           height={svgHeight} // Set the SVG height
-          className=" ml-4 block"
+          className="ml-4 block"
           aria-hidden="true"
         >
           <motion.path
@@ -115,7 +116,7 @@ const Timeline = ({ className }) => {
             d={`M 1 0V -36 l 18 24 V ${svgHeight * 0.8} l -18 24V ${svgHeight}`}
             fill="none"
             stroke="url(#gradient)"
-            strokeWidth="1.25"
+            strokeWidth="5"
             className="motion-reduce:hidden"
             transition={{
               duration: 10,
@@ -141,95 +142,101 @@ const Timeline = ({ className }) => {
       <div
         ref={contentRef}
         id="Timeline"
-        className="flex justify-between py-5 min-h-screen w-full"
+        className="flex flex-col lg:flex-row justify-center gap-16 w-full"
       >
         {/* Left Side Div */}
-        <div className="flex flex-col items-start">
+        <div className="flex flex-col items-end">
           <div
             style={{
               background:
                 "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
             }}
-            className="max-w-fit leftBox rounded h-64 p-3 flex flex-col justify-around items-center"
+            className="max-w-fit leftBox rounded px-4 py-2 lg:p-3 md:p-1 mt-16 flex gap-8 items-center"
           >
-            <h1 className="text-2xl font-semibold ">Timeline Title</h1>
-            <h6>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
-              quis, quae incidunt ducimus cupiditate ullam hic quaerat soluta
-              reprehenderit unde id, eius obcaecati laudantium earum quisquam,
-              rem laboriosam adipisci? Ea mollitia cumque est excepturi,
-              provident quisquam consectetur omnis. Eos.
+            <h6 className="font-bold text-xl hover:text-xl">
+              Registration Starts
             </h6>
+            <FaHome />
           </div>
-          <div className="w-5/6 leftBox rounded h-64 p-3 flex flex-col justify-around items-end">
-            <h1 className="text-2xl text-white font-semibold ">
-              Timeline Date
-            </h1>
+          <div className="max-w-fit leftBox rounded mt-9 h-20 p-3 ml-48 flex flex-col justify-around items-end">
+            <h1 className="text-xl text-white font-semibold ">13th April</h1>
           </div>
           <div
             style={{
               background:
                 "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
             }}
-            className="w-5/6 leftBox rounded h-64 p-3 flex flex-col justify-around items-center"
+            className="max-w-fit leftBox rounded px-4 py-2 lg:p-3 md:p-1 mt-16 flex gap-8 items-center"
           >
-            <h1 className="text-2xl font-semibold ">Timeline Title</h1>
-            <h6>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
-              quis, quae incidunt ducimus cupiditate ullam hic quaerat soluta
-              reprehenderit unde id, eius obcaecati laudantium earum quisquam,
-              rem laboriosam adipisci? Ea mollitia cumque est excepturi,
-              provident quisquam consectetur omnis. Eos.
+            <h6 className="font-bold text-xl hover:text-xl">
+              Registration Starts
             </h6>
+            <FaHome />
           </div>
-          <div className="w-5/6 leftBox rounded h-64 p-3 flex flex-col justify-around items-end">
-            <h1 className="text-2xl text-white font-semibold ">
-              Timeline Date
-            </h1>
+          <div className="max-w-fit leftBox rounded mt-9 h-20 p-3 ml-48 flex flex-col justify-around items-end">
+            <h1 className="text-xl text-white font-semibold ">13th April</h1>
+          </div>
+          <div
+            style={{
+              background:
+                "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
+            }}
+            className="max-w-fit leftBox rounded px-4 py-2 lg:p-3 md:p-1 mt-10 flex gap-8 items-center"
+          >
+            <h6 className="font-bold text-xl hover:text-xl">
+              Registration Starts
+            </h6>
+            <FaHome />
+          </div>
+          <div className="max-w-fit leftBox rounded h-20 p-3 mt-9 ml-48 flex flex-col justify-center items-end">
+            <h1 className="text-xl text-white font-semibold ">13th April</h1>
           </div>
         </div>
         {/* Right Side Div */}
-        <div className="flex flex-col gap-5 items-end">
-          <div className="w-5/6 rightBox rounded h-64 p-3 flex flex-col justify-around items-start">
-            <h1 className="text-2xl text-white font-semibold ">
-              Timeline Date
-            </h1>
+        <div className="flex flex-col gap-5 items-end lg:items-start">
+          <div className="max-w-fit rightBox rounded h-44 lg:ml-14 p-3 lg:mt-2 md:-mt-20 flex flex-col justify-center">
+            <h1 className="text-xl text-white font-semibold ">13th April</h1>
           </div>
           <div
             style={{
               background:
                 "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
             }}
-            className="w-5/6 rightBox rounded h-64 p-3 flex flex-col justify-around items-center"
+            className="max-w-fit rightBox rounded px-5 py-2 lg:p-3 md:p-1 -mt-8 flex gap-8 ml-16 items-center"
           >
-            <h1 className="text-2xl font-semibold ">Timeline Title</h1>
-            <h6>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
-              quis, quae incidunt ducimus cupiditate ullam hic quaerat soluta
-              reprehenderit unde id, eius obcaecati laudantium earum quisquam,
-              rem laboriosam adipisci? Ea mollitia cumque est excepturi,
-              provident quisquam consectetur omnis. Eos.
+            <FaHome />
+            <h6 className="font-bold text-xl hover:text-xl">
+              Registration Start
             </h6>
           </div>
-          <div className="w-5/6 rightBox rounded h-64 p-3 flex flex-col justify-around items-start">
-            <h1 className="text-2xl text-white font-semibold ">
-              Timeline Date
-            </h1>
+          <div className="max-w-fit rightBox rounded h-44 lg:ml-14 p-3 lg:mt-2 md:-mt-20 flex flex-col justify-center">
+            <h1 className="text-xl text-white font-semibold ">13th April</h1>
           </div>
           <div
             style={{
               background:
                 "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
             }}
-            className="w-5/6 rightBox rounded h-64 p-3 flex flex-col justify-around items-center"
+            className="max-w-fit rightBox rounded px-5 py-2 lg:p-3 md:p-1 -mt-8 flex gap-8 ml-16 items-center"
           >
-            <h1 className="text-2xl font-semibold ">Timeline Title</h1>
-            <h6>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
-              quis, quae incidunt ducimus cupiditate ullam hic quaerat soluta
-              reprehenderit unde id, eius obcaecati laudantium earum quisquam,
-              rem laboriosam adipisci? Ea mollitia cumque est excepturi,
-              provident quisquam consectetur omnis. Eos.
+            <FaHome />
+            <h6 className="font-bold text-xl hover:text-xl">
+              Registration Start
+            </h6>
+          </div>
+          <div className="max-w-fit rightBox rounded lg:mt-6 ml-14 h-20 p-3 flex flex-col justify-center">
+            <h1 className="text-xl text-white font-semibold ">13th April</h1>
+          </div>
+          <div
+            style={{
+              background:
+                "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
+            }}
+            className="max-w-fit rightBox rounded px-4 py-2 lg:p-3 md:p-1 lg:mt-4 md:-mt-3 flex gap-8 ml-16 items-center"
+          >
+            <FaHome />
+            <h6 className="font-bold text-xl hover:text-xl">
+              Registration Starts
             </h6>
           </div>
         </div>
