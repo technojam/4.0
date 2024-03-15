@@ -12,6 +12,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        Product_Sans: ["Product Sans"],
+        Ethnocentric: ["Ethnocentric"],
         Phudu: ["Phudu"],
         Tilt_Prism:["Tilt Prism"],
         Kode_Mono:["Kode Mono"],

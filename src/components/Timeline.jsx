@@ -6,6 +6,9 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FaHome } from "react-icons/fa";
+import { FaWalking } from "react-icons/fa";
+import { FaGift } from "react-icons/fa";
+import { FaHourglassStart } from "react-icons/fa";
 
 const Timeline = ({ className }) => {
   const ref = useRef(null);
@@ -159,7 +162,7 @@ const Timeline = ({ className }) => {
             <FaHome />
           </div>
           <div className="max-w-fit leftBox rounded mt-9 h-20 p-3 ml-48 flex flex-col justify-around items-end">
-            <h1 className="text-xl text-white font-semibold ">13th April</h1>
+            <h1 className="text-xl text-white font-semibold ">1st April</h1>
           </div>
           <div
             style={{
@@ -182,11 +185,12 @@ const Timeline = ({ className }) => {
                 "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
             }}
             className="max-w-fit leftBox rounded px-4 py-2 lg:p-3 md:p-1 mt-10 flex gap-8 items-center"
+
           >
             <h6 className="font-bold text-xl hover:text-xl">
-              Registration Starts
+              Registration Ends
             </h6>
-            <FaHome />
+            <FaWalking />
           </div>
           <div className="max-w-fit leftBox rounded h-20 p-3 mt-9 ml-48 flex flex-col justify-center items-end">
             <h1 className="text-xl text-white font-semibold ">13th April</h1>
@@ -195,19 +199,17 @@ const Timeline = ({ className }) => {
         {/* Right Side Div */}
         <div className="flex flex-col gap-5 items-end lg:items-start">
           <div className="max-w-fit rightBox rounded h-44 lg:ml-14 p-3 lg:mt-2 md:-mt-20 flex flex-col justify-center">
-            <h1 className="text-xl text-white font-semibold ">13th April</h1>
+            <h1 className="text-xl text-white font-semibold ">10th March</h1>
           </div>
           <div
             style={{
               background:
                 "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
             }}
-            className="max-w-fit rightBox rounded px-5 py-2 lg:p-3 md:p-1 -mt-8 flex gap-8 ml-16 items-center"
+            className="max-w-fit rightBox rounded px-5 py-2 lg:p-3 md:p-1 -mt-8 flex gap-32 ml-16 items-center"
           >
-            <FaHome />
-            <h6 className="font-bold text-xl hover:text-xl">
-              Registration Start
-            </h6>
+            <FaGift />
+            <h6 className="font-bold text-xl hover:text-xl">Bootcamp</h6>
           </div>
           <div className="max-w-fit rightBox rounded h-44 lg:ml-14 p-3 lg:mt-2 md:-mt-20 flex flex-col justify-center">
             <h1 className="text-xl text-white font-semibold ">13th April</h1>
@@ -225,19 +227,17 @@ const Timeline = ({ className }) => {
             </h6>
           </div>
           <div className="max-w-fit rightBox rounded lg:mt-6 ml-14 h-20 p-3 flex flex-col justify-center">
-            <h1 className="text-xl text-white font-semibold ">13th April</h1>
+            <h1 className="text-xl text-white font-semibold ">10th April</h1>
           </div>
           <div
             style={{
               background:
                 "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
             }}
-            className="max-w-fit rightBox rounded px-4 py-2 lg:p-3 md:p-1 lg:mt-4 md:-mt-3 flex gap-8 ml-16 items-center"
+            className="max-w-fit rightBox rounded px-4 py-2 lg:p-3 md:p-1 lg:mt-4 md:-mt-3 flex gap-32 ml-16 items-center"
           >
-            <FaHome />
-            <h6 className="font-bold text-xl hover:text-xl">
-              Registration Starts
-            </h6>
+            <FaHourglassStart />
+            <h6 className="font-bold text-xl hover:text-xl">Dextrix 4.0</h6>
           </div>
         </div>
       </div>

@@ -45,6 +45,7 @@ const App = () => {
         <TimerCounter />
         <ImageSlider />
         {/* Card Section */}
+        <h1 className="text-white text-4xl font-Phudu font-medium flex justify-center">Themes</h1>
         <div className="flex justify-center min-h-screen py-10 items-center text-white gap-10 flex-wrap">
           {cardTheme.map((theme) => (
             <Card key={theme.hueDeg} theme={theme} />
