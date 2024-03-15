@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <div className="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4 relative">
-      <div className="w-full flex flex-col justify-center items-center relative z-10 font-Phudu">
+      <div className="w-full flex flex-col justify-center items-center relative z-10 font-Ethnocentric">
         <h1 className="text-3xl lg:text-4xl flex justify-center font-bold leading-9 text-white pb-4">
           About Us
         </h1>
