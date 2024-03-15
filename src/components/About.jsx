@@ -20,7 +20,7 @@ const About = () => {
           trigger: "#para",
           start: "top 120%",
           end: "bottom 60%",
-          markers: true,
+          // markers: true,
           scrub: 3,
         },
       });
