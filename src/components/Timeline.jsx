@@ -17,7 +17,6 @@ const Timeline = ({ className }) => {
   useEffect(() => {
     if (contentRef.current) {
       setSvgHeight(contentRef.current.offsetHeight - 60);
-      console.log(contentRef.current.offsetHeight);
     }
   }, []);
   const y1 = useSpring(
@@ -151,7 +150,7 @@ const Timeline = ({ className }) => {
               background:
                 "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
             }}
-            className="w-5/6 leftBox rounded h-64 p-3 flex flex-col justify-around items-center"
+            className="max-w-fit leftBox rounded h-64 p-3 flex flex-col justify-around items-center"
           >
             <h1 className="text-2xl font-semibold ">Timeline Title</h1>
             <h6>
