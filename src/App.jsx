@@ -9,7 +9,7 @@ import { useGSAP } from "@gsap/react";
 import gsap, { Power4 } from "gsap";
 import TimerCounter from "./components/TimerCounter";
 import GoToTop from "./components/GoToTop";
-import ImageSlider from "./components/ImageSlider";
+import About from "./components/About";
 const App = () => {
   const comp = useRef();
   const t1 = gsap.timeline();
@@ -39,9 +39,9 @@ const App = () => {
       <div className="d-block opacity-100">
         <Navbar />
         <Hero />
+        <About/>
         <Timeline />
         <TimerCounter />
-        <ImageSlider />
         {/* Card Section */}
         <div className="flex justify-center min-h-screen py-10 items-center text-white gap-10 flex-wrap">
           {cardTheme.map((theme) => (
