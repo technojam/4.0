@@ -7,7 +7,7 @@ import cardTheme from "./components/cardTheme";
 import { useGSAP } from "@gsap/react";
 import gsap, { Power4 } from "gsap";
 import TimerCounter from "./components/TimerCounter";
-import GoToTop from "./components/GoToTop";
+import ChatBox from "./components/ChatBox";
 import ImageSlider from "./components/ImageSlider";
 import About from "./components/About";
 import Footer1 from "./components/Footer1";
@@ -55,7 +55,7 @@ const App = () => {
       </div>
       {/* Scroll To Top Button */}
       <div className="d-block">
-        <GoToTop />
+        <ChatBox />
       </div>
     </div>
   );
