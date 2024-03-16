@@ -42,36 +42,54 @@ const Timeline = ({ className }) => {
   const t1 = gsap.timeline();
   useGSAP(
     () => {
-      t1.from(".leftBox", {
-        x: -800,
-        opacity: 0.3,
-        stagger: 1,
-        scrollTrigger: {
-          trigger: "#Timeline",
-          start: "top center",
-          end: "bottom 90%",
-          scrub: 3,
-        },
-      }).from(".rightBox", {
-        x: 800,
-        opacity: 0.3,
-        stagger: 1,
-        scrollTrigger: {
-          trigger: "#Timeline",
-          start: "top center",
-          end: "bottom 90%",
-          scrub: 3,
-        },
-      });
+      if (window.innerWidth >= 1200) {
+        t1.from(".leftBox", {
+          x: -1000,
+          opacity: 0.3,
+          stagger: 1,
+          scrollTrigger: {
+            trigger: "#Timeline",
+            start: "top center",
+            end: "bottom 90%",
+            scrub: 3,
+          },
+        }).from(".rightBox", {
+          x: 1000,
+          opacity: 0.3,
+          stagger: 1,
+          scrollTrigger: {
+            trigger: "#Timeline",
+            start: "top center",
+            end: "bottom 90%",
+            scrub: 3,
+          },
+        });
+      } else {
+        t1.from(".resBox", {
+          x: 800,
+          opacity: 0.3,
+          stagger: 1,
+          scrollTrigger: {
+            trigger: "#Timeline",
+            start: "top 90%",
+            markers: true,
+            end: "bottom 70%",
+            scrub: 3,
+          },
+        });
+      }
     },
     { scope: ref }
   );
   return (
     <motion.div
       ref={ref}
-      className={cn("relative w-10/12 mx-auto min-h-screen", className)}
+      className={cn(
+        "relative lg:w-10/12 w-[95%] mx-auto min-h-screen",
+        className
+      )}
     >
-      <div className="absolute lg:left-1/2 left-5 top-5">
+      <div className="absolute lg:left-1/2 left-0 top-5">
         <motion.div
           transition={{
             duration: 0.2,
@@ -147,58 +165,86 @@ const Timeline = ({ className }) => {
         id="Timeline"
         className="flex flex-col lg:flex-row justify-center gap-16 w-full"
       >
-        {/* Left Side Div */}
-        <div className="flex flex-col items-end">
-          <div
+        <div className="flex flex-col gap-14 items-end mt-5">
+          <div className="flex lg:items-center gap-28 items-start lg:flex-row flex-col">
+            <div
+              style={{
+                background:
+                  "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
+              }}
+              className="max-w-fit leftBox resBox rounded px-4 py-2 lg:p-3 md:p-1 flex gap-8 items-center"
+            >
+              <h6 className="font-bold text-xl hover:text-xl">
+                Registration Starts
+              </h6>
+              <FaHome />
+            </div>
+            <h1 className="text-xl text-white rightBox resBox font-semibold pr-28">10th March</h1>
+          </div>
+          <div className="flex lg:items-center gap-28 items-start lg:flex-row flex-col-reverse">
+            <h1 className="text-xl text-white resBox leftBox font-semibold">1st April</h1>
+            <div
+              style={{
+                background:
+                  "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
+              }}
+              className="max-w-fit rightBox resBox rounded px-4 py-2 lg:p-3 md:p-1 flex gap-8 mr-12 items-center"
+            >
+              <h6 className="font-bold text-xl hover:text-xl">
+                Bootcamp
+              </h6>
+              <FaHome />
+            </div>
+          </div>
+          <div className="flex lg:items-center gap-28 items-start lg:flex-row flex-col">
+            <div
+              style={{
+                background:
+                  "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
+              }}
+              className="max-w-fit leftBox resBox rounded px-4 py-2 lg:p-3 md:p-1 flex gap-8 items-center"
+            >
+              <h6 className="font-bold text-xl hover:text-xl">
+                Registration Ends
+              </h6>
+              <FaHome />
+            </div>
+            <h1 className="text-xl text-white rightBox font-semibold pr-28">10th April</h1>
+          </div>
+          <div className="flex lg:items-center resBox gap-28 items-start lg:flex-row flex-col-reverse">
+            <h1 className="text-xl text-white leftBox font-semibold">13th April</h1>
+            <div
+              style={{
+                background:
+                  "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
+              }}
+              className="max-w-fit rightBox resBox rounded px-4 py-2 lg:p-3 md:p-1 flex gap-8 mr-8 items-center"
+            >
+              <h6 className="font-bold text-xl hover:text-xl">
+                Dexterix 4.0
+              </h6>
+              <FaHome />
+            </div>
+          </div>
+          {/* <div
             style={{
               background:
                 "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
             }}
-            className="max-w-fit leftBox rounded px-4 py-2 lg:p-3 md:p-1 mt-16 flex gap-8 items-center"
-          >
-            <h6 className="font-bold text-xl hover:text-xl">
-              Registration Starts
-            </h6>
-            <FaHome />
-          </div>
-          <div className="max-w-fit leftBox rounded mt-9 h-20 p-3 ml-48 flex flex-col justify-around items-end">
-            <h1 className="text-xl text-white font-semibold ">1st April</h1>
-          </div>
-          <div
-            style={{
-              background:
-                "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
-            }}
-            className="max-w-fit leftBox rounded px-4 py-2 lg:p-3 md:p-1 mt-16 flex gap-8 items-center"
-          >
-            <h6 className="font-bold text-xl hover:text-xl">
-              Registration Starts
-            </h6>
-            <FaHome />
-          </div>
-          <div className="max-w-fit leftBox rounded mt-9 h-20 p-3 ml-48 flex flex-col justify-around items-end">
-            <h1 className="text-xl text-white font-semibold ">13th April</h1>
-          </div>
-          <div
-            style={{
-              background:
-                "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
-            }}
-            className="max-w-fit leftBox rounded px-4 py-2 lg:p-3 md:p-1 mt-10 flex gap-8 items-center"
-
+            className="max-w-fit leftBox resBox h-14 rounded px-4 py-2 lg:p-3 md:p-1 flex gap-8 items-center"
           >
             <h6 className="font-bold text-xl hover:text-xl">
               Registration Ends
             </h6>
             <FaWalking />
           </div>
-          <div className="max-w-fit leftBox rounded h-20 p-3 mt-9 ml-48 flex flex-col justify-center items-end">
+          <div className="max-w-fit leftBox resBox h-14 rounded flex flex-col justify-center items-end">
             <h1 className="text-xl text-white font-semibold ">13th April</h1>
-          </div>
+          </div> */}
         </div>
         {/* Right Side Div */}
-        <div className="flex flex-col gap-5 items-end lg:items-start">
-          <div className="max-w-fit rightBox rounded h-44 lg:ml-14 p-3 lg:mt-2 md:-mt-20 flex flex-col justify-center">
+        {/* <div className="flex flex-col gap-14 items-end lg:items-start mt-5 ml-16">
+          <div className="max-w-fit h-14 rightBox resBox rounded flex flex-col justify-center">
             <h1 className="text-xl text-white font-semibold ">10th March</h1>
           </div>
           <div
@@ -206,27 +252,12 @@ const Timeline = ({ className }) => {
               background:
                 "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
             }}
-            className="max-w-fit rightBox rounded px-5 py-2 lg:p-3 md:p-1 -mt-8 flex gap-32 ml-16 items-center"
+            className="max-w-fit rightBox resBox h-14 rounded px-5 py-2 lg:p-3 md:p-1 flex gap-8 items-center"
           >
             <FaGift />
             <h6 className="font-bold text-xl hover:text-xl">Bootcamp</h6>
           </div>
-          <div className="max-w-fit rightBox rounded h-44 lg:ml-14 p-3 lg:mt-2 md:-mt-20 flex flex-col justify-center">
-            <h1 className="text-xl text-white font-semibold ">13th April</h1>
-          </div>
-          <div
-            style={{
-              background:
-                "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
-            }}
-            className="max-w-fit rightBox rounded px-5 py-2 lg:p-3 md:p-1 -mt-8 flex gap-8 ml-16 items-center"
-          >
-            <FaHome />
-            <h6 className="font-bold text-xl hover:text-xl">
-              Registration Start
-            </h6>
-          </div>
-          <div className="max-w-fit rightBox rounded lg:mt-6 ml-14 h-20 p-3 flex flex-col justify-center">
+          <div className="max-w-fit rightBox resBox h-14 rounded flex flex-col justify-center">
             <h1 className="text-xl text-white font-semibold ">10th April</h1>
           </div>
           <div
@@ -234,12 +265,12 @@ const Timeline = ({ className }) => {
               background:
                 "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
             }}
-            className="max-w-fit rightBox rounded px-4 py-2 lg:p-3 md:p-1 lg:mt-4 md:-mt-3 flex gap-32 ml-16 items-center"
+            className="max-w-fit rightBox resBox h-14 rounded px-4 py-2 lg:p-3 md:p-1 flex gap-8 items-center"
           >
             <FaHourglassStart />
             <h6 className="font-bold text-xl hover:text-xl">Dextrix 4.0</h6>
           </div>
-        </div>
+        </div> */}
       </div>
     </motion.div>
   );
