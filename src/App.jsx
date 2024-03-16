@@ -14,6 +14,9 @@ import About from "./components/About";
 import Footer from "./components/Footer";
 import Sponsors from "./components/Sponsors";
 import { useState } from "react";
+
+import Prize from "./components/Prize"; // Resolve the conflict by keeping one import statement
+
 const App = () => {
   const [sidebar, setSidebar] = useState(false);
   const about = useRef(null);
@@ -194,12 +197,9 @@ const App = () => {
           <Timeline />
         </div>
         <TimerCounter />
-        <div ref={sponsors}>
-          <Sponsors />
-        </div>
-        <div ref={events}>
-          <ImageSlider />
-        </div>
+        <Prize /> {/* Include Prize component */}
+        <Sponsors />
+        <ImageSlider />
         {/* Card Section */}
         <h1 className="text-white text-4xl font-Phudu font-medium flex justify-center">
           Themes
@@ -218,4 +218,5 @@ const App = () => {
     </div>
   );
 };
+
 export default App;
