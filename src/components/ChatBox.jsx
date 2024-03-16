@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { IoChatbubble } from "react-icons/io5";
 import { motion } from "framer-motion";
-import "./ChatBox.css";
 
 const ChatBox = () => {
   const [visible, setVisible] = useState(false);
@@ -78,7 +77,7 @@ const ChatBox = () => {
       )}
       {showChat && (
         <motion.div
-          className="fixed   bottom-[calc(4rem+1.5rem)] right-0 mr-4  p-6 rounded-lg bg-slate-100  w-[360px] h-[634px] z-10 shadow-md transition-all duration-300 ease-in-out flex flex-col justify-between"
+          className="fixed message-box bottom-[calc(4rem+1.5rem)] right-0 mr-4  p-6 rounded-lg bg-slate-100  w-[300px] h-[500px] lg:h-[640px] md:w-[400px] md:h-[700px] z-10 shadow-md transition-all duration-300 ease-in-out flex flex-col justify-between"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
         >
@@ -89,7 +88,7 @@ const ChatBox = () => {
               </h2>
               <p className="text-sm text-gray-500">Powered by Technojam</p>
             </div>
-            <div className="overflow-y-auto flex-1 max-h-[450px] scrollbar-width-none">
+            <div className="overflow-y-auto flex-1 max-h-[325px] lg:max-h-[450px]">
               {messages.map((message, index) => (
                 <div
                   key={index}
