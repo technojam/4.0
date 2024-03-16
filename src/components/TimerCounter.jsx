@@ -47,7 +47,7 @@ const Timer3 = () => {
   };
 
   const startCountDown = useCallback(() => {
-    const countDownDate = new Date("April 14, 2024 00:00:00").getTime();
+    const countDownDate = new Date("April 10, 2024 00:00:00").getTime();
 
     timerInterval = setInterval(() => {
       getTimeDifference(countDownDate);
@@ -95,7 +95,7 @@ const Timer3 = () => {
   return (
     <div ref={timeCounter} className="flex flex-col items-center justify-center h-screen gap-8 sm:gap-16">
       <div className="text-2xl relative sm:text-3xl font-semibold text-white text-center tracking-widest px-2">
-        Registration Starts Dexterix 4.0
+        Registration Ends in
         <h1 className="absolute heading w-full h-full bg-cyan-400 top-0 right-0"></h1>
       </div>
       <div className="flex justify-center gap-3 sm:gap-8 font-Orbitron">

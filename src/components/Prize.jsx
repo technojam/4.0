@@ -145,8 +145,9 @@ const Prize = () => {
       ></div>
     
     </div>
-    <div><h1 className='text-white top-[500px] absolute'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quidem.</h1></div>
+
     </div>
+    
     
   );
 }
