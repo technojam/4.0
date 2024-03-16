@@ -12,6 +12,7 @@ import ImageSlider from "./components/ImageSlider";
 import About from "./components/About";
 import Footer1 from "./components/Footer1";
 import Sponsors from "./components/Sponsors";
+import Prize from "./components/Prize";
 const App = () => {
   const comp = useRef();
   const t1 = gsap.timeline();
@@ -44,6 +45,7 @@ const App = () => {
         <About/>
         <Timeline />
         <TimerCounter />
+        <Prize/>
         <Sponsors/>
         <ImageSlider />
         {/* Card Section */}

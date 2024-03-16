@@ -3,85 +3,95 @@ import gsap, { Power4 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import React, { useEffect, useRef, useState } from "react";
 import { useCallback } from "react";
+let timerInterval; 
+
+
 const Timer3 = () => {
-  const [countDownTime, setCountDownTIme] = useState({
+  const [countDownTime, setCountDownTime] = useState({
     days: "00",
     hours: "00",
     minutes: "00",
     seconds: "00",
   });
+
   const getTimeDifference = (countDownTime) => {
     const currentTime = new Date().getTime();
-    const timeDiffrence = countDownTime - currentTime;
-    let days =
-      Math.floor(timeDiffrence / (24 * 60 * 60 * 1000)) >= 10
-        ? Math.floor(timeDiffrence / (24 * 60 * 60 * 1000))
-        : `0${Math.floor(timeDiffrence / (24 * 60 * 60 * 1000))}`;
-    const hours =
-      Math.floor((timeDiffrence % (24 * 60 * 60 * 1000)) / (1000 * 60 * 60)) >=
-      10
-        ? Math.floor((timeDiffrence % (24 * 60 * 60 * 1000)) / (1000 * 60 * 60))
-        : `0${Math.floor(
-            (timeDiffrence % (24 * 60 * 60 * 1000)) / (1000 * 60 * 60)
-          )}`;
-    const minutes =
-      Math.floor((timeDiffrence % (60 * 60 * 1000)) / (1000 * 60)) >= 10
-        ? Math.floor((timeDiffrence % (60 * 60 * 1000)) / (1000 * 60))
-        : `0${Math.floor((timeDiffrence % (60 * 60 * 1000)) / (1000 * 60))}`;
-    const seconds =
-      Math.floor((timeDiffrence % (60 * 1000)) / 1000) >= 10
-        ? Math.floor((timeDiffrence % (60 * 1000)) / 1000)
-        : `0${Math.floor((timeDiffrence % (60 * 1000)) / 1000)}`;
-    if (timeDiffrence < 0) {
-      setCountDownTIme({
+    const timeDifference = countDownTime - currentTime;
+
+    if (timeDifference <= 0) {
+      clearInterval(timerInterval);
+      setCountDownTime({
         days: "00",
         hours: "00",
         minutes: "00",
         seconds: "00",
       });
-      clearInterval();
     } else {
-      setCountDownTIme({
-        days: days,
-        hours: hours,
-        minutes: minutes,
-        seconds: seconds,
+      let days = Math.floor(timeDifference / (24 * 60 * 60 * 1000));
+      let hours = Math.floor((timeDifference % (24 * 60 * 60 * 1000)) / (1000 * 60 * 60));
+      let minutes = Math.floor((timeDifference % (60 * 60 * 1000)) / (1000 * 60));
+      let seconds = Math.floor((timeDifference % (60 * 1000)) / 1000);
+
+      days = days.toString().padStart(2, "0");
+      hours = hours.toString().padStart(2, "0");
+      minutes = minutes.toString().padStart(2, "0");
+      seconds = seconds.toString().padStart(2, "0");
+
+      setCountDownTime({
+        days,
+        hours,
+        minutes,
+        seconds,
       });
     }
   };
+
   const startCountDown = useCallback(() => {
-    const customDate = new Date();
-    const countDownDate = new Date(
-      customDate.getFullYear(),
-      customDate.getMonth() + 1,
-      customDate.getDate() + 6,
-      customDate.getHours(),
-      customDate.getMinutes(),
-      customDate.getSeconds() + 1
-    );
-    setInterval(() => {
-      getTimeDifference(countDownDate.getTime());
+    const countDownDate = new Date("April 14, 2024 00:00:00").getTime();
+
+    timerInterval = setInterval(() => {
+      getTimeDifference(countDownDate);
     }, 1000);
   }, []);
+
   useEffect(() => {
+    let timerInterval;
     startCountDown();
+
+    return () => {
+      clearInterval(timerInterval);
+    };
   }, [startCountDown]);
+
   const timeCounter = useRef();
   gsap.registerPlugin(ScrollTrigger);
-  const t1= gsap.timeline();
-  useGSAP(()=>{
-    t1.to(".heading",{width:0,scrollTrigger:{
-      trigger:".heading",
-      start:"top 80%",
-      end:"bottom center",
-      scrub:2.5,
-    }}).to(".revealBox",{height:0,ease:Power4.easeInOut,stagger:.12,scrollTrigger:{
-      trigger:".revealBox",
-      start:"top 70%",
-      end:"center center",
-      scrub:2.5,
-    }})
-  },{scope:timeCounter});
+  const t1 = gsap.timeline();
+
+  useGSAP(() => {
+    t1.to(".heading", {
+      width: 0,
+      scrollTrigger: {
+        trigger: ".heading",
+        start: "top 80%",
+        end: "bottom center",
+        scrub: 2.5,
+      },
+    }).to(
+      ".revealBox",
+      {
+        height: 0,
+        ease: Power4.easeInOut,
+        stagger: 0.12,
+        scrollTrigger: {
+          trigger: ".revealBox",
+          start: "top 70%",
+          end: "center center",
+          scrub: 2.5,
+        },
+      }
+    );
+  }, { scope: timeCounter });
+
   return (
     <div ref={timeCounter} className="flex flex-col items-center justify-center h-screen gap-8 sm:gap-16">
       <div className="text-2xl relative sm:text-3xl font-semibold text-white text-center tracking-widest px-2">
@@ -149,4 +159,5 @@ const Timer3 = () => {
     </div>
   );
 };
+
 export default Timer3;
