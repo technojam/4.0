@@ -41,7 +41,6 @@ const Sponsors = () => {
             ))}
           </SponsorsMarqueeGroup>
         </SponsorsMarquee>
-
         <SponsorsMarquee>
           <SponsorsMarqueeGroup>
             {row1.map((el, index) => (
@@ -74,7 +73,7 @@ const SponsorsContainer = styled.div`
 
 const SponsorsWrapper = styled.div`
   width: 100%;
-  max-width: 1200px;
+  // max-width: 1200px;
   display: flex;
   align-items: center;
   justify-content: center;

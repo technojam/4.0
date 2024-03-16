@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { IoChatbubble } from "react-icons/io5";
 import { motion } from "framer-motion";
-import "./ChatBox.css";
 
 const ChatBox = () => {
   const [visible, setVisible] = useState(false);
