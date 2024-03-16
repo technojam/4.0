@@ -1,32 +1,12 @@
 import { IoMenu } from "react-icons/io5";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 const Navbar = () => {
-  // Animation Using Gsap
-  const comp = useRef();
-  const [theme, setTheme] = useState(null);
   const [sidebar, setSidebar] = useState(false);
-  // Theme
-  useEffect(() => {
-    // Default Dark Mode...
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
-  }, []);
-  // Dark Mode Checking...
-  useEffect(() => {
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [theme]);
   return (
     <>
       <nav
         ref={comp}
-        className="px-5 w-screen z-20 text-white gap-8 absolute top-0 left-0 h-[11vh] bg-transparent flex items-center justify-between navbar"
+        className="px-5 w-screen z-30 text-white gap-8 absolute top-0 left-0 h-[11vh] bg-transparent flex items-center justify-between navbar"
       >
         {/* Technojam Logo */}
         <div className="logo">
@@ -53,7 +33,7 @@ const Navbar = () => {
           <div
             onClick={() =>
               window.scrollTo({
-                top: window.innerHeight,
+                top: 2*window.innerHeight,
                 left: 0,
                 behavior: "smooth",
               })
@@ -118,13 +98,7 @@ const Navbar = () => {
           </div> */}
         </div>
         {/* Mobile Optimization */}
-        <div className="flex lg:hidden gap-5 items-center">
-          {/* <div
-            onClick={() => setTheme(theme == "dark" ? "light" : "dark")}
-            className="text-lg md:text-2xl cursor-pointer rounded-xl"
-          >
-            {theme == "dark" ? <FaSun /> : <FaMoon className="text-black" />}
-          </div> */}
+        <div className="flex lg:hidden cursor-pointer gap-5 items-center">
           <IoMenu
             onClick={() => setSidebar(!sidebar)}
             className="text-2xl md:text-3xl mr-5"
@@ -135,7 +109,7 @@ const Navbar = () => {
       <div
         className={`${
           sidebar ? "top-0 right-0" : "top-0 right-[-400px]"
-        } duration-300 lg:hidden flex flex-col border border-l border-[#ffffff2c] backdrop-blur bg-transparent justify-start pt-[12vh] items-start px-8 z-10 text-xl md:text-2xl gap-2 dark:text-white text-black absolute max-w-fit h-screen`}
+        } duration-300 lg:hidden flex flex-col border border-l border-[#ffffff2c] backdrop-blur bg-transparent justify-start pt-[12vh] items-start px-8 z-20 text-xl md:text-2xl gap-2 dark:text-white text-black absolute max-w-fit h-screen`}
       >
         <div
           onClick={() =>

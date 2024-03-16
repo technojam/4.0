@@ -68,13 +68,12 @@ const Timeline = ({ className }) => {
         t1.from(".resBox", {
           x: 800,
           opacity: 0.3,
-          stagger: 1,
+          stagger: 0.8,
           scrollTrigger: {
             trigger: "#Timeline",
             start: "top 90%",
-            markers: true,
-            end: "bottom 70%",
-            scrub: 3,
+            end: "bottom 80%",
+            scrub: 2.5,
           },
         });
       }
@@ -89,7 +88,7 @@ const Timeline = ({ className }) => {
         className
       )}
     >
-      <div className="absolute lg:left-1/2 left-0 top-5">
+      <div className="absolute lg:left-1/2 left-0 top-20">
         <motion.div
           transition={{
             duration: 0.2,
@@ -163,9 +162,10 @@ const Timeline = ({ className }) => {
       <div
         ref={contentRef}
         id="Timeline"
-        className="flex flex-col lg:flex-row justify-center gap-16 w-full"
+        className="flex flex-col items-center md:items-start lg:items-center gap-16 w-full"
       >
-        <div className="flex flex-col gap-14 items-end mt-5">
+        <h1 className="text-white text-4xl font-semibold underline underline-offset-4 text-center w-full">Schedule</h1>
+        <div className="flex flex-col gap-14 items-end md:items-start lg:items-end mt-5 md:ml-20 lg:ml-0">
           <div className="flex lg:items-center gap-28 items-start lg:flex-row flex-col">
             <div
               style={{
@@ -179,10 +179,14 @@ const Timeline = ({ className }) => {
               </h6>
               <FaHome />
             </div>
-            <h1 className="text-xl text-white rightBox resBox font-semibold pr-28">10th March</h1>
+            <h1 className="text-xl text-white rightBox resBox font-semibold pr-28">
+              10th March
+            </h1>
           </div>
           <div className="flex lg:items-center gap-28 items-start lg:flex-row flex-col-reverse">
-            <h1 className="text-xl text-white resBox leftBox font-semibold">1st April</h1>
+            <h1 className="text-xl text-white resBox leftBox font-semibold">
+              1st April
+            </h1>
             <div
               style={{
                 background:
@@ -190,10 +194,8 @@ const Timeline = ({ className }) => {
               }}
               className="max-w-fit rightBox resBox rounded px-4 py-2 lg:p-3 md:p-1 flex gap-8 mr-12 items-center"
             >
-              <h6 className="font-bold text-xl hover:text-xl">
-                Bootcamp
-              </h6>
-              <FaHome />
+              <h6 className="font-bold text-xl hover:text-xl">Bootcamp</h6>
+              <FaGift />
             </div>
           </div>
           <div className="flex lg:items-center gap-28 items-start lg:flex-row flex-col">
@@ -207,12 +209,16 @@ const Timeline = ({ className }) => {
               <h6 className="font-bold text-xl hover:text-xl">
                 Registration Ends
               </h6>
-              <FaHome />
+              <FaWalking />
             </div>
-            <h1 className="text-xl text-white rightBox font-semibold pr-28">10th April</h1>
+            <h1 className="text-xl text-white rightBox font-semibold pr-28">
+              10th April
+            </h1>
           </div>
           <div className="flex lg:items-center resBox gap-28 items-start lg:flex-row flex-col-reverse">
-            <h1 className="text-xl text-white leftBox font-semibold">13th April</h1>
+            <h1 className="text-xl text-white leftBox font-semibold">
+              13th April
+            </h1>
             <div
               style={{
                 background:
@@ -220,57 +226,11 @@ const Timeline = ({ className }) => {
               }}
               className="max-w-fit rightBox resBox rounded px-4 py-2 lg:p-3 md:p-1 flex gap-8 mr-8 items-center"
             >
-              <h6 className="font-bold text-xl hover:text-xl">
-                Dexterix 4.0
-              </h6>
-              <FaHome />
+              <h6 className="font-bold text-xl hover:text-xl">Dexterix 4.0</h6>
+              <FaHourglassStart />
             </div>
           </div>
-          {/* <div
-            style={{
-              background:
-                "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
-            }}
-            className="max-w-fit leftBox resBox h-14 rounded px-4 py-2 lg:p-3 md:p-1 flex gap-8 items-center"
-          >
-            <h6 className="font-bold text-xl hover:text-xl">
-              Registration Ends
-            </h6>
-            <FaWalking />
-          </div>
-          <div className="max-w-fit leftBox resBox h-14 rounded flex flex-col justify-center items-end">
-            <h1 className="text-xl text-white font-semibold ">13th April</h1>
-          </div> */}
         </div>
-        {/* Right Side Div */}
-        {/* <div className="flex flex-col gap-14 items-end lg:items-start mt-5 ml-16">
-          <div className="max-w-fit h-14 rightBox resBox rounded flex flex-col justify-center">
-            <h1 className="text-xl text-white font-semibold ">10th March</h1>
-          </div>
-          <div
-            style={{
-              background:
-                "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
-            }}
-            className="max-w-fit rightBox resBox h-14 rounded px-5 py-2 lg:p-3 md:p-1 flex gap-8 items-center"
-          >
-            <FaGift />
-            <h6 className="font-bold text-xl hover:text-xl">Bootcamp</h6>
-          </div>
-          <div className="max-w-fit rightBox resBox h-14 rounded flex flex-col justify-center">
-            <h1 className="text-xl text-white font-semibold ">10th April</h1>
-          </div>
-          <div
-            style={{
-              background:
-                "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
-            }}
-            className="max-w-fit rightBox resBox h-14 rounded px-4 py-2 lg:p-3 md:p-1 flex gap-8 items-center"
-          >
-            <FaHourglassStart />
-            <h6 className="font-bold text-xl hover:text-xl">Dextrix 4.0</h6>
-          </div>
-        </div> */}
       </div>
     </motion.div>
   );
