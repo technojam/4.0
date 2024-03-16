@@ -47,10 +47,11 @@ const Prize = () => {
   };
 
   return (
-   
+   <>
     <div style={{
       display: 'flex',
-      gap: '80px', justifyContent: 'center',height:'80vh'
+      gap: '80px', justifyContent: 'center',
+      // height: '70vh'
     }}>
     <div
       className="font-bold p-4 text-right text-gray-800 bg-cover bg-center rounded-lg shadow-md transition duration-300 hover:shadow-xl relative card"
@@ -147,6 +148,15 @@ const Prize = () => {
     </div>
 
     </div>
+    <div></div>
+    {/* <div className='h-[20'></div> */}
+      <div className='h-[200px] relative top-14 p-10 mb-[100px] w-[800px] ml-[20%] text-center text-xl  bg-grey rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40 border border-gray-100 text-white'>
+       <span className='z-10'>1. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>  <br />
+       <span>1. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>  <br />
+       <span>1. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>  
+        
+      </div>
+    </>
     
     
   );
