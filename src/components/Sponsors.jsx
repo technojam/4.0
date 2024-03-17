@@ -84,7 +84,7 @@ const SponsorsText = styled.div`
   font-size: 60px;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #f5f7f9;
+  color: #daa520;
 `;
 
 const SponsorsMarquee = styled.div`
