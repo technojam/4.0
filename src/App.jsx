@@ -1,4 +1,3 @@
-import { IoMenu } from "react-icons/io5";
 import Card from "./components/Card";
 import Hero from "./components/Hero";
 import { useRef } from "react";
@@ -12,22 +11,10 @@ import ImageSlider from "./components/ImageSlider";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import Sponsors from "./components/Sponsors";
-import { useState } from "react";
-
-import Prize from "./components/Prize"; // Resolve the conflict by keeping one import statement
+import Prize from "./components/Prize";
+import Navbar from "./components/Navbar";
 
 const App = () => {
-  const [sidebar, setSidebar] = useState(false);
-  const about = useRef(null);
-  const timeline = useRef(null);
-  const sponsors = useRef(null);
-  const events = useRef(null);
-  const scrollToSection = (element) => {
-    window.scrollTo({
-      top: element.current.offsetTop,
-      behavior: "smooth",
-    });
-  };
   // Gsap Animation
   const comp = useRef();
   const t1 = gsap.timeline();
@@ -60,141 +47,13 @@ const App = () => {
       </div>
       <div className="d-block opacity-100">
         {/* navbar */}
-        <div>
-          <nav
-            ref={comp}
-            className="px-5 w-screen z-30 text-white gap-8 absolute top-0 left-0 h-[11vh] bg-transparent flex items-center justify-between navbar"
-          >
-            {/* Technojam Logo */}
-            <div className="logo">
-              <img
-                src="/TechnoJam.png"
-                className="w-[45px] mx-auto logo"
-                alt="logo"
-              />
-            </div>
-            {/* Page Navigation */}
-            <div className="hidden lg:flex text-xl items-center gap-8 font-Product_Sans mr-10">
-              <div
-                onClick={() => scrollToSection(about)}
-                className={`cursor-pointer duration-200 hover:scale-110 hover:text-[#daa520] `}
-              >
-                About
-              </div>
-              <div
-                onClick={() => scrollToSection(timeline)}
-                className={`cursor-pointer duration-200 hover:scale-110 hover:text-[#daa520] `}
-              >
-                Schedule
-              </div>
-              <div
-                onClick={() => scrollToSection(events)}
-                className={`cursor-pointer duration-200 hover:scale-110 hover:text-[#daa520] `}
-              >
-                Events
-              </div>
-              <div
-                onClick={() => scrollToSection(sponsors)}
-                className={`cursor-pointer duration-200 hover:scale-110 hover:text-[#daa520] `}
-              >
-                Sponsors
-              </div>
-              <div
-                onClick={() =>
-                  window.scrollTo({
-                    top: 0,
-                    left: 0,
-                    behavior: "smooth",
-                  })
-                }
-                className={`cursor-pointer duration-200 hover:scale-110 hover:text-[#daa520] `}
-              >
-                FAQs
-              </div>
-              <div
-                onClick={() =>
-                  window.scrollTo({
-                    top: 0,
-                    left: 0,
-                    behavior: "smooth",
-                  })
-                }
-                className={`cursor-pointer duration-200 hover:scale-110 hover:text-[#daa520] `}
-              >
-                Contact Us
-              </div>
-            </div>
-            {/* Mobile Optimization */}
-            <div className="flex lg:hidden cursor-pointer gap-5 items-center">
-              <IoMenu
-                onClick={() => setSidebar(!sidebar)}
-                className="text-2xl md:text-3xl mr-5"
-              />
-            </div>
-          </nav>
-          {/* Small Devices Sidebar */}
-          <div
-            className={`${
-              sidebar ? "top-0 right-0" : "top-0 right-[-400px]"
-            } duration-300 lg:hidden flex flex-col border border-l border-[#ffffff2c] backdrop-blur bg-transparent justify-start pt-[12vh] items-start px-8 z-20 text-xl md:text-2xl gap-2 dark:text-white text-black absolute max-w-fit h-screen`}
-          >
-            <div
-              onClick={() => scrollToSection(about)}
-              className={`cursor-pointer duration-200 hover:scale-110`}
-            >
-              About
-            </div>
-            <div
-              onClick={() => scrollToSection(timeline)}
-              className={`cursor-pointer duration-200 hover:scale-110`}
-            >
-              Schedule
-            </div>
-            <div
-              onClick={() => () => scrollToSection(events)}
-              className={`cursor-pointer duration-200 hover:scale-110`}
-            >
-              Events
-            </div>
-            <div
-              onClick={() => () => scrollToSection(sponsors)}
-              className={`cursor-pointer duration-200 hover:scale-110`}
-            >
-              Sponsors
-            </div>
-            <div
-              onClick={() =>
-                window.scrollTo({
-                  top: 0,
-                  left: 0,
-                  behavior: "smooth",
-                })
-              }
-              className={`cursor-pointer duration-200 hover:scale-110`}
-            >
-              FAQs
-            </div>
-            <div
-              onClick={() =>
-                window.scrollTo({
-                  top: 0,
-                  left: 0,
-                  behavior: "smooth",
-                })
-              }
-              className={`cursor-pointer duration-200 hover:scale-110`}
-            >
-              Contact Us
-            </div>
-          </div>
-        </div>
+
+       
+        <Navbar />
+
         <Hero />
-        <div ref={about}>
-          <About />
-        </div>
-        <div ref={timeline}>
-          <Timeline />
-        </div>
+        <About />
+        <Timeline />
         <TimerCounter />
         {/* Prize component */}
         <Prize /> 
@@ -203,7 +62,10 @@ const App = () => {
         {/* Image Slider  */}
         <ImageSlider />
         {/* Card Section */}
-        <h1 className="text-white text-4xl font-Phudu font-medium flex justify-center">
+        <h1
+          id="themes"
+          className="text-white text-4xl font-Phudu font-medium flex justify-center"
+        >
           Themes
         </h1>
         <div className="flex justify-center min-h-screen py-10 items-center text-white gap-10 flex-wrap">

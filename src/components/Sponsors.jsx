@@ -22,7 +22,7 @@ const Sponsors = () => {
   ];
 
   return (
-    <SponsorsContainer>
+    <SponsorsContainer id="sponsors">
       <SponsorsWrapper>
         <SponsorsText>Our Sponsors</SponsorsText>
         <SponsorsMarquee>

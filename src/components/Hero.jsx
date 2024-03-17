@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
 import Logo3D from "./Logo3D";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -37,9 +38,10 @@ const Hero = () => {
         </div>
       </div>
       {/*REGISTER BUTTON */}
-      <button className="bg-[#daa520] w-[150px] lg:absolute top-[54%] right-0 rounded-md font-medium text-xl my-4 py-3 hover:bg-white hover:text-[#daa520] ease-in-out duration-200 lg:rotate-90 hover:scale-95">
+
+      <Link to='/register' className="bg-[#daa520] w-[150px] text-center lg:absolute top-[56%] right-0 rounded-md font-medium text-xl py-3 hover:bg-white ease-in-out duration-200 lg:rotate-90 hover:scale-95 hover:text-[#daa520]">
         Register
-      </button>
+      </Link>
       {/* Social Media */}
       <ul className="lg:flex-col flex gap-3 text-3xl text-white lg:absolute top-1/2 left-10">
         <li className="hover:scale-110 hover:text-[#daa520] duration-150">

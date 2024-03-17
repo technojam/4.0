@@ -18,10 +18,32 @@ const Prize = () => {
   };
 
   return (
+// <<<<<<< HEAD
     <>
     <h1 className="paragraph text-3xl self-center lg:text-4xl font-bold leading-9 text-[#daa520] pb-4 left-[45%] relative m-10">
           Prize
         </h1>
+{/* ======= */}
+   {/* <>
+    <div id='prize' style={{
+      display: 'flex',
+      gap: '80px', justifyContent: 'center',
+      // height: '70vh'
+    }}>
+    <div
+      className="font-bold p-4 text-right text-gray-800 bg-cover bg-center rounded-lg shadow-md transition duration-300 hover:shadow-xl relative card"
+      style={{
+        ...cardStyles,
+        width: '200px',
+        height: '300px',
+        backgroundPosition: 'top',
+        borderRadius: '15px',
+        backgroundImage: 'url(https://img.freepik.com/free-vector/shiny-golden-number-one-winner-symbol-with-laurel-design-vector_1017-45560.jpg?t=st=1710600072~exp=1710600672~hmac=78fae018d9611e16c0f65bdf3d61601e6c1b6eaeaf0c8609fe2b2dd97bea362f)',
+      }}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+>>>>>>> a4306f1cec3a2049d5b18ab39b87e917aeea9078 */}
       <div style={{
         display: 'flex',
         gap: '80px', justifyContent: 'center',
