@@ -1,4 +1,3 @@
-import Navbar from "./components/Navbar";
 import { IoMenu } from "react-icons/io5";
 import Card from "./components/Card";
 import Hero from "./components/Hero";
@@ -40,7 +39,7 @@ const App = () => {
   return (
     <div
       ref={comp}
-      className="relative scroll-smooth min-h-screen select-none font-Phudu overflow-x-hidden"
+      className="relative scroll-smooth min-h-screen font-Phudu overflow-x-hidden"
     >
       {/* Background Sky */}
       <div className="sky bg-center fixed left-0 -z-20 w-0 h-screen">
