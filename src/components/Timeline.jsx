@@ -100,7 +100,7 @@ const Timeline = ({ className }) => {
                 ? "none"
                 : "rgba(0, 0, 0, 0.24) 0px 3px 8px",
           }}
-          className="ml-[27px] h-4 w-4 rounded-full border border-netural-200 shadow-sm flex items-center justify-center"
+          className="ml-[27px] h-4 w-4 rounded-full border border-netural-200 shadow-sm flex items-center justify-center text-[#daa520]"
         >
           <motion.div
             transition={{
@@ -164,7 +164,7 @@ const Timeline = ({ className }) => {
         id="Timeline"
         className="flex flex-col items-center md:items-start lg:items-center gap-16 w-full"
       >
-        <h1 className="text-white text-4xl font-semibold underline underline-offset-4 text-center w-full">Schedule</h1>
+        <h1 className="text-4xl font-semibold underline underline-offset-4 text-center w-full text-[#daa520]">Schedule</h1>
         <div className="flex flex-col gap-14 items-end md:items-start lg:items-end mt-5 md:ml-20 lg:ml-0">
           <div className="flex lg:items-center gap-28 items-start lg:flex-row flex-col">
             <div

@@ -34,7 +34,7 @@ const About = () => {
       className="lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 mb-10 lg:mb-0 px-4 min-h-screen font-Ethnocentric relative z-10 flex justify-center items-center"
     >
       <div className="flex flex-col justify-center" id="para">
-        <h1 className="paragraph text-3xl self-center lg:text-4xl font-bold leading-9 text-white pb-4">
+        <h1 className="paragraph text-3xl self-center lg:text-4xl font-bold leading-9 text-[#daa520] pb-4">
           About Us
         </h1>
         <p className="paragraph font-light leading-6 text-white text-sm md:text-base lg:text-lg">
