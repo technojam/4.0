@@ -60,7 +60,7 @@ export function Form() {
             5. <b>Submit the form.</b>
           </p>
         </div>
-        <form className="my-2" method="post" action="">
+        <form className="my-2" method="post" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScVZkA-33QSt73JhWXptvI3PGqBSTc5oVNGHI3rvrYo284C8A/formResponse">
           {/* Team Details */}
           <div className="flex justify-between flex-wrap mx-auto w-full">
             <div className="w-2/5">
@@ -72,7 +72,7 @@ export function Form() {
               </label>
               <input
                 type="text"
-                name="teamName"
+                name="entry.1932180768"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -91,7 +91,7 @@ export function Form() {
               </label>
               <input
                 type="text"
-                name="collageName"
+                name="entry.1987526107"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -110,8 +110,8 @@ export function Form() {
                 <span className="text-red-600 text-base">*</span>
               </label>
               <input
-                type="number"
-                name="participants"
+                type="text"
+                name="entry.1885897688"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -137,7 +137,7 @@ export function Form() {
               </label>
               <input
                 type="text"
-                name="teamName"
+                name="entry.1217593804"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -156,7 +156,7 @@ export function Form() {
               </label>
               <input
                 type="text"
-                name="collageName"
+                name="entry.918564703"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -174,8 +174,8 @@ export function Form() {
                 Mobile No. <span className="text-red-600 text-base">*</span>
               </label>
               <input
-                type="number"
-                name="participants"
+                type="text"
+                name="entry.1853390448"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -194,7 +194,7 @@ export function Form() {
               </label>
               <input
                 type="email"
-                name="participants"
+                name="entry.511454205"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -213,7 +213,7 @@ export function Form() {
               </label>
               <input
                 type="text"
-                name="participants"
+                name="entry.1096854709"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -232,7 +232,7 @@ export function Form() {
               </label>
               <input
                 type="text"
-                name="participants"
+                name="entry.502478469"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -251,7 +251,7 @@ export function Form() {
               </label>
               <input
                 type="text"
-                name="participants"
+                name="entry.673940271"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -277,7 +277,7 @@ export function Form() {
               </label>
               <input
                 type="text"
-                name="teamName"
+                name="entry.148991010"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -296,7 +296,7 @@ export function Form() {
               </label>
               <input
                 type="text"
-                name="collageName"
+                name="entry.708546089"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -315,7 +315,7 @@ export function Form() {
               </label>
               <input
                 type="text"
-                name="participants"
+                name="entry.1918798711"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -333,8 +333,8 @@ export function Form() {
                 Mobile No. <span className="text-red-600 text-base">*</span>
               </label>
               <input
-                type="number"
-                name="participants"
+                type="text"
+                name="entry.1307302182"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -353,7 +353,7 @@ export function Form() {
               </label>
               <input
                 type="email"
-                name="participants"
+                name="entry.114061522"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -372,7 +372,7 @@ export function Form() {
               </label>
               <input
                 type="text"
-                name="participants"
+                name="entry.1204337144"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -391,7 +391,7 @@ export function Form() {
               </label>
               <input
                 type="text"
-                name="participants"
+                name="entry.1843552946"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -410,7 +410,7 @@ export function Form() {
               </label>
               <input
                 type="text"
-                name="participants"
+                name="entry.1713029225"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -436,7 +436,7 @@ export function Form() {
               </label>
               <input
                 type="text"
-                name="teamName"
+                name="entry.1799382749"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -455,7 +455,7 @@ export function Form() {
               </label>
               <input
                 type="text"
-                name="collageName"
+                name="entry.1296943352"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -474,7 +474,7 @@ export function Form() {
               </label>
               <input
                 type="text"
-                name="participants"
+                name="entry.491547428"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -492,8 +492,8 @@ export function Form() {
                 Mobile No. <span className="text-red-600 text-base">*</span>
               </label>
               <input
-                type="number"
-                name="participants"
+                type="text"
+                name="entry.895621178"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -512,7 +512,7 @@ export function Form() {
               </label>
               <input
                 type="email"
-                name="participants"
+                name="entry.24583159"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -531,7 +531,7 @@ export function Form() {
               </label>
               <input
                 type="text"
-                name="participants"
+                name="entry.1172949681"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -550,7 +550,7 @@ export function Form() {
               </label>
               <input
                 type="text"
-                name="participants"
+                name="entry.640328074"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -569,7 +569,7 @@ export function Form() {
               </label>
               <input
                 type="text"
-                name="participants"
+                name="entry.1509887177"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -595,7 +595,7 @@ export function Form() {
               </label>
               <input
                 type="text"
-                name="teamName"
+                name="entry.1427779032"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -614,7 +614,7 @@ export function Form() {
               </label>
               <input
                 type="text"
-                name="collageName"
+                name="entry.576038842"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -633,7 +633,7 @@ export function Form() {
               </label>
               <input
                 type="text"
-                name="participants"
+                name="entry.598916686"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -651,8 +651,8 @@ export function Form() {
                 Mobile No. <span className="text-red-600 text-base">*</span>
               </label>
               <input
-                type="number"
-                name="participants"
+                type="text"
+                name="entry.733419504"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -671,7 +671,7 @@ export function Form() {
               </label>
               <input
                 type="email"
-                name="participants"
+                name="entry.1083039317"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -690,7 +690,7 @@ export function Form() {
               </label>
               <input
                 type="text"
-                name="participants"
+                name="entry.1623968367"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -709,7 +709,7 @@ export function Form() {
               </label>
               <input
                 type="text"
-                name="participants"
+                name="entry.1820092718"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -728,7 +728,7 @@ export function Form() {
               </label>
               <input
                 type="text"
-                name="participants"
+                name="entry.1593766942"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -810,7 +810,7 @@ export function Form() {
                 Mobile No.
               </label>
               <input
-                type="number"
+                type="text"
                 name="participants"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
@@ -969,7 +969,7 @@ export function Form() {
                 Mobile No.
               </label>
               <input
-                type="number"
+                type="text"
                 name="participants"
                 className={`flex h-10 w-full border-none bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
