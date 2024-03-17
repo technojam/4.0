@@ -11,7 +11,7 @@ import {
 const Footer = () => {
   return (
     <>
-      <div className=" text-white grid lg:grid-cols-2 gap-6 px-20 py-14 sm:px-8">
+      <div className=" text-white bg-gray-900 grid lg:grid-cols-2 gap-6 px-20 py-14 sm:px-8">
         {/* Logo and map */}
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-10">
           {/*logo*/}
@@ -30,7 +30,6 @@ const Footer = () => {
             <p className="">Galgotias University, Greater Noida</p>
           </div>
         </div>
-
         {/*Other List Items */}
         <div className="row grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
           <div className="col">
@@ -132,7 +131,7 @@ const Footer = () => {
       </div>
       <div
         className="
-      text-center pt-2 text-gray-400 text-sm pb-8"
+      text-center pt-2 text-gray-400 text-sm pb-8 bg-gray-900"
       >
         <span>Made with ❤️ by Team Technojam</span>
       </div>
