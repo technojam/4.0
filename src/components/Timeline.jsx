@@ -164,26 +164,28 @@ const Timeline = ({ className }) => {
         id="Timeline"
         className="flex flex-col items-center md:items-start lg:items-center gap-16 w-full"
       >
-        <h1 className="text-4xl font-semibold underline underline-offset-4 text-center w-full text-[#daa520]">Schedule</h1>
+        <h1 className="text-4xl font-semibold underline underline-offset-4 text-center w-full text-[#daa520]">
+          Schedule
+        </h1>
         <div className="flex flex-col gap-14 items-end md:items-start lg:items-end mt-5 md:ml-20 lg:ml-0">
-          <div className="flex lg:items-center gap-28 items-start lg:flex-row flex-col">
+          <div className="flex lg:items-center gap-28 ml-12 items-start lg:flex-row flex-col">
             <div
               style={{
                 background:
                   "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
               }}
-              className="max-w-fit leftBox resBox rounded px-4 py-2 lg:p-3 md:p-1 flex gap-8 items-center"
+              className="w-60 leftBox resBox rounded px-4 py-2 lg:p-3 md:p-1 flex justify-between items-center"
             >
               <h6 className="font-bold text-xl hover:text-xl">
                 Registration Starts
               </h6>
               <FaHome />
             </div>
-            <h1 className="text-xl text-white rightBox resBox font-semibold pr-28">
+            <h1 className="text-xl text-white rightBox resBox font-semibold pr-32">
               10th March
             </h1>
           </div>
-          <div className="flex lg:items-center gap-28 items-start lg:flex-row flex-col-reverse">
+          <div className="flex lg:items-center gap-28 ml-12 items-start lg:flex-row flex-col-reverse">
             <h1 className="text-xl text-white resBox leftBox font-semibold">
               1st April
             </h1>
@@ -192,30 +194,30 @@ const Timeline = ({ className }) => {
                 background:
                   "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
               }}
-              className="max-w-fit rightBox resBox rounded px-4 py-2 lg:p-3 md:p-1 flex gap-8 mr-12 items-center"
+              className="w-60 rightBox resBox rounded px-4 py-2 lg:p-3 md:p-1 flex justify-between items-center"
             >
               <h6 className="font-bold text-xl hover:text-xl">Bootcamp</h6>
               <FaGift />
             </div>
           </div>
-          <div className="flex lg:items-center gap-28 items-start lg:flex-row flex-col">
+          <div className="flex lg:items-center gap-28 ml-12 items-start lg:flex-row flex-col">
             <div
               style={{
                 background:
                   "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
               }}
-              className="max-w-fit leftBox resBox rounded px-4 py-2 lg:p-3 md:p-1 flex gap-8 items-center"
+              className="w-60 leftBox resBox rounded px-4 py-2 lg:p-3 md:p-1 flex justify-between items-center"
             >
               <h6 className="font-bold text-xl hover:text-xl">
                 Registration Ends
               </h6>
               <FaWalking />
             </div>
-            <h1 className="text-xl text-white rightBox font-semibold pr-28">
+            <h1 className="text-xl text-white rightBox font-semibold pr-36">
               10th April
             </h1>
           </div>
-          <div className="flex lg:items-center resBox gap-28 items-start lg:flex-row flex-col-reverse">
+          <div className="flex lg:items-center resBox gap-28 ml-12 items-start lg:flex-row flex-col-reverse">
             <h1 className="text-xl text-white leftBox font-semibold">
               13th April
             </h1>
@@ -224,7 +226,7 @@ const Timeline = ({ className }) => {
                 background:
                   "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
               }}
-              className="max-w-fit rightBox resBox rounded px-4 py-2 lg:p-3 md:p-1 flex gap-8 mr-8 items-center"
+              className="w-60 rightBox resBox rounded px-4 py-2 lg:p-3 md:p-1 flex justify-between items-center"
             >
               <h6 className="font-bold text-xl hover:text-xl">Dexterix 4.0</h6>
               <FaHourglassStart />
