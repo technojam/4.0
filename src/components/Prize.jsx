@@ -48,7 +48,7 @@ const Prize = () => {
 
   return (
    <>
-    <div style={{
+    <div id='prize' style={{
       display: 'flex',
       gap: '80px', justifyContent: 'center',
       // height: '70vh'

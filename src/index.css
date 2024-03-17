@@ -1,11 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Orbitron:wght@400..900&family=Tilt+Prism&family=Phudu:wght@300..900&family=Nunito:wght@200;500;700;800;900;1000&display=swap");
-.glass {
-  background: rgba(255, 255, 255, 0.22);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.9px);
-  -webkit-backdrop-filter: blur(4.9px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+*{
+  scroll-behavior: smooth;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
