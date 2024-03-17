@@ -20,37 +20,37 @@ const Navbar = () => {
         {/* Page Navigation */}
         <div className="hidden lg:flex text-xl items-center gap-8 font-Product_Sans mr-10">
           <a href="#about"
-            className={`cursor-pointer duration-200 hover:scale-110`}
+            className={`cursor-pointer duration-200 hover:scale-110 hover:text-[#daa520]`}
           >
             About
           </a>
           <a
           href="#Timeline"
-            className={`cursor-pointer duration-200 hover:scale-110`}
+            className={`cursor-pointer duration-200 hover:scale-110 hover:text-[#daa520]`}
           >
             Schedule
           </a>
           <a
           href="#events"
-            className={`cursor-pointer duration-200 hover:scale-110`}
+            className={`cursor-pointer duration-200 hover:scale-110 hover:text-[#daa520]`}
           >
             Events
           </a>
           <a
           href="#sponsors"
-            className={`cursor-pointer duration-200 hover:scale-110`}
+            className={`cursor-pointer duration-200 hover:scale-110 hover:text-[#daa520]`}
           >
             Sponsors
           </a>
           <a
           href="#"
-            className={`cursor-pointer duration-200 hover:scale-110`}
+            className={`cursor-pointer duration-200 hover:scale-110 hover:text-[#daa520]`}
           >
             FAQs
           </a>
           <a
           href="#"
-            className={`cursor-pointer duration-200 hover:scale-110`}
+            className={`cursor-pointer duration-200 hover:scale-110 hover:text-[#daa520]`}
           >
             Contact Us
           </a>

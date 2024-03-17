@@ -25,7 +25,7 @@ const Hero = () => {
         <div>
           <div>
             <ReactTyped
-              className="text-2xl font-bold"
+              className="text-2xl font-bold text-[#daa520]"
               strings={["April 13-14, 2024"]}
               typeSpeed={40}
               backSpeed={50}
@@ -38,32 +38,33 @@ const Hero = () => {
         </div>
       </div>
       {/*REGISTER BUTTON */}
-      <Link to='/register' className="bg-[#39A8DC] w-[150px] text-center lg:absolute top-[56%] right-0 rounded-md font-medium text-xl py-3 hover:bg-[#57c1f2] ease-in-out duration-200 lg:rotate-90 hover:scale-95">
+
+      <Link to='/register' className="bg-[#daa520] w-[150px] text-center lg:absolute top-[56%] right-0 rounded-md font-medium text-xl py-3 hover:bg-white ease-in-out duration-200 lg:rotate-90 hover:scale-95 hover:text-[#daa520]">
         Register
       </Link>
       {/* Social Media */}
       <ul className="lg:flex-col flex gap-3 text-3xl text-white lg:absolute top-1/2 left-10">
-        <li className="hover:scale-110 duration-150">
+        <li className="hover:scale-110 hover:text-[#daa520] duration-150">
           <a href="https://www.linkedin.com/company/technojam/" target="_blank">
             <FaLinkedinIn />
           </a>
         </li>
-        <li className="hover:scale-110 duration-150">
+        <li className="hover:scale-110 hover:text-[#daa520]  duration-150">
           <a href="https://www.facebook.com/teamtechnojam" target="_blank">
             <FaFacebookSquare />
           </a>
         </li>
-        <li className="hover:scale-110 duration-150">
+        <li className="hover:scale-110 hover:text-[#daa520]  duration-150">
           <a href="https://www.instagram.com/teamtechnojam/" target="_blank">
             <FaInstagram />
           </a>
         </li>
-        <li className="hover:scale-110 duration-150">
+        <li className="hover:scale-110 hover:text-[#daa520] duration-150">
           <a href="https://twitter.com/technojam_gu" target="_blank">
             <FaTwitter />
           </a>
         </li>
-        <li className="hover:scale-110 duration-150">
+        <li className="hover:scale-110 hover:text-[#daa520] duration-150">
           <a href="https://discord.gg/d3VZen7c" target="_blank">
             <FaDiscord />
           </a>
