@@ -18,7 +18,7 @@ const Footer = () => {
             <img className="w-[70px] pt-5" src="/TechnoJam.png" alt="" />
           {/*Map*/}
           <div>
-            <h4 className="mb-4 font-bold">VENUE</h4>
+            <h4 className="mb-4 font-bold border-b-2  w-8">VENUE</h4>
             <iframe
               width="150"
               height="100"
@@ -33,7 +33,7 @@ const Footer = () => {
         {/*Other List Items */}
         <div className="row grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
           <div className="col">
-            <h4 className="font-bold">Resources</h4>
+            <h4 className="font-bold border-b-2 mb-2 w-14">Resources</h4>
             <ul>
               <li className="hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#299092]">
                 <a href="#">Sponsorship Brochure</a>
@@ -45,35 +45,35 @@ const Footer = () => {
           </div>
 
           <div className="col">
-            <h4 className="font-bold">COMMUNITY</h4>
+            <h4 className="font-bold border-b-2 mb-2 w-14">COMMUNITY</h4>
             <ul>
-              <li className="flex gap-2 items-center hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#299092]">
+              <li className="flex gap-2 items-center hover:pl-3 transition-all duration-150 ease-linear text-gray-400  hover:text-[#299092]">
                 Github
-                <a href="https://discord.gg/d3VZen7c" target="_blank">
-                  <FaGithub />
+                <a href="https://github.com/technojam" target="_blank">
+                  <FaGithub className="cursor-pointer hover:scale-125  duration-150" />
                 </a>
               </li>
               <li className="flex gap-2 items-center hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#299092]">
                 Discord
                 <a href="https://discord.gg/d3VZen7c" target="_blank">
-                  <FaDiscord />
+                  <FaDiscord className="cursor-pointer hover:scale-125  duration-150" />
                 </a>
               </li>
 
               <li className="flex gap-2 items-center hover:pl-3 transition-all duration-150 ease-in-out text-gray-400 cursor-pointer hover:text-[#299092]">
                 Telegram
                 <a href="https://discord.gg/d3VZen7c" target="_blank">
-                  <FaTelegram />
+                  <FaTelegram className="cursor-pointer hover:scale-125  duration-150" />
                 </a>
               </li>
             </ul>
           </div>
 
           <div className="col">
-            <h1 className="font-bold">Social Connection</h1>
-            <p>Learn. Teach. Hack. Win</p>
+            <h1 className="font-bold border-b-2 mb-2 w-12">Social Connection</h1>
+            <p className="text-gray-400">Learn. Teach. Hack. Win</p>
             <ul className="flex gap-3 py-4 ">
-              <li className="hover:scale-110  duration-150 text-2xl text-[#299092]">
+              <li className="hover:scale-125 duration-150 text-2xl text-[#3c9e9f] hover:text-[#4fd2d4]">
                 <a
                   href="https://www.linkedin.com/company/technojam/"
                   target="_blank"
@@ -81,7 +81,7 @@ const Footer = () => {
                   <FaLinkedinIn />
                 </a>
               </li>
-              <li className="hover:scale-110 duration-150 text-2xl text-[#299092]">
+              <li className="hover:scale-125 duration-150 text-2xl text-[#3c9e9f] hover:text-[#4fd2d4]">
                 <a
                   href="https://www.facebook.com/teamtechnojam"
                   target="_blank"
@@ -89,7 +89,7 @@ const Footer = () => {
                   <FaFacebook />
                 </a>
               </li>
-              <li className="hover:scale-110 duration-150 text-2xl text-[#299092]">
+              <li className="hover:scale-125 duration-150 text-2xl text-[#3c9e9f] hover:text-[#4fd2d4]">
                 <a
                   href="https://www.instagram.com/teamtechnojam/"
                   target="_blank"
@@ -97,12 +97,12 @@ const Footer = () => {
                   <FaInstagram />
                 </a>
               </li>
-              <li className="hover:scale-110 duration-150 text-2xl text-[#299092]">
+              <li className="hover:scale-125 duration-150 text-2xl text-[#3c9e9f] hover:text-[#4fd2d4]">
                 <a href="https://twitter.com/technojam_gu" target="_blank">
                   <FaTwitter />
                 </a>
               </li>
-              <li className="hover:scale-110 duration-150 text-2xl text-[#299092]">
+              <li className="hover:scale-125 duration-150 text-2xl text-[#3c9e9f] hover:text-[#4fd2d4]">
                 <a href="https://discord.gg/d3VZen7c" target="_blank">
                   <FaDiscord />
                 </a>
@@ -111,7 +111,7 @@ const Footer = () => {
           </div>
 
           <div className="col">
-            <h4 className="font-bold">Archives</h4>
+            <h4 className="font-bold border-b-2 mb-2 w-10">Archives</h4>
             <ul>
               <li className="hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#299092]">
                 hackCBS 2.0
@@ -129,6 +129,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <hr />
       <div
         className="
       text-center pt-2 text-gray-400 text-sm pb-8 bg-gray-900"
