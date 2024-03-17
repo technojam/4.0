@@ -77,25 +77,25 @@ const App = () => {
             <div className="hidden lg:flex text-xl items-center gap-8 font-Product_Sans mr-10">
               <div
                 onClick={() => scrollToSection(about)}
-                className={`cursor-pointer duration-200 hover:scale-110`}
+                className={`cursor-pointer duration-200 hover:scale-110 hover:text-[#daa520] `}
               >
                 About
               </div>
               <div
                 onClick={() => scrollToSection(timeline)}
-                className={`cursor-pointer duration-200 hover:scale-110`}
+                className={`cursor-pointer duration-200 hover:scale-110 hover:text-[#daa520] `}
               >
                 Schedule
               </div>
               <div
                 onClick={() => scrollToSection(events)}
-                className={`cursor-pointer duration-200 hover:scale-110`}
+                className={`cursor-pointer duration-200 hover:scale-110 hover:text-[#daa520] `}
               >
                 Events
               </div>
               <div
                 onClick={() => scrollToSection(sponsors)}
-                className={`cursor-pointer duration-200 hover:scale-110`}
+                className={`cursor-pointer duration-200 hover:scale-110 hover:text-[#daa520] `}
               >
                 Sponsors
               </div>
@@ -107,7 +107,7 @@ const App = () => {
                     behavior: "smooth",
                   })
                 }
-                className={`cursor-pointer duration-200 hover:scale-110`}
+                className={`cursor-pointer duration-200 hover:scale-110 hover:text-[#daa520] `}
               >
                 FAQs
               </div>
@@ -119,7 +119,7 @@ const App = () => {
                     behavior: "smooth",
                   })
                 }
-                className={`cursor-pointer duration-200 hover:scale-110`}
+                className={`cursor-pointer duration-200 hover:scale-110 hover:text-[#daa520] `}
               >
                 Contact Us
               </div>
@@ -196,8 +196,11 @@ const App = () => {
           <Timeline />
         </div>
         <TimerCounter />
-        <Prize /> {/* Include Prize component */}
+        {/* Prize component */}
+        <Prize /> 
+        {/* Sponsors */}
         <Sponsors />
+        {/* Image Slider  */}
         <ImageSlider />
         {/* Card Section */}
         <h1 className="text-white text-4xl font-Phudu font-medium flex justify-center">

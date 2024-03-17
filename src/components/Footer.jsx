@@ -18,7 +18,7 @@ const Footer = () => {
             <img className="w-[70px] pt-5" src="/TechnoJam.png" alt="" />
           {/*Map*/}
           <div>
-            <h4 className="mb-4 font-bold">VENUE</h4>
+            <h4 className="mb-4 font-bold text-[#daa520]">VENUE</h4>
             <iframe
               width="150"
               height="100"
@@ -26,41 +26,41 @@ const Footer = () => {
             >
               <a href="https://www.gps.ie/">gps trackers</a>
             </iframe>
-            <h2 className="mt-4 text-[#299092] font-bold">April 2024</h2>
+            <h2 className="mt-4 text-[#daa520] font-bold">April 2024</h2>
             <p className="">Galgotias University, Greater Noida</p>
           </div>
         </div>
         {/*Other List Items */}
         <div className="row grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
           <div className="col">
-            <h4 className="font-bold">Resources</h4>
+            <h4 className="font-bold text-[#daa520]">Resources</h4>
             <ul>
-              <li className="hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#299092]">
+              <li className="hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#daa520]">
                 <a href="#">Sponsorship Brochure</a>
               </li>
-              <li className="hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#299092]">
+              <li className="hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#daa520]">
                 <a href="#">Code Of Conduct</a>
               </li>
             </ul>
           </div>
 
           <div className="col">
-            <h4 className="font-bold">COMMUNITY</h4>
+            <h4 className="font-bold text-[#daa520]">COMMUNITY</h4>
             <ul>
-              <li className="flex gap-2 items-center hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#299092]">
+              <li className="flex gap-2 items-center hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#daa520]">
                 Github
                 <a href="https://discord.gg/d3VZen7c" target="_blank">
                   <FaGithub />
                 </a>
               </li>
-              <li className="flex gap-2 items-center hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#299092]">
+              <li className="flex gap-2 items-center hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#daa520]">
                 Discord
                 <a href="https://discord.gg/d3VZen7c" target="_blank">
                   <FaDiscord />
                 </a>
               </li>
 
-              <li className="flex gap-2 items-center hover:pl-3 transition-all duration-150 ease-in-out text-gray-400 cursor-pointer hover:text-[#299092]">
+              <li className="flex gap-2 items-center hover:pl-3 transition-all duration-150 ease-in-out text-gray-400 cursor-pointer hover:text-[#daa520]">
                 Telegram
                 <a href="https://discord.gg/d3VZen7c" target="_blank">
                   <FaTelegram />
@@ -70,10 +70,10 @@ const Footer = () => {
           </div>
 
           <div className="col">
-            <h1 className="font-bold">Social Connection</h1>
+            <h1 className="font-bold text-[#daa520]">Social Connection</h1>
             <p>Learn. Teach. Hack. Win</p>
             <ul className="flex gap-3 py-4 ">
-              <li className="hover:scale-110  duration-150 text-2xl text-[#299092]">
+              <li className="hover:scale-110  duration-150 text-2xl text-[#daa520]">
                 <a
                   href="https://www.linkedin.com/company/technojam/"
                   target="_blank"
@@ -81,7 +81,7 @@ const Footer = () => {
                   <FaLinkedinIn />
                 </a>
               </li>
-              <li className="hover:scale-110 duration-150 text-2xl text-[#299092]">
+              <li className="hover:scale-110 duration-150 text-2xl text-[#daa520]">
                 <a
                   href="https://www.facebook.com/teamtechnojam"
                   target="_blank"
@@ -89,7 +89,7 @@ const Footer = () => {
                   <FaFacebook />
                 </a>
               </li>
-              <li className="hover:scale-110 duration-150 text-2xl text-[#299092]">
+              <li className="hover:scale-110 duration-150 text-2xl text-[#daa520]">
                 <a
                   href="https://www.instagram.com/teamtechnojam/"
                   target="_blank"
@@ -97,12 +97,12 @@ const Footer = () => {
                   <FaInstagram />
                 </a>
               </li>
-              <li className="hover:scale-110 duration-150 text-2xl text-[#299092]">
+              <li className="hover:scale-110 duration-150 text-2xl text-[#daa520]">
                 <a href="https://twitter.com/technojam_gu" target="_blank">
                   <FaTwitter />
                 </a>
               </li>
-              <li className="hover:scale-110 duration-150 text-2xl text-[#299092]">
+              <li className="hover:scale-110 duration-150 text-2xl text-[#daa520]">
                 <a href="https://discord.gg/d3VZen7c" target="_blank">
                   <FaDiscord />
                 </a>
@@ -111,18 +111,18 @@ const Footer = () => {
           </div>
 
           <div className="col">
-            <h4 className="font-bold">Archives</h4>
+            <h4 className="font-bold text-[#daa520]">Archives</h4>
             <ul>
-              <li className="hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#299092]">
+              <li className="hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#daa520]">
                 hackCBS 2.0
               </li>
-              <li className="hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#299092]">
+              <li className="hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#daa520]">
                 hackCBS 3.0
               </li>
-              <li className="hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#299092]">
+              <li className="hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#daa520]">
                 hackCBS 4.0
               </li>
-              <li className="hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#299092]">
+              <li className="hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#daa520]">
                 hackCBS 5.0
               </li>
             </ul>
