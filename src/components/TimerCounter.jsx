@@ -93,7 +93,7 @@ const Timer3 = () => {
   }, { scope: timeCounter });
 
   return (
-    <div ref={timeCounter} className="flex flex-col items-center justify-center h-screen gap-8 sm:gap-16">
+    <div id="timeCounter" ref={timeCounter} className="flex flex-col items-center justify-center h-screen gap-8 sm:gap-16">
       <div className="text-2xl relative sm:text-3xl font-semibold text-white text-center tracking-widest px-2">
         Registration Ends in
         <h1 className="absolute heading w-full h-full bg-cyan-400 top-0 right-0"></h1>
