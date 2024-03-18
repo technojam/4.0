@@ -1,9 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Card = ({ theme }) => {
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const handleFlip = () => {
+    setIsFlipped(!isFlipped);
+  };
+
   return (
-    <div className={`h-[400px] w-[300px] perspective`}>
-      <div className="preserve-3d pt-[100px] w-full transition-all ease-in-out duration-500 rounded-[10px] bg-[url('https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-center">
+    <div
+      className={`h-[400px] w-[300px] perspective relative`}
+      onMouseEnter={handleFlip}
+      onMouseLeave={handleFlip}
+    >
+      <div
+        className={`preserve-3d pt-[100px] w-full transition-all ease-in-out duration-500 rounded-[10px] bg-[url('https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-center inline-block`}
+        style={{
+          transformStyle: "preserve-3d",
+          transform: isFlipped ? "rotateY(180deg)" : "rotateY(0deg)",
+        }}
+      >
         <div className="h-full w-full content-box">
           <h1 className="transform-3d text-white text-2xl font-black">
             {theme.title}
@@ -25,4 +41,5 @@ const Card = ({ theme }) => {
     </div>
   );
 };
+
 export default Card;
