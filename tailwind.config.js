@@ -8,6 +8,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      colors: {
+        'bottom-outline-color': '#e9e3d5',
+      },
       fontFamily: {
         Product_Sans: ["Product Sans"],
         Ethnocentric: ["Ethnocentric"],
