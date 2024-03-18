@@ -47,13 +47,19 @@ const App = () => {
       </div>
       <div className="d-block opacity-100">
         {/* navbar */}
+
+       
         <Navbar />
+
         <Hero />
         <About />
         <Timeline />
         <TimerCounter />
-        <Prize /> {/* Include Prize component */}
+        {/* Prize component */}
+        <Prize /> 
+        {/* Sponsors */}
         <Sponsors />
+        {/* Image Slider  */}
         <ImageSlider />
         {/* Card Section */}
         <h1
