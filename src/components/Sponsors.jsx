@@ -81,7 +81,7 @@ const SponsorsWrapper = styled.div`
 `;
 
 const SponsorsText = styled.div`
-  font-size: 60px;
+  font-size: 2.2rem;
   font-weight: 700;
   margin-bottom: 10px;
   color: #daa520;

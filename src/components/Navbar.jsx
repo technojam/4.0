@@ -18,7 +18,7 @@ const Navbar = () => {
           />
         </div>
         {/* Page Navigation */}
-        <div className="hidden lg:flex text-xl items-center gap-8 font-Product_Sans mr-10">
+        <div className="hidden lg:flex text-xl items-center gap-8 font-Gugi_sans-serif mr-10">
           <a href="#about"
             className={`cursor-pointer duration-200 hover:scale-110 hover:text-[#daa520]`}
           >

@@ -36,17 +36,17 @@ function ImageSlider() {
 
   return (
     <div id="events" className="max-w-[900px] h-[500px] w-full m-auto px-4 relative group mb-52">
-      <h1 className="text-white text-4xl font-Phudu font-medium flex justify-center mb-5">
+      <h1 className="text-[#daa520] text-4xl font-Phudu font-medium flex justify-center mb-5">
         Our Past Events
       </h1>
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
       ></div>
-      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 mt-16 bg-black/20 text-white cursor-pointer">
+      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 mt-16 bg-black/20 text-[#daa520] cursor-pointer">
         <BsChevronCompactLeft onClick={prevSlide} size={30} />
       </div>
-      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 mt-16 bg-black/20 text-white cursor-pointer">
+      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 mt-16 bg-black/20 text-[#daa520] cursor-pointer">
         <BsChevronCompactRight onClick={nextSlide} size={30} />
       </div>
       <div className="flex top-4 justify-center py-2">
@@ -56,7 +56,7 @@ function ImageSlider() {
             onClick={() => goToSlide(slideIndex)}
             className="text-2xl cursor-pointer"
           >
-            <RxDotFilled className="text-white" />
+            <RxDotFilled className="text-[#daa520]" />
           </div>
         ))}
       </div>
