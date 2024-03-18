@@ -10,7 +10,7 @@ import ChatBox from "./components/ChatBox";
 import ImageSlider from "./components/ImageSlider";
 import About from "./components/About";
 import Footer from "./components/Footer";
-import Sponsors from "./components/Sponsors";
+import { Sponsors } from "./components/Sponsors";
 import Prize from "./components/Prize";
 import Navbar from "./components/Navbar";
 
