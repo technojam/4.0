@@ -15,6 +15,21 @@ const ChatBox = () => {
     }
     return deviceId;
   });
+  const [prompts, setPrompts] = useState([
+    "What is a hackathon?",
+    "Who can participate?",
+    "Tell me a joke",
+    "Who organizes Dexterix?",
+  ]);
+
+  const [altprompts, setAltprompts] = useState([
+    "When is Dexterix?",
+    "Where is Dexterix?",
+    "Duration of Event",
+    "Registration fee",
+    "Team size",
+    "Prizes",
+  ]);
 
   const messagesEndRef = useRef(null);
 
@@ -43,7 +58,10 @@ const ChatBox = () => {
 
   const sendMessage = async () => {
     if (inputValue.trim() === "") return;
-    setMessages((prevMessages) => [...prevMessages, { text: inputValue, sender: "user" }])
+    setMessages((prevMessages) => [
+      ...prevMessages,
+      { text: inputValue, sender: "user" },
+    ]);
     setInputValue("");
     try {
       const response = await fetch(
@@ -54,11 +72,48 @@ const ChatBox = () => {
       // Update messages state with the bot's response
       setMessages((prevMessages) => [
         ...prevMessages,
-        { text: data.cnt, sender: "bot" },
+        { text: data.cnt.replace(/<tips> enJoke <\/tips>/, ""), sender: "bot" },
       ]);
+      
+      if(prompts.length === 0) {
+        setTimeout(() => {
+          setMessages((prevMessages) => [
+            ...prevMessages,
+            { text: "If you have any more doubts head on to our Faq section", sender: "bot" },
+          ]);
+        }, 1000);
+      
+      }
     } catch (error) {
       console.error("Error sending message:", error);
     }
+  };
+
+  const handlePromptClick = (promptIndex) => {
+    const selectedPrompt = prompts[promptIndex];
+    setInputValue(selectedPrompt);
+    sendMessage();
+
+    // Remove the selected prompt from prompts array
+    const updatedPrompts = prompts.filter((_, index) => index !== promptIndex);
+    let newPrompts = [...updatedPrompts];
+
+    if (altprompts.length > 0) {
+      const randomIndex = Math.floor(Math.random() * altprompts.length);
+      const newPrompt = altprompts[randomIndex];
+
+      // Remove the selected prompt from altprompts
+      const updatedAltprompts = [
+        ...altprompts.slice(0, randomIndex),
+        ...altprompts.slice(randomIndex + 1),
+      ];
+
+      // Combine the updated prompts array with the new prompt from altprompts
+      newPrompts = [...newPrompts, newPrompt].slice(0, 4);
+      setAltprompts(updatedAltprompts);
+    }
+
+    setPrompts(newPrompts);
   };
 
   return (
@@ -77,22 +132,22 @@ const ChatBox = () => {
       )}
       {showChat && (
         <motion.div
-          className="fixed message-box bottom-[calc(4rem+1.5rem)] right-0 mr-4  p-6 rounded-lg bg-slate-100  w-[300px] h-[500px] lg:h-[640px] md:w-[400px] md:h-[700px] z-10 shadow-md transition-all duration-300 ease-in-out flex flex-col justify-between"
+          className="fixed message-box bottom-[calc(4rem+1.5rem)] right-0 mr-2 p-6 pl-[15px] rounded-lg bg-slate-100 w-[320px] h-[500px] lg:h-[640px] md:w-[400px] md:h-[700px] z-10 shadow-md transition-all duration-300 ease-in-out flex flex-col justify-between"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <div>
+          <div className="flex flex-col flex-grow overflow-y-auto">
             <div className="flex flex-col space-y-4">
-              <h2 className="font-semibold text-lg tracking-tight text-black">
+              <h2 className="font-semibold  tracking-tight text-black">
                 Chat
               </h2>
               <p className="text-sm text-gray-500">Powered by Technojam</p>
             </div>
-            <div className="overflow-y-auto flex-1 max-h-[325px] lg:max-h-[450px]">
+            <div className="flex-1 font-sans  overflow-y-auto">
               {messages.map((message, index) => (
                 <div
                   key={index}
-                  className={`mb-2 flex ${
+                  className={`mb-2 mr-2  flex ${
                     message.sender === "user" ? "justify-end" : "justify-start"
                   }`}
                 >
@@ -101,7 +156,7 @@ const ChatBox = () => {
                   )}
                   <div className="flex items-center">
                     <p
-                      className={`rounded-xl max-w-fit px-4 py-2 text-sm   ${
+                      className={`rounded-xl max-w-fit px-3 py-[6px] text-sm ${
                         message.sender === "user"
                           ? "bg-blue-600 text-white self-end"
                           : "bg-gray-200 text-gray-800 self-start"
@@ -131,18 +186,30 @@ const ChatBox = () => {
               e.preventDefault();
               sendMessage();
             }}
+            className="mt-4"
           >
-            <div className="flex items-center mt-4">
+            <div className="flex font-sans flex-wrap items-center">
+              {prompts.map((prompt, index) => (
+                <button
+                  key={index}
+                  className="px-2 lg:px-3 py-[5px] lg:py-[6px] mr-1 mt-1 bg-blue-500 text-white rounded-xl text-xs hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+                  onClick={() => handlePromptClick(index)}
+                >
+                  {prompt}
+                </button>
+              ))}
+            </div>
+            <div className="flex items-center mr-4 w-fit font-sans  mt-4">
               <input
                 type="text"
-                className="flex-1  h-10 px-4 rounded-xl border border-gray-400 bg-gray-100 focus:outline-none focus:ring focus:ring-blue-400"
-                placeholder="Type your message..."
+                className="flex-1 h-10 px-4 rounded-xl border border-gray-400 bg-gray-100 focus:outline-none focus:ring focus:ring-blue-400"
+                placeholder="Type your message"
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
               />
               <button
                 type="submit"
-                className="ml-2 px-4 py-2 bg-blue-500 text-white rounded-xl hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+                className="mx-2 px-4 py-2 bg-blue-500 text-white rounded-xl hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
               >
                 Send
               </button>
