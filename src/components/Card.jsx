@@ -21,7 +21,7 @@ const Card = ({ theme }) => {
         }}
       >
         <div className="h-full w-full content-box">
-          <h1 className="transform-3d text-white text-2xl font-black">
+          <h1 className="transform-3d text-[#daa520] text-2xl font-black">
             {theme.title}
           </h1>
           <p className="transform-3d h-40 pt-4 text-xs">{theme.info}</p>

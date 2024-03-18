@@ -26,10 +26,14 @@ const App = () => {
     },
     { scope: comp }
   );
+  const style = {
+    fontFamily: "Gugi, sans-serif",
+  };
   return (
     <div
       ref={comp}
       className="relative scroll-smooth w-screen min-h-screen font-Phudu overflow-x-hidden"
+      style={style}
     >
       {/* Background Sky */}
       <div className="sky bg-center fixed left-0 -z-20 w-0 h-screen">
@@ -64,7 +68,7 @@ const App = () => {
         {/* Card Section */}
         <h1
           id="themes"
-          className="text-white text-4xl font-Phudu font-medium flex justify-center"
+          className="text-[#daa520] text-4xl font-Phudu font-medium flex justify-center"
         >
           Themes
         </h1>
