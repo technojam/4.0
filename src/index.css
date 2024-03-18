@@ -1487,5 +1487,17 @@ input[type=number]{
   }
 }
 .message-box ::-webkit-scrollbar {
-  visibility: hidden;
+  width: 4px;
+  border-radius: 50px;
+}
+
+.message-box ::-webkit-scrollbar-track {
+
+  background-color: rgb(229 231 235);
+  border-radius: 50px;
+}
+.message-box ::-webkit-scrollbar-thumb {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99  / var(--tw-bg-opacity));
+  border-radius: 50px;
 }
