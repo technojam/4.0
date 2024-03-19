@@ -39,7 +39,10 @@ const Hero = () => {
       </div>
       {/*REGISTER BUTTON */}
 
-      <Link to='/register' className="bg-[#daa520] w-[150px] text-center lg:absolute top-[56%] right-0 rounded-md font-medium text-xl py-3 hover:bg-white ease-in-out duration-200 lg:rotate-90 hover:scale-95 hover:text-[#daa520]">
+      <Link
+        to="/register"
+        className="bg-[#daa520] w-[150px] text-center lg:absolute top-[56%] right-0 rounded-md font-medium text-xl py-3 hover:bg-white ease-in-out duration-200 lg:rotate-90 hover:scale-95 hover:text-[#daa520]"
+      >
         Register
       </Link>
       {/* Social Media */}
