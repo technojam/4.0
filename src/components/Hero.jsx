@@ -7,13 +7,11 @@ import {
   FaDiscord,
 } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
-import Logo3D from "./Logo3D";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
     <div className="text-white pt-[12vh] lg:pt-0 relative z-10 pb-20 h-screen overflow-hidden flex flex-col w-screen px-5 lg:px-0 items-center justify-center gap-10 lg:gap-0">
-      {/* <Logo3D/> */}
       <div className="mt-10 lg:mt-0 flex flex-col lg:flex-row justify-center gap-14">
         <div>
           <p className="text-[22px] font-bold">Organised by,</p>
@@ -38,8 +36,10 @@ const Hero = () => {
         </div>
       </div>
       {/*REGISTER BUTTON */}
-
-      <Link to='/register' className="bg-[#daa520] w-[150px] text-center lg:absolute top-[56%] right-0 rounded-md font-medium text-xl py-3 hover:bg-white ease-in-out duration-200 lg:rotate-90 hover:scale-95 hover:text-[#daa520]">
+      <Link
+        to="/register"
+        className="bg-[#daa520] w-[150px] text-center lg:absolute top-[56%] right-0 rounded-md font-medium text-xl py-3 hover:bg-white ease-in-out duration-200 lg:rotate-90 hover:scale-95 hover:text-[#daa520]"
+      >
         Register
       </Link>
       {/* Social Media */}
