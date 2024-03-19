@@ -25,7 +25,7 @@ const Card = ({ theme }) => {
             {theme.title}
           </h1>
           <p className="transform-3d h-40 pt-4 text-xs">{theme.info}</p>
-          <span className="block font-black text-xs uppercase text-blue-500 pt-4 transform-3d">
+          <span className="block font-black text-xs uppercase text-[#daa520] pt-4 transform-3d">
             See More
           </span>
         </div>
@@ -33,7 +33,7 @@ const Card = ({ theme }) => {
           <span className="text-white text-center font-bold block text-xs">
             {theme.month}
           </span>
-          <span className="text-blue-700 font-black text-center block text-lg">
+          <span className="text-[#daa520] font-black text-center block text-lg">
             {theme.date}
           </span>
         </div>
