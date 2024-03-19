@@ -7,6 +7,7 @@ import {
   FaGithub,
   FaTelegram,
 } from "react-icons/fa6";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 const Footer = () => {
   return (
     <>
@@ -15,8 +16,7 @@ const Footer = () => {
         {/* Logo and map */}
         <div className="grid md:grid-cols-2 lg:grid-cols-2 ">
           {/*logo*/}
-
-            <img className="w-[70px] pt-5 ml-[70px]" src="/TechnoJam.png" alt="" />
+            <LazyLoadImage className="w-[70px] pt-5 ml-[70px]" src="/TechnoJam.png" alt="" />
           {/*Map*/}
           <div>
             <h4 className="mb-4 font-bold text-[#daa520] border-b-2 border-[#daa520] w-8">VENUE</h4>

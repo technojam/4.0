@@ -1,17 +1,16 @@
 import React from "react";
 import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(false);
   return (
     <>
-      <nav
-        className="px-5 w-screen z-30 text-white gap-8 absolute top-0 left-0 h-[11vh] bg-transparent flex items-center justify-between navbar"
-      >
+      <nav className="px-5 w-screen z-30 text-white gap-8 absolute top-0 left-0 h-[11vh] bg-transparent flex items-center justify-between navbar">
         {/* Technojam Logo */}
         <div className="logo">
-          <img
+          <LazyLoadImage
             src="/TechnoJam.png"
             className="w-[45px] mx-auto logo"
             alt="logo"
@@ -19,37 +18,38 @@ const Navbar = () => {
         </div>
         {/* Page Navigation */}
         <div className="hidden lg:flex text-xl items-center gap-8 font-Gugi_sans-serif mr-10">
-          <a href="#about"
+          <a
+            href="#about"
             className={`cursor-pointer duration-200 hover:scale-110 hover:text-[#daa520]`}
           >
             About
           </a>
           <a
-          href="#Timeline"
+            href="#Timeline"
             className={`cursor-pointer duration-200 hover:scale-110 hover:text-[#daa520]`}
           >
             Schedule
           </a>
           <a
-          href="#events"
+            href="#events"
             className={`cursor-pointer duration-200 hover:scale-110 hover:text-[#daa520]`}
           >
             Events
           </a>
           <a
-          href="#sponsors"
+            href="#sponsors"
             className={`cursor-pointer duration-200 hover:scale-110 hover:text-[#daa520]`}
           >
             Sponsors
           </a>
           <a
-          href="#"
+            href="#prize"
             className={`cursor-pointer duration-200 hover:scale-110 hover:text-[#daa520]`}
           >
-            FAQs
+            Prize
           </a>
           <a
-          href="#"
+            href="mailto:technojam@galgotiasuniversity.edu.in"
             className={`cursor-pointer duration-200 hover:scale-110 hover:text-[#daa520]`}
           >
             Contact Us
@@ -69,33 +69,39 @@ const Navbar = () => {
           sidebar ? "top-0 right-0" : "top-0 right-[-400px]"
         } duration-300 lg:hidden flex flex-col border border-l border-[#ffffff2c] backdrop-blur bg-transparent justify-start pt-[12vh] items-start px-8 z-20 text-xl md:text-2xl gap-2 dark:text-white text-black absolute max-w-fit h-screen`}
       >
-        <a href="#about"
+        <a
+          href="#about"
           className={`cursor-pointer duration-200 hover:scale-110`}
         >
           About
         </a>
-        <a href="#Timeline"
+        <a
+          href="#Timeline"
           className={`cursor-pointer duration-200 hover:scale-110`}
         >
           Schedule
         </a>
-        <a href="#events"
-          className={`cursor-pointer duration-200 hover:scale-110`}
+        <a
+          href="#events"
+          className={`cursor-pointer duration-200 hover:scale-110 hover:text-[#daa520]`}
         >
           Events
         </a>
-        <a href="#sponsors"
-          className={`cursor-pointer duration-200 hover:scale-110`}
+        <a
+          href="#sponsors"
+          className={`cursor-pointer duration-200 hover:scale-110 hover:text-[#daa520]`}
         >
           Sponsors
         </a>
-        <a href="#"
-          className={`cursor-pointer duration-200 hover:scale-110`}
+        <a
+          href="#prize"
+          className={`cursor-pointer duration-200 hover:scale-110 hover:text-[#daa520]`}
         >
-          FAQs
+          Prize
         </a>
-        <a href="#"
-          className={`cursor-pointer duration-200 hover:scale-110`}
+        <a
+          href="mailto:technojam@galgotiasuniversity.edu.in"
+          className={`cursor-pointer duration-200 hover:scale-110 hover:text-[#daa520]`}
         >
           Contact Us
         </a>
