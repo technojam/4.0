@@ -13,6 +13,7 @@ import Footer from "./components/Footer";
 import { Sponsors } from "./components/Sponsors";
 import Prize from "./components/Prize";
 import Navbar from "./components/Navbar";
+import GoToTop from "./components/GoToTop";
 
 const App = () => {
   // Gsap Animation
@@ -50,20 +51,13 @@ const App = () => {
         />
       </div>
       <div className="d-block opacity-100">
-        {/* navbar */}
-
-       
         <Navbar />
-
         <Hero />
         <About />
         <Timeline />
         <TimerCounter />
-        {/* Prize component */}
-        <Prize /> 
-        {/* Sponsors */}
+        <Prize />
         <Sponsors />
-        {/* Image Slider  */}
         <ImageSlider />
         {/* Card Section */}
         <h1
@@ -80,8 +74,9 @@ const App = () => {
         <Footer />
       </div>
       {/* Scroll To Top Button */}
+      <ChatBox />
       <div className="d-block">
-        <ChatBox />
+        <GoToTop />
       </div>
     </div>
   );

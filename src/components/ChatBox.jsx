@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ChatBox = () => {
-  const [visible, setVisible] = useState(false);
   const [showChat, setShowChat] = useState(false);
   const [inputValue, setInputValue] = useState("");
   const [messages, setMessages] = useState([]);
@@ -39,17 +38,6 @@ const ChatBox = () => {
   };
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      setVisible(scrollY > 400);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  useEffect(() => {
     scrollToBottom();
   }, [messages]);
 
@@ -75,15 +63,17 @@ const ChatBox = () => {
         ...prevMessages,
         { text: data.cnt.replace(/<tips> enJoke <\/tips>/, ""), sender: "bot" },
       ]);
-      
-      if(prompts.length === 0) {
+
+      if (prompts.length === 0) {
         setTimeout(() => {
           setMessages((prevMessages) => [
             ...prevMessages,
-            { text: "If you have any more doubts head on to our Faq section", sender: "bot" },
+            {
+              text: "If you have any more doubts head on to our Faq section",
+              sender: "bot",
+            },
           ]);
         }, 1000);
-      
       }
     } catch (error) {
       console.error("Error sending message:", error);
@@ -119,18 +109,14 @@ const ChatBox = () => {
 
   return (
     <>
-      {visible && (
-        <motion.button
-          className="fixed bottom-4 right-4 overflow-auto cursor-pointer w-20 h-20 z-10 transition-all duration-300 ease-in-out"
-          onClick={handleButtonClick}
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-        >
-          <IoChatbubble
-            style={{ width: "70%", height: "70%", color: "#fff" }}
-          />
-        </motion.button>
-      )}
+      <motion.button
+        className="fixed bottom-5 right-2 overflow-auto cursor-pointer w-12 aspect-square z-10 transition-all duration-300 ease-in-out"
+        onClick={handleButtonClick}
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+      >
+        <IoChatbubble className="w-full h-full text-[#ffff]" />
+      </motion.button>
       {showChat && (
         <motion.div
           className="fixed message-box bottom-[calc(4rem+1.5rem)] right-0 mr-2 p-6 pl-[15px] rounded-lg bg-slate-100 w-[320px] h-[500px] lg:h-[640px] md:w-[400px] md:h-[700px] z-10 shadow-md transition-all duration-300 ease-in-out flex flex-col justify-between"
@@ -139,9 +125,7 @@ const ChatBox = () => {
         >
           <div className="flex flex-col flex-grow overflow-y-auto">
             <div className="flex flex-col space-y-4">
-              <h2 className="font-semibold  tracking-tight text-black">
-                Chat
-              </h2>
+              <h2 className="font-semibold  tracking-tight text-black">Chat</h2>
               <p className="text-sm text-gray-500">Powered by Technojam</p>
             </div>
             <div className="flex-1 font-sans  overflow-y-auto">
@@ -153,7 +137,10 @@ const ChatBox = () => {
                   }`}
                 >
                   {message.sender === "bot" && (
-                    <LazyLoadImage src="/TechnoJam.png" className="w-5 h-5 mr-2 mt-2" />
+                    <LazyLoadImage
+                      src="/TechnoJam.png"
+                      className="w-5 h-5 mr-2 mt-2"
+                    />
                   )}
                   <div className="flex items-center">
                     <p
