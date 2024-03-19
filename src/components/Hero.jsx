@@ -8,10 +8,13 @@ import {
 } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
+import ThreeDModel from "./ThreeDModel";
 const Hero = () => {
   return (
     <div className="text-white pt-[12vh] lg:pt-0 relative z-10 pb-20 h-screen overflow-hidden flex flex-col w-screen px-5 lg:px-0 items-center justify-center gap-10 lg:gap-0">
+  <div className="z-10">     
       <div className="mt-10 lg:mt-0 flex flex-col lg:flex-row justify-center gap-14">
         <div>
           <p className="text-[22px] font-bold">Organised by,</p>
@@ -70,6 +73,15 @@ const Hero = () => {
           </a>
         </li>
       </ul>
+      </div>
+      <div className="absolute inset-0 z-0">
+            <Canvas>
+              <ambientLight />
+              <OrbitControls enableZoom={false} />
+              <ThreeDModel />
+            </Canvas>
+          </div>
+       
     </div>
   );
 };
