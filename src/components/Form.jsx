@@ -17,11 +17,9 @@ export function Form() {
         </h2>
         <p className="text-[#f9f5ed] my-2 pt-6">
           <b>
-            Thank you for your interest in participating in the Dexterix 4.0
-            Hackathon!
+          Thank you for your interest in participating in the Dexterix 4.0 Hackathon!💻🚀
           </b>
           <br />
-          
           Dexterix 4.0: A 36-hour innovation marathon where creativity meets
           technology. Join us at Galgotias University for an exhilarating
           journey of coding, collaboration, and competition. Unleash your
@@ -32,9 +30,9 @@ export function Form() {
           <p className="text-[#f9f5ed] my-2">
             <b>Event Details :</b>
             <br />
-            Date:<b> 24th-26th September 2021 </b>
+            Date:<b> 13th-14th April 2024</b>
             <br />
-            Team Size : <b>4</b>(min) <b>6</b>(max)
+            Team Size : <b>4</b>(minimum) and&nbsp; <b>6</b>(maximum)
             <br />
             Location : <b>Galgotias University, Greater Noida.</b>
             <br />
@@ -1058,6 +1056,78 @@ export function Form() {
               />
             </div>
           </div>
+
+           {/* upi section */}
+           <h1 className="text-3xl w-full text-center font-semibold text-gray-100 mt-7 mb-4">
+           Paymet
+          </h1>
+          <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent mb-8 h-1 w-full" />
+          <div className="flex justify-center flex-wrap flex-col ">
+            <div className="lg:w-2/5  pb-2 w-full">
+              <label
+                htmlFor="Payment"
+                className="text-sm font-medium text-[#f9f5ed] leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+              >
+             Scan QR <span className="text-red-600 text-base">*</span>
+              </label>
+              <input
+                type="image"
+                src="public/qr.jpg"
+                name=""
+                className={`flex w-full h-25  bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
+            file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
+            focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
+             disabled:cursor-not-allowed disabled:opacity-50
+             dark:shadow-[0px_0px_1px_1px_var(--neutral-700)]
+             group-hover/input:shadow-none transition duration-400
+             mt-1
+             border-b border-zinc-700  focus:border-b-2 focus:border-bottom-outline-color  focus:outline-none peer `}
+              />
+            </div>
+          
+            <div className="lg:w-2/5  pb-2 w-full">
+              <label
+                htmlFor="Upi transaction id"
+                className="text-sm font-medium text-[#f9f5ed] leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+              >
+               Upi transaction id <span className="text-red-600 text-base">*</span>
+              </label>
+              <input
+              required
+                type="text"
+                name="entry.1867478914"
+                className={`flex w-full h-10  bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
+            file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
+            focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
+             disabled:cursor-not-allowed disabled:opacity-50
+             dark:shadow-[0px_0px_1px_1px_var(--neutral-700)]
+             group-hover/input:shadow-none transition duration-400
+             mt-1
+             border-b border-zinc-700  focus:border-b-2 focus:border-bottom-outline-color  focus:outline-none peer `}
+              />
+            </div>
+            <div className="lg:w-2/5  pb-2 w-full">
+              <label
+                htmlFor="upi transaction id"
+                className="text-sm font-medium text-[#f9f5ed] leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+              >
+                Screenshot of payment <span className="text-red-600 text-base">*</span>
+              </label>
+              <input
+              required
+                type="file"
+                name="entry.1584897889"
+                className={`flex w-full h-10  bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
+            file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
+            focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
+             disabled:cursor-not-allowed disabled:opacity-50
+             dark:shadow-[0px_0px_1px_1px_var(--neutral-700)]
+             group-hover/input:shadow-none transition duration-400
+             mt-1
+             border-b border-zinc-700  focus:border-b-2 focus:border-bottom-outline-color  focus:outline-none peer `}
+              />
+            </div>
+            </div>
           <br></br>
           <button
             className="bg-gradient-to-br relative group/btn from-zinc-900 to-zinc-900 block mt-2 bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
