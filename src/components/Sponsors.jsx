@@ -4,7 +4,7 @@ import MovingCards from "./MovingCards";
 export function Sponsors() {
   return (
     <div
-      className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden"
+      className="h-[40rem] rounded-md flex flex-col antialiased bg-transparent  bg-grid-transparent/[0.02] items-center justify-center relative overflow-hidden"
       id="sponsors"
     >
       <MovingCards items={testimonials} direction="right" speed="slow" />
