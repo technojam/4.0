@@ -4,7 +4,7 @@ const Prize = () => {
   return (
 // <<<<<<< HEAD
     
-    <div className='w-screen overflow-x-hidden'>
+    <div id='prize' className='w-screen overflow-x-hidden'>
       <h1 className=" text-3xl self-center lg:text-4xl font-bold leading-9 text-[#daa520] pb-1 text-center relative mb-4">
           Prize
         </h1>
