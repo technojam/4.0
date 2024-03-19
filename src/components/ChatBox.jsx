@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { IoChatbubble } from "react-icons/io5";
 import { motion } from "framer-motion";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ChatBox = () => {
   const [visible, setVisible] = useState(false);
@@ -152,7 +153,7 @@ const ChatBox = () => {
                   }`}
                 >
                   {message.sender === "bot" && (
-                    <img src="/TechnoJam.png" className="w-5 h-5 mr-2 mt-2" />
+                    <LazyLoadImage src="/TechnoJam.png" className="w-5 h-5 mr-2 mt-2" />
                   )}
                   <div className="flex items-center">
                     <p
