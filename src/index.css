@@ -1,17 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Orbitron:wght@400..900&family=Tilt+Prism&family=Phudu:wght@300..900&family=Nunito:wght@200;500;700;800;900;1000&display=swap");
-/* <<<<<<< HEA
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gugi&display=swap');
-.glass {
-  background: rgba(255, 255, 255, 0.22);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.9px);
-  -webkit-backdrop-filter: blur(4.9px);
-  border: 1px solid rgba(255, 255, 255, 0.3); */
-/* ======= */
 *{
   scroll-behavior: smooth;
-/* >>>>>>> a4306f1cec3a2049d5b18ab39b87e917aeea9078 */
 }
 body{
   font-family: "Gugi", sans-serif; 
@@ -25,10 +14,26 @@ input::-webkit-inner-spin-button {
 input[type=number]{
   -moz-appearance: textfield;
 }
+::-webkit-scrollbar{
+  width: 7px
+}
+::-webkit-scrollbar-thumb{
+  background-color: #daa520;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: #cfae5c;
+}
+::-webkit-scrollbar-track{
+  background-color: rgb(40, 35, 35)
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 /* Card Animation */
+.customRotate:hover .preserve-3d{
+  transform: rotateY(180deg);
+}
 .perspective {
   perspective: 1000px;
 }

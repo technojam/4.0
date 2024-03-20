@@ -65,7 +65,7 @@ const MovingCards = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20 max-w-7xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        "scroller relative z-20 w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
         className
       )}
     >
@@ -79,8 +79,8 @@ const MovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="w-[350px] h-[240px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6
-             md:w-[300px] md:h-[250px]  "
+            className="w-[150px] h-[100px] md:w-[230px] md:h-[180px]  max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-5 py-4
+              "
             style={{
               background:
                 "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
