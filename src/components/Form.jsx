@@ -2,6 +2,40 @@
 import React from "react";
 
 export function Form() {
+  const setGdriveURL = (url) => {
+    document.getElementById("gdriveURL").value = url;
+  };
+  const uploadFile = async (file) => {
+    const formData = new FormData();
+    formData.append("image", file);
+    formData.append(
+      "phoneNumber",
+      document.getElementById("phoneNumber").value
+    );
+
+    try {
+      const response = await fetch(
+        "https://dex-backend-xero.koyeb.app/upload",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
+      if (response.ok) {
+        response.json().then((data) => {
+          setGdriveURL(data.url);
+        });
+      } else {
+        setGdriveURL();
+      }
+    } catch (error) {
+      console.error("Error uploading file:", error);
+    }
+  };
+  const handleFileChange = async (e) => {
+    uploadFile(e.target.files[0]);
+  };
+
   return (
     <div className="sky bg-center  w-auto h-3000 overflow-hidden">
       <div className="stars"></div>
@@ -201,6 +235,7 @@ export function Form() {
                   required
                   type="text"
                   name="entry.1853390448"
+                  id="phoneNumber"
                   className={`flex w-full h-10  bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -1089,20 +1124,19 @@ export function Form() {
               </div>
 
               <div className="lg:flex lg:justify-around mt-2">
-
-              <div className="lg:w-2/5  pb-2 w-full h-5">
-                <label
-                  htmlFor="Upi transaction id"
-                  className="text-sm font-medium text-[#f9f5ed] leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                >
-                  Upi transaction id{" "}
-                  <span className="text-red-600 text-base">*</span>
-                </label>
-                <input
-                  required
-                  type="text"
-                  name="entry.1867478914"
-                  className={`flex w-full h-10  bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
+                <div className="lg:w-2/5  pb-2 w-full h-5">
+                  <label
+                    htmlFor="Upi transaction id"
+                    className="text-sm font-medium text-[#f9f5ed] leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                  >
+                    Upi transaction id{" "}
+                    <span className="text-red-600 text-base">*</span>
+                  </label>
+                  <input
+                    required
+                    type="text"
+                    name="entry.1867478914"
+                    className={`flex w-full h-10  bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
              disabled:cursor-not-allowed disabled:opacity-50
@@ -1110,21 +1144,21 @@ export function Form() {
              group-hover/input:shadow-none transition duration-400
              mt-1
              border-b border-zinc-700  focus:border-b-2 focus:border-bottom-outline-color  focus:outline-none peer `}
-                />
-              </div>
-              <div className="lg:w-2/5  pb-2 w-full mt-14 lg:mt-0">
-                <label
-                  htmlFor="upi transaction id"
-                  className="text-sm font-medium text-[#f9f5ed] leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                >
-                  Screenshot of payment{" "}
-                  <span className="text-red-600 text-base">*</span>
-                </label>
-                <input
-                  required
-                  type="file"
-                  name="entry.1584897889"
-                  className={`flex w-full h-10  bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
+                  />
+                </div>
+                <div className="lg:w-2/5  pb-2 w-full mt-14 lg:mt-0">
+                  <label
+                    htmlFor="upi transaction id"
+                    className="text-sm font-medium text-[#f9f5ed] leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                  >
+                    Screenshot of payment{" "}
+                    <span className="text-red-600 text-base">*</span>
+                  </label>
+                  <input
+                    required
+                    type="file"
+                    onChange={handleFileChange}
+                    className={`flex w-full h-10  bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
             focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
              disabled:cursor-not-allowed disabled:opacity-50
@@ -1132,8 +1166,16 @@ export function Form() {
              group-hover/input:shadow-none transition duration-400
              mt-1
              border-b border-zinc-700  focus:border-b-2 focus:border-bottom-outline-color  focus:outline-none peer `}
-                />
-              </div>
+                  />
+                  <input
+                    type="text"
+                    name="entry.1147912076"
+                    id="gdriveURL"
+                    accept="image/*"
+                    required
+                    className="hidden"
+                  />
+                </div>
               </div>
             </div>
             <br></br>

@@ -54,7 +54,7 @@ const ChatBox = () => {
     setInputValue("");
     try {
       const response = await fetch(
-        `https://gu-confessions-xero.koyeb.app/api/chat?uid=${uid}&msg=${inputValue}`
+        `https://dex-backend-xero.koyeb.app/api/chat?uid=${uid}&msg=${inputValue}`
       );
       const data = await response.json();
 
