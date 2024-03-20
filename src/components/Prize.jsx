@@ -1,4 +1,5 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Prize = () => {
   return (
@@ -9,7 +10,7 @@ const Prize = () => {
       {/* Prize Cards */}
       <div className="flex flex-wrap gap-10 lg:gap-28 md:gap-4 justify-center items-center pb-[150px] max-w-fit mx-auto ">
         <div className="hover:scale-110 duration-300">
-          <img
+          <LazyLoadImage
             src="/silver.jpeg"
             className="bg-cover rounded-lg w-[180px] lg:w-[200px] h-[250px] lg:h-[300px]"
           />
@@ -20,7 +21,7 @@ const Prize = () => {
           </h2>
         </div>
         <div className="hover:scale-110 duration-300">
-          <img
+          <LazyLoadImage
             src="/gold.jpeg"
             className="bg-cover rounded-lg w-[250px] h-[300px] lg:w-[300px] lg:h-[400px]"
           />
@@ -31,7 +32,7 @@ const Prize = () => {
           </h2>
         </div>
         <div className="hover:scale-110 duration-300">
-          <img
+          <LazyLoadImage
             src="/bronze.jpeg"
             className="bg-cover rounded-lg w-[180px] lg:w-[200px] h-[250px] lg:h-[300px]"
           />
