@@ -110,7 +110,7 @@ const ChatBox = () => {
   return (
     <>
       <motion.button
-        className="fixed bottom-5 right-2 overflow-auto cursor-pointer w-12 aspect-square z-10 transition-all duration-300 ease-in-out"
+        className="fixed bottom-5 right-2 overflow-auto cursor-pointer w-12 aspect-square z-50 transition-all duration-300 ease-in-out"
         onClick={handleButtonClick}
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
@@ -119,7 +119,7 @@ const ChatBox = () => {
       </motion.button>
       {showChat && (
         <motion.div
-          className="fixed message-box bottom-[calc(4rem+1.5rem)] right-0 mr-2 p-6 pl-[15px] rounded-lg bg-slate-100 w-[320px] h-[500px] lg:h-[640px] md:w-[400px] md:h-[700px] z-10 shadow-md transition-all duration-300 ease-in-out flex flex-col justify-between"
+          className="fixed message-box bottom-[calc(4rem+1.5rem)] right-0 mr-2 p-6 pl-[15px] rounded-lg bg-slate-100 w-[320px] h-[500px] lg:h-[640px] md:w-[400px] md:h-[700px] z-50 shadow-md transition-all duration-300 ease-in-out flex flex-col justify-between"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
         >
