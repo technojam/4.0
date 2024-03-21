@@ -110,12 +110,12 @@ const ChatBox = () => {
   return (
     <>
       <motion.button
-        className="fixed bottom-5 right-2 overflow-auto cursor-pointer w-12 aspect-square z-50 transition-all duration-300 ease-in-out"
+        className="fixed bottom-5 right-2 overflow-auto cursor-pointer w-[70px] aspect-square z-50 transition-all duration-300 ease-in-out"
         onClick={handleButtonClick}
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
       >
-        <IoChatbubble className="w-full h-full text-[#ffff]" />
+        <LazyLoadImage className="w-full" src="bot.png"/>
       </motion.button>
       {showChat && (
         <motion.div
