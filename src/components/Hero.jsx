@@ -12,8 +12,8 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Hero = () => {
   return (
-    <div className="text-white pt-[12vh] lg:pt-0 relative z-10 pb-20 h-screen overflow-hidden flex flex-col w-screen px-5 lg:px-0 items-center justify-center gap-10 lg:gap-0">
-      <LazyLoadImage src="/dexLogo.png" className="w-full" />
+    <div className="text-white pt-[12vh] lg:pt-0 relative z-10 pb-20 h-screen overflow-hidden flex flex-col w-screen px-5 my-10 lg:my-14  lg:px-0 items-center justify-center gap-10 lg:gap-0">
+      <LazyLoadImage src="/dexLogo.png" className="w-full " />
       <div className="mt-10 lg:mt-0 flex flex-col md:flex-row gap-8 md:justify-between w-full lg:w-8/12">
         <div>
           <p className="text-[22px] font-bold">Organised by,</p>

@@ -110,7 +110,7 @@ const ChatBox = () => {
   return (
     <>
       <motion.button
-        className="fixed bottom-5 right-2 overflow-auto cursor-pointer w-[70px] aspect-square z-50 transition-all duration-300 ease-in-out"
+        className="fixed bottom-5 right-2 overflow-auto cursor-pointer w-[90px] aspect-square z-50 transition-all duration-300 ease-in-out"
         onClick={handleButtonClick}
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
