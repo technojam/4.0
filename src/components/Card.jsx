@@ -9,7 +9,6 @@ const Card = ({ theme }) => {
             {theme.title}
           </h1>
           <p className="transform-3d h-40 pt-4 text-xs">{theme.info}</p>
-          
         </div>
         <div className="box-shadow bg-black p-3 rounded-lg absolute top-[75px] left-[25px] w-[60px] aspect-square">
           <span className="text-white text-center font-bold block text-xs">

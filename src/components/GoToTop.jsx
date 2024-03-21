@@ -17,7 +17,12 @@ const GoToTop = () => {
   return (
     <>
       {visible && (
-        <div onClick={()=>window.scrollTo({top:0,left:0,behavior:"smooth"})} className="fixed z-50 text-blue-400 text-3xl cursor-pointer animate-pulse bottom-7 right-16">
+        <div
+          onClick={() =>
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+          }
+          className="fixed z-50 text-blue-400 text-3xl cursor-pointer animate-pulse bottom-7 right-[70px]"
+        >
           <FaArrowCircleUp />
         </div>
       )}

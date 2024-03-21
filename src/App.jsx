@@ -73,8 +73,8 @@ const App = () => {
         </div>
         <Footer />
       </div>
-      {/* Scroll To Top Button */}
       <ChatBox />
+      {/* Scroll To Top Button */}
       <div className="d-block">
         <GoToTop />
       </div>

@@ -30,9 +30,9 @@ const Hero = () => {
               loop
             />
           </div>
-          <p className="text-gray-300 text-[20px] font-bold">
+          <h1 className="text-gray-300 text-xl font-bold">
             Galgotias University, Greater Noida
-          </p>
+          </h1>
         </div>
       </div>
       <div className="mt-10 flex flex-col md:flex-row gap-8 md:justify-between w-full lg:w-8/12 items-center">
@@ -72,9 +72,7 @@ const Hero = () => {
         >
           Register
         </Link>
-        {/* Social Media */}
       </div>
-      {/*REGISTER BUTTON */}
     </div>
   );
 };
