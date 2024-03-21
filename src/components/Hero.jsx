@@ -61,7 +61,7 @@ const Hero = () => {
             </a>
           </li>
           <li className="hover:scale-110 hover:text-[#daa520] duration-150">
-            <a href="https://discord.gg/d3VZen7c" target="_blank">
+            <a href="https://discord.gg/S5GhBJYNVg" target="_blank">
               <FaDiscord />
             </a>
           </li>
