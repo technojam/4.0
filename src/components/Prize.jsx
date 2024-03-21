@@ -50,8 +50,8 @@ const Prize = () => {
             src="/download.jpg"
             className="bg-cover rounded-lg w-[180px] lg:w-[240px] h-[150px] lg:h-[200px]"
           />
-          <h2 className="bg-gradient-to-r text-center font-semibold lg:font-bold lg:text-xl text-xl text-white py-1 from-[#FFF1A5] via-[#C87D4C] to-[#533636] rounded-md w-[180px] lg:w-[240px]">
-            All Girls Team
+          <h2 className="bg-gradient-to-r text-center font-semibold lg:font-bold lg:text-xl text-l text-white py-1 from-[#FFF1A5] via-[#C87D4C] to-[#533636] rounded-md w-[180px] lg:w-[240px]">
+          🏆All Girls Team🏆
             <br />
             ₹5000
           </h2>
@@ -62,8 +62,8 @@ const Prize = () => {
             src="/fresher.jpg"
             className="bg-cover rounded-lg w-[180px] lg:w-[240px] h-[150px] lg:h-[200px]"
           />
-          <h2 className="bg-gradient-to-r text-center font-semibold lg:font-bold lg:text-xl text-xl text-white py-1 from-[#FFF1A5] via-[#C87D4C] to-[#533636] rounded-md w-[180px] lg:w-[240px]">
-            All Freshers Team
+          <h2 className="bg-gradient-to-r text-center font-semibold lg:font-bold lg:text-xl text-l text-white py-1 from-[#FFF1A5] via-[#C87D4C] to-[#533636] rounded-md w-[180px] lg:w-[240px]">
+            🏆All Freshers Team🏆
             <br />
             ₹5000
           </h2>
