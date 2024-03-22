@@ -44,7 +44,7 @@ const Prize = () => {
           </h2>
         </div>
       
-        <div className="lg:flex lg:ml-[50px] gap-10 lg:gap-28 md:gap-4 flex flex-wrap justify-center items-center gap-10 pb-10">
+        <div className="lg:flex lg:ml-[50px] lg:gap-28 md:gap-4 flex flex-wrap justify-center items-center gap-10 pb-10">
         <div className="hover:scale-110 duration-300 ">
           <img
             src="/download.jpg"
