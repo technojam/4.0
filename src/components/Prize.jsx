@@ -9,7 +9,7 @@ const Prize = () => {
       </h1>
       {/* Prize Cards */}
       <div className="flex flex-wrap gap-10 lg:gap-28 md:gap-4 justify-center items-center  max-w-fit mx-auto">
-        
+        {/*Second Prize */}
         <div className="hover:scale-110 duration-300">
           <LazyLoadImage
             src="/silver.jpeg"
@@ -21,6 +21,7 @@ const Prize = () => {
             ₹15000
           </h2>
         </div>
+        {/*First Prize */}
         <div className="hover:scale-110 duration-300">
           <LazyLoadImage
             src="/gold.jpeg"
@@ -32,6 +33,7 @@ const Prize = () => {
             ₹21000
           </h2>
         </div>
+        {/* Third Prize */}
         <div className="hover:scale-110 duration-300">
           <LazyLoadImage
             src="/bronze.jpeg"
@@ -43,31 +45,32 @@ const Prize = () => {
             ₹10000
           </h2>
         </div>
-      
-        <div className="lg:flex lg:ml-[50px] lg:gap-28 md:gap-4 flex flex-wrap justify-center items-center gap-10 pb-10">
-        <div className="hover:scale-110 duration-300 ">
-          <img
-            src="/download.jpg"
-            className="bg-cover rounded-lg w-[180px] lg:w-[240px] h-[150px] lg:h-[200px]"
-          />
-          <h2 className="bg-gradient-to-r text-center font-semibold lg:font-bold lg:text-xl text-l text-white py-1 from-[#FFF1A5] via-[#C87D4C] to-[#533636] rounded-md w-[180px] lg:w-[240px]">
-          🏆All Girls Team🏆
-            <br />
-            ₹5000
-          </h2>
-        </div>
-
-        <div className="hover:scale-110 duration-300">
-          <img
-            src="/fresher.jpg"
-            className="bg-cover rounded-lg w-[180px] lg:w-[240px] h-[150px] lg:h-[200px]"
-          />
-          <h2 className="bg-gradient-to-r text-center font-semibold lg:font-bold lg:text-xl text-l text-white py-1 from-[#FFF1A5] via-[#C87D4C] to-[#533636] rounded-md w-[180px] lg:w-[240px]">
-            🏆All Freshers Team🏆
-            <br />
-            ₹5000
-          </h2>
-        </div>
+        {/* Bottom Section */}
+        <div className="lg:flex lg:ml-[50px] gap-14 lg:gap-28 md:gap-4 flex flex-wrap justify-center items-center pb-10">
+          {/*All Girls Team */}
+          <div className="hover:scale-110 duration-300 ">
+            <img
+              src="/download.jpg"
+              className="bg-cover rounded-lg w-[190px] lg:w-[240px] h-[250px] lg:h-[300px]"
+            />
+            <h2 className="bg-gradient-to-r text-center font-semibold lg:font-bold lg:text-xl text-l text-white py-1 from-[#FFF1A5] via-[#C87D4C] to-[#533636] rounded-md w-[190px] lg:w-[240px]">
+              🏆All Girls Team🏆
+              <br />
+              ₹5000
+            </h2>
+          </div>
+          {/*All Freshers Team */}
+          <div className="hover:scale-110 duration-300">
+            <img
+              src="/fresher.jpg"
+              className="bg-cover rounded-lg w-[190px] lg:w-[240px] h-[250px] lg:h-[300px]"
+            />
+            <h2 className="bg-gradient-to-r text-center font-semibold lg:font-bold lg:text-xl text-l text-white py-1 from-[#FFF1A5] via-[#C87D4C] to-[#533636] rounded-md w-[190px] lg:w-[240px]">
+              🏆All Freshers Team🏆
+              <br />
+              ₹5000
+            </h2>
+          </div>
         </div>
       </div>
     </div>
