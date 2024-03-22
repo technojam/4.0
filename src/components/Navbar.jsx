@@ -61,7 +61,7 @@ const Navbar = () => {
       <div
         className={`${
           sidebar ? "top-0 right-0" : "top-0 right-[-400px]"
-        } duration-300 lg:hidden flex flex-col border border-l border-[#ffffff2c] backdrop-blur bg-transparent justify-start pt-[12vh] items-start px-8 z-20 text-xl md:text-2xl gap-2 dark:text-white text-black absolute max-w-fit h-screen`}
+        } duration-300 lg:hidden flex flex-col border border-l border-[#ffffff2c] backdrop-blur bg-transparent justify-start pt-[12vh] items-start px-8 z-20 text-xl md:text-2xl gap-2 text-white absolute max-w-fit h-screen`}
       >
         <a
           href="#about"
