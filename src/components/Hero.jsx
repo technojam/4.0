@@ -67,7 +67,7 @@ const Hero = () => {
             </a>
           </li>
         </ul>
-        <div className="flex items-center gap-5">
+        <div className="flex md:flex-row flex-col items-center gap-5">
           <Link
             to="/register"
             className="bg-[#daa520] rounded-md font-medium text-xl px-5 py-3 hover:bg-gray-300 ease-in-out duration-200 hover:scale-95 hover:text-[#daa520]"
@@ -75,12 +75,12 @@ const Hero = () => {
             Register
           </Link>
           <Link
-            to="/register"
+            to="https://discord.gg/BcpQxnUWpc"
             target="_blank"
             className="bg-[#7289da] flex items-center gap-5 rounded-md font-medium text-xl px-5 py-3 hover:bg-gray-300 ease-in-out duration-200 hover:scale-95 hover:text-[#7289da]"
           >
-            <h1>Join Discord</h1>
             <FaDiscord />
+            <h1>Join Discord</h1>
           </Link>
         </div>
       </div>

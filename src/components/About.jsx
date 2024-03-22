@@ -19,7 +19,7 @@ const About = () => {
         scrollTrigger: {
           trigger: "#para",
           start: "top 120%",
-          end: "bottom 60%",
+          end: "bottom 90%",
           scrub: 3,
         },
       });
@@ -30,7 +30,7 @@ const About = () => {
     <div
       ref={about}
       id="about"
-      className="lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 mb-10 lg:mb-0 px-4 min-h-screen font-Gugi, sans-serif relative z-10 flex justify-center items-center"
+      className="lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 mb-10 lg:mb-0 px-4 md:min-h-[60vh] font-Gugi, sans-serif relative z-10 flex justify-center items-center"
     >
       <div className="flex flex-col justify-center" id="para">
         <h1 className="paragraph text-3xl self-center lg:text-4xl font-bold leading-9 text-[#daa520] pb-4">

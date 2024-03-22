@@ -174,7 +174,7 @@ const Timeline = ({ className }) => {
                 background:
                   "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
               }}
-              className="w-60 leftBox resBox rounded px-4 py-2 lg:p-3 md:p-1 flex justify-between items-center"
+              className="w-[260px] leftBox resBox rounded px-4 py-2 lg:p-3 flex justify-between items-center"
             >
               <h6 className="font-bold text-xl hover:text-xl">
                 Registration Starts
@@ -194,7 +194,7 @@ const Timeline = ({ className }) => {
                 background:
                   "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
               }}
-              className="w-60 rightBox resBox rounded px-4 py-2 lg:p-3 md:p-1 flex justify-between items-center"
+              className="w-[260px] rightBox resBox rounded px-4 py-2 lg:p-3 flex justify-between items-center"
             >
               <h6 className="font-bold text-xl hover:text-xl">Bootcamp</h6>
               <FaGift />
@@ -206,7 +206,7 @@ const Timeline = ({ className }) => {
                 background:
                   "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
               }}
-              className="w-60 leftBox resBox rounded px-4 py-2 lg:p-3 md:p-1 flex justify-between items-center"
+              className="w-[260px] leftBox resBox rounded px-4 py-2 lg:p-3 flex justify-between items-center"
             >
               <h6 className="font-bold text-xl hover:text-xl">
                 Registration Ends
@@ -226,7 +226,7 @@ const Timeline = ({ className }) => {
                 background:
                   "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
               }}
-              className="w-60 rightBox resBox rounded px-4 py-2 lg:p-3 md:p-1 flex justify-between items-center"
+              className="w-[260px] rightBox resBox rounded px-4 py-2 lg:p-3 flex justify-between items-center"
             >
               <h6 className="font-bold text-xl hover:text-xl">Dexterix 4.0</h6>
               <FaHourglassStart />
