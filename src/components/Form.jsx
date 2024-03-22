@@ -1097,7 +1097,7 @@ export function Form() {
 
             {/* upi section */}
             <h1 className="text-3xl w-full text-center font-semibold text-gray-100 mt-7 mb-4">
-              Paymet
+              Payment
             </h1>
             <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent mb-8 h-1 w-full" />
             <div className="flex justify-center flex-wrap flex-col items-centre ">
