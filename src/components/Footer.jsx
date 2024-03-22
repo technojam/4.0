@@ -88,14 +88,14 @@ const Footer = () => {
 
             <ul>
               <li className="hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#daa520]">
-              Dexterix 1.0
+              Dexterix 2.0
               </li>
               <li className="hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#daa520]">
-                Dexterix 2.0
+                Dexterix 3.0
               </li>
 
               <li className="hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#daa520]">
-                Dexterix 3.0
+                NASA Space Apps Challenge 2022
               </li>
               
             </ul>
