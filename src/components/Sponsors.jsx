@@ -18,7 +18,7 @@ export function Sponsors() {
         <MovingCards key={"sponsorsSecond"} items={testimonials} direction="left" speed="fast" />
       </div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white text-4xl font-bold">
-        COMING SOON
+        REVEALING SOON
       </div>
     </div>
   );
