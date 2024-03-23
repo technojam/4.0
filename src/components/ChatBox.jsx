@@ -119,7 +119,7 @@ const ChatBox = () => {
       </motion.button>
       {showChat && (
         <motion.div
-          className="fixed message-box bottom-[calc(4rem+1.5rem)] right-0 mr-2 p-6 pl-[15px] rounded-lg bg-slate-100 w-[320px] h-[500px] lg:h-[640px] md:w-[400px] md:h-[700px] z-50 shadow-md transition-all duration-300 ease-in-out flex flex-col justify-between"
+          className="fixed message-box bottom-[calc(4rem+1.5rem)] right-0 mr-2 p-6 pl-[15px] rounded-lg bg-slate-100 w-[320px] h-[80vh] lg:h-[85vh] md:w-[400px] md:h-[85vh] z-50 shadow-md transition-all duration-300 ease-in-out flex flex-col justify-between"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
         >
@@ -187,17 +187,17 @@ const ChatBox = () => {
                 </button>
               ))}
             </div>
-            <div className="flex items-center mr-4 w-fit font-sans  mt-4">
+            <div className="flex items-center mx-4 w-full font-sans  mt-4">
               <input
                 type="text"
-                className="flex-1 h-10 px-4 rounded-xl border border-gray-400 bg-gray-100 focus:outline-none focus:ring focus:ring-blue-400"
+                className="flex-1 h-10 px-4 rounded-xl w-[70%] border border-gray-400 bg-gray-100 focus:outline-none focus:ring focus:ring-blue-400"
                 placeholder="Type your message"
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
               />
               <button
                 type="submit"
-                className="mx-2 px-4 py-2 bg-blue-500 text-white rounded-xl hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+                className="mx-2 px-4 py-2 bg-blue-500 text-white rounded-xl w-[25%] hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
               >
                 Send
               </button>
