@@ -1111,7 +1111,7 @@ export function Form() {
                 </label>
                 <input
                   type="image"
-                  src="public/Paytm_QRcode.png"
+                  src="https://res.cloudinary.com/dyfhbqtjm/image/upload/f_auto,q_auto/zrtqohnmkkqazcohk5ec"
                   name=""
                   className={`flex w-full h-25 lg:left-[70%] relative bg-zinc-800 text-white rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent
             file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
