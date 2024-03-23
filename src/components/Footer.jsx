@@ -11,18 +11,19 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 const Footer = () => {
   return (
     <>
-      <div className=" text-white bg-gray-900 grid lg:grid-cols-2 gap-5 lg:gap-14
-       px-14 py-6 sm:px-8">
+      <div className=" text-white bg-gray-900 grid lg:grid-cols-2 
+      gap-8 px-8
+        py-6 lg:px-14">
         {/* Logo and map */}
-        <div className="grid  md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+        <div className="grid  md:grid-cols-2 lg:grid-cols-2 gap-4 ">
           {/*logo*/}
-            <LazyLoadImage className="w-[70px] pt-8 ml-[10px] " src="/3d logo3-02 final.png" alt="" />
+            {/*<LazyLoadImage className="w-[70px] pt-8 ml-[10px] " src="/3d logo3-02 final.png" alt="" />*/}
 
             {/* Dexterix Image */}
-            <LazyLoadImage src="/Dexterix-ntg.png" className="w-44  py-8 md:row-start-2 ml-[10px]  " alt="logo" />
+            <LazyLoadImage src="/Dexterix-ntg.png" className="w-44 py-8 md:py-28  lg:py-20" alt="logo" />
 
           {/*Map*/}
-          <div className="md:col-start-2 md:row-span-2 lg:pl-10 w-[280px]">
+          <div className="">
             <h4 className="mb-4 font-bold text-[#daa520] border-b-2 border-[#daa520] w-8">VENUE</h4>
             <iframe
               width="200"
@@ -62,25 +63,29 @@ const Footer = () => {
             <div className=" w-14 bg-[#daa520] h-[1.5px] mb-2"></div>
 
             <ul>
-              <li className="flex gap-2 items-center hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#daa520]">
-                Github
+              
                 <a href="https://github.com/technojam" target="_blank">
+                <li className="flex gap-2 items-center hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#daa520]">
+                Github
                   <FaGithub className="cursor-pointer hover:scale-125  duration-150" />
+                  </li>
                 </a>
-              </li>
-              <li className="flex gap-2 items-center hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#daa520]">
-                Discord
+              
+              
                 <a href="https://discord.gg/d3VZen7c" target="_blank">
+                <li className="flex gap-2 items-center hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#daa520]">
+                Discord
                   <FaDiscord className="cursor-pointer hover:scale-125  duration-150" />
+                  </li>
                 </a>
-              </li>
-
-              <li className="flex gap-2 items-center hover:pl-3 transition-all duration-150 ease-in-out text-gray-400 cursor-pointer hover:text-[#daa520]">
-                Telegram
+              
                 <a href="https://t.me/+2Nl-Md27pXkwNjI1" target="_blank">
+                <li className="flex gap-2 items-center hover:pl-3 transition-all duration-150 ease-in-out text-gray-400 cursor-pointer hover:text-[#daa520]">
+                Telegram
                   <FaTelegram className="cursor-pointer hover:scale-125  duration-150" />
+                  </li>
                 </a>
-              </li>
+              
             </ul>
           </div>
 
