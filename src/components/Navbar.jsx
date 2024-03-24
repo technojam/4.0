@@ -9,7 +9,7 @@ const Navbar = () => {
     <>
       <nav className="px-5 w-screen z-30 text-white gap-8 absolute top-0 left-0 h-[11vh] bg-transparent flex items-center justify-between navbar">
         {/* Technojam Logo */}
-        <LazyLoadImage src="/Dexterix-ntg.png" className="w-44" alt="logo" />
+        <LazyLoadImage className="w-[70px] ml-[10px] " src="/3d logo3-02 final.png" alt="" />
         {/* Page Navigation */}
         <div className="hidden lg:flex text-xl items-center gap-8 font-Gugi_sans-serif mr-10">
           <a
