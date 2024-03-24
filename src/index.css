@@ -31,9 +31,9 @@ input[type=number]{
 @tailwind components;
 @tailwind utilities;
 /* Card Animation */
-.customRotate:hover .preserve-3d{
+/* .customRotate:hover .preserve-3d{
   transform: rotateY(180deg);
-}
+} */
 .perspective {
   perspective: 1000px;
 }
@@ -1466,9 +1466,6 @@ input[type=number]{
   height: 85px;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
-  /* position: absolute;
-  bottom: 0;
-  right: 0; */
   background: linear-gradient(to top, rgba(255, 255, 255, 0), white);
   animation: animShootingStar 15s linear infinite;
 }
@@ -1496,7 +1493,6 @@ input[type=number]{
   width: 4px;
   border-radius: 50px;
 }
-
 .message-box ::-webkit-scrollbar-track {
 
   background-color: rgb(229 231 235);

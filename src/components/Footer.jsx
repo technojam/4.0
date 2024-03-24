@@ -12,13 +12,18 @@ const Footer = () => {
   return (
     <>
       <div className=" text-white bg-gray-900 grid lg:grid-cols-2 
-      gap-2 px-20 py-6 sm:px-8">
+      gap-8 px-8
+        py-6 lg:px-14">
         {/* Logo and map */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 ">
+        <div className="grid  md:grid-cols-2 lg:grid-cols-2 gap-4 ">
           {/*logo*/}
-            <LazyLoadImage className="w-[70px] pt-5 ml-[70px]" src="/TechnoJam.png" alt="" />
+            {/*<LazyLoadImage className="w-[70px] pt-8 ml-[10px] " src="/3d logo3-02 final.png" alt="" />*/}
+
+            {/* Dexterix Image */}
+            <LazyLoadImage src="/Dexterix-ntg.png" className="w-44 py-8 md:py-28  lg:py-20" alt="logo" />
+
           {/*Map*/}
-          <div>
+          <div className="">
             <h4 className="mb-4 font-bold text-[#daa520] border-b-2 border-[#daa520] w-8">VENUE</h4>
             <iframe
               width="200"
@@ -28,7 +33,7 @@ const Footer = () => {
               <a href="https://www.gps.ie/">gps trackers</a>
             </iframe>
             <h2 className="mt-4 text-[#daa520] font-bold">April 2024</h2>
-            <p className="">Galgotias University, Greater Noida</p>
+            <p className="w-[200px]">Galgotias University, Greater Noida</p>
           </div>
         </div>
 
@@ -58,25 +63,29 @@ const Footer = () => {
             <div className=" w-14 bg-[#daa520] h-[1.5px] mb-2"></div>
 
             <ul>
-              <li className="flex gap-2 items-center hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#daa520]">
-                Github
+              
                 <a href="https://github.com/technojam" target="_blank">
+                <li className="flex gap-2 items-center hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#daa520]">
+                Github
                   <FaGithub className="cursor-pointer hover:scale-125  duration-150" />
+                  </li>
                 </a>
-              </li>
-              <li className="flex gap-2 items-center hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#daa520]">
+              
+              
+                <a href="https://discord.gg/d3VZen7c" target="_blank">
+                <li className="flex gap-2 items-center hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#daa520]">
                 Discord
-                <a href="https://discord.gg/d3VZen7c" target="_blank">
                   <FaDiscord className="cursor-pointer hover:scale-125  duration-150" />
+                  </li>
                 </a>
-              </li>
-
-              <li className="flex gap-2 items-center hover:pl-3 transition-all duration-150 ease-in-out text-gray-400 cursor-pointer hover:text-[#daa520]">
+              
+                <a href="https://t.me/+2Nl-Md27pXkwNjI1" target="_blank">
+                <li className="flex gap-2 items-center hover:pl-3 transition-all duration-150 ease-in-out text-gray-400 cursor-pointer hover:text-[#daa520]">
                 Telegram
-                <a href="https://discord.gg/d3VZen7c" target="_blank">
                   <FaTelegram className="cursor-pointer hover:scale-125  duration-150" />
+                  </li>
                 </a>
-              </li>
+              
             </ul>
           </div>
 
@@ -88,14 +97,14 @@ const Footer = () => {
 
             <ul>
               <li className="hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#daa520]">
-              Dexterix 1.0
+              Dexterix 2.0
               </li>
               <li className="hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#daa520]">
-                Dexterix 2.0
+                Dexterix 3.0
               </li>
 
               <li className="hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#daa520]">
-                Dexterix 3.0
+                NASA Space Apps Challenge 2022
               </li>
               
             </ul>
