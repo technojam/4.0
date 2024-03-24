@@ -2,17 +2,25 @@ import React from "react";
 import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom"; 
+
 
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(false);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   return (
     <>
       <nav className="px-5 w-screen z-30 text-white gap-8 absolute top-0 left-0 h-[11vh] bg-transparent flex items-center justify-between navbar">
         {/* Technojam Logo */}
         <LazyLoadImage className="w-[70px] ml-[10px] " src="/3d logo3-02 final.png" alt="" />
         {/* Page Navigation */}
+        <Link
+          to="/digitalSwag" // Link to Digital Swag page
+          className="bg-[#daa520] rounded-md font-medium text-xl px-5 py-3 hover:bg-white ease-in-out duration-200 hover:scale-95 hover:text-[#daa520]"
+        >
+          Digital Swag
+        </Link>
         <div className="hidden lg:flex text-xl items-center gap-8 font-Gugi_sans-serif mr-10">
           <a
             href="#about"

@@ -7,7 +7,7 @@ import {
   FaDiscord,
 } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { Link } from "react-router-dom"; 
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Hero = () => {
