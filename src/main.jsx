@@ -4,6 +4,7 @@ import App from "./App.jsx";
 import "./index.css";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import {Form} from "./components/Form.jsx";
+import DigitalSwag from "./components/DigitalSwag.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -11,6 +12,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route exact path="/register" element={<Form />} />
+        <Route exact path="/digitalSwag" element={<DigitalSwag />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </BrowserRouter>

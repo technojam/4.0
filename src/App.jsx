@@ -14,6 +14,8 @@ import { Sponsors } from "./components/Sponsors";
 import Prize from "./components/Prize";
 import Navbar from "./components/Navbar";
 import GoToTop from "./components/GoToTop";
+import DigitalSwag from "./components/DigitalSwag";
+
 
 const App = () => {
   // Gsap Animation
@@ -59,6 +61,7 @@ const App = () => {
         <Prize />
         <Sponsors />
         <ImageSlider />
+        {/* <DigitalSwag /> */}
         {/* Card Section */}
         <h1
           id="themes"

@@ -7,7 +7,7 @@ import {
   FaDiscord,
 } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; 
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Hero = () => {
@@ -19,7 +19,7 @@ const Hero = () => {
           <p className="text-[22px] font-bold">Organised by,</p>
           <p className="text-[18px] font-bold">Team TechnoJam</p>
         </div>
-        {/*REACT TYPED */}
+        {/* REACT TYPED */}
         <div>
           <div>
             <ReactTyped
@@ -42,22 +42,35 @@ const Hero = () => {
             <a
               href="https://www.linkedin.com/company/technojam/"
               target="_blank"
+
             >
               <FaLinkedinIn />
             </a>
           </li>
           <li className="hover:scale-110 hover:text-[#daa520]  duration-150">
-            <a href="https://www.facebook.com/teamtechnojam" target="_blank">
+            <a
+              href="https://www.facebook.com/teamtechnojam"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaFacebookSquare />
             </a>
           </li>
           <li className="hover:scale-110 hover:text-[#daa520]  duration-150">
-            <a href="https://www.instagram.com/teamtechnojam/" target="_blank">
+            <a
+              href="https://www.instagram.com/teamtechnojam/"
+              target="_blank"
+              
+            >
               <FaInstagram />
             </a>
           </li>
           <li className="hover:scale-110 hover:text-[#daa520] duration-150">
-            <a href="https://twitter.com/technojam_gu" target="_blank">
+            <a
+              href="https://twitter.com/technojam_gu"
+              target="_blank"
+              
+            >
               <FaTwitter />
             </a>
           </li>
