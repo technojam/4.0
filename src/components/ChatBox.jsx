@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import { IoChatbubble } from "react-icons/io5";
 import { motion } from "framer-motion";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
@@ -64,14 +63,22 @@ const ChatBox = () => {
         { text: data.cnt.replace(/<tips> enJoke <\/tips>/, ""), sender: "bot" },
       ]);
 
+      const LastMessage = (
+        <>
+          If you have any more doubts, feel free to contact us at{" "}
+          <a
+            className="text-cyan-600"
+            href="mailto:technojam@galgotiasuniversity.edu.in"
+          >
+            technojam@galgotiasuniversity.edu.in
+          </a>
+        </>
+      );
       if (prompts.length === 0) {
         setTimeout(() => {
           setMessages((prevMessages) => [
             ...prevMessages,
-            {
-              text: "If you have any more doubts head on to our Faq section",
-              sender: "bot",
-            },
+            { text: LastMessage, sender: "bot" },
           ]);
         }, 1000);
       }
@@ -84,8 +91,6 @@ const ChatBox = () => {
     const selectedPrompt = prompts[promptIndex];
     setInputValue(selectedPrompt);
     sendMessage();
-
-    // Remove the selected prompt from prompts array
     const updatedPrompts = prompts.filter((_, index) => index !== promptIndex);
     let newPrompts = [...updatedPrompts];
 
@@ -115,7 +120,7 @@ const ChatBox = () => {
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
       >
-        <LazyLoadImage className="w-full" src="bot.png"/>
+        <LazyLoadImage className="w-full" src="bot.png" />
       </motion.button>
       {showChat && (
         <motion.div
