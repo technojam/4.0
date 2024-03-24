@@ -2,9 +2,11 @@ import React from "react";
 import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(false);
+  const navigate = useNavigate();
   return (
     <>
       <nav className="px-5 w-screen z-30 text-white gap-8 absolute top-0 left-0 h-[11vh] bg-transparent flex items-center justify-between navbar">
@@ -48,6 +50,7 @@ const Navbar = () => {
           >
             Contact Us
           </a>
+          {/* <button onClick={()=>navigate("/components/DigitalSwag.jsx")}>dS</button> */}
         </div>
         {/* Mobile Optimization */}
         <div className="flex lg:hidden cursor-pointer gap-5 items-center">
