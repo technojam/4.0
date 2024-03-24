@@ -36,6 +36,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="mt-10 flex flex-col md:flex-row gap-8 md:justify-between w-full lg:w-8/12 items-center">
+        {/* Social Links */}
         <ul className="flex gap-3 text-3xl text-white">
           <li className="hover:scale-110 hover:text-[#daa520] duration-150">
             <a
@@ -61,17 +62,27 @@ const Hero = () => {
             </a>
           </li>
           <li className="hover:scale-110 hover:text-[#daa520] duration-150">
-            <a href="https://discord.gg/d3VZen7c" target="_blank">
+            <a href="https://discord.gg/S5GhBJYNVg" target="_blank">
               <FaDiscord />
             </a>
           </li>
         </ul>
-        <Link
-          to="/register"
-          className="bg-[#daa520] rounded-md font-medium text-xl px-5 py-3 hover:bg-white ease-in-out duration-200 hover:scale-95 hover:text-[#daa520]"
-        >
-          Register
-        </Link>
+        <div className="flex md:flex-row flex-col items-center gap-5">
+          <Link
+            to="/register"
+            className="bg-[#daa520] rounded-md font-medium text-xl px-5 py-3 hover:bg-gray-300 ease-in-out duration-200 hover:scale-95 hover:text-[#daa520]"
+          >
+            Register
+          </Link>
+          <Link
+            to="https://discord.gg/BcpQxnUWpc"
+            target="_blank"
+            className="bg-[#7289da] flex items-center gap-5 rounded-md font-medium text-xl px-5 py-3 hover:bg-gray-300 ease-in-out duration-200 hover:scale-95 hover:text-[#7289da]"
+          >
+            <FaDiscord />
+            <h1>Join Discord</h1>
+          </Link>
+        </div>
       </div>
     </div>
   );
