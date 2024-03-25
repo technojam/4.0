@@ -14,8 +14,7 @@ import { Sponsors } from "./components/Sponsors";
 import Prize from "./components/Prize";
 import Navbar from "./components/Navbar";
 import GoToTop from "./components/GoToTop";
-import DigitalSwag from "./components/DigitalSwag";
-
+import { CommunityPartners } from "./components/CommunityPartners";
 
 const App = () => {
   // Gsap Animation
@@ -60,6 +59,7 @@ const App = () => {
         <TimerCounter />
         <Prize />
         <Sponsors />
+        <CommunityPartners/>
         <ImageSlider />
         {/* <DigitalSwag /> */}
         {/* Card Section */}
