@@ -174,6 +174,46 @@ export function Form() {
              border-b border-zinc-700  focus:border-b-2 focus:border-bottom-outline-color  focus:outline-none peer `}
                 />
               </div>
+
+              <div className="lg:w-2/5  pb-2 w-full">
+                <label
+                  htmlFor="teamName"
+                  id="theme"
+                  className="text-sm font-medium text-[#f9f5ed] leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                >
+                  Theme <span className="text-red-600 text-base">*</span>
+                </label>
+                <select
+      required
+      name="entry.200848220"
+      id="theme"
+      className={`
+        flex w-full h-10 bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm file:border-0 file:bg-transparent
+        file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
+        focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
+        disabled:cursor-not-allowed disabled:opacity-50
+        dark:shadow-[0px_0px_1px_1px_var(--neutral-700)]
+        group-hover/input:shadow-none transition duration-400
+        mt-1
+        border-b border-zinc-700 focus:border-b-2 focus:border-bottom-outline-color focus:outline-none peer
+      `}
+    >
+      <option value="">Select Theme</option>
+      <option value="Fintech">1. Fintech</option>
+      <option value="Sustainability">2. Sustainability</option>
+      <option value="Health and Wellness">3. Health and Wellness</option>
+      <option value="Web3 and Blockchain">4. Web3 and Blockchain</option>
+      <option value="Security and Cloud">5. Security and Cloud</option>
+      <option value="Education and Accessibility">6. Education and Accessibility</option>
+      <option value="Gaming/Entertainment">7. Gaming/Entertainment</option>
+      <option value="AR and VR">8. AR and VR</option>
+      <option value="IoT/Robotics/Drones">9. IoT/Robotics/Drones</option>
+      <option value="AI/ML">10. AI/ML</option>
+      <option value="Open Innovation">11. Open Innovation</option>
+      <option value="UI/UX">12. UI/UX</option>
+     
+    </select>
+              </div>
             </div>
 
             {/* Team Leader Detials */}

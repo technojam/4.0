@@ -24,9 +24,6 @@ export function Sponsors() {
   );
 }
 
-
-
-
 const testimonials = [
   {
     src: "/rocket.png",

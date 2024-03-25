@@ -2,7 +2,9 @@ import React from "react";
 import MovingCards2 from "./MovingCards2";
 
 export function CommunityPartners() {
-  
+  const blurredStyle = {
+    filter: "blur(20px)", // Increased blur amount
+  };
 
   return (
     <div
@@ -11,17 +13,16 @@ export function CommunityPartners() {
       <h1 className="text-[#daa520] text-4xl font-Phudu font-medium flex justify-center mb-5">
       Community Partners
       </h1>
-      <div >
-        <MovingCards2 key={"communityPartners"} items={testimonials} direction="right" speed="slow" />
-        <MovingCards2 key={"communityPartnersSecond"} items={testimonials} direction="left" speed="slow" />
+      <div style={blurredStyle} >
+        <MovingCards2 key={"communityPartners"} items={testimonials} direction="right" speed="fast" />
+        <MovingCards2 key={"communityPartnersSecond"} items={testimonials} direction="left" speed="fast" />
       </div>
-      
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white text-4xl font-bold">
+          REVEALING SOON
+        </div>
     </div>
   );
 }
-
-
-
 
 const testimonials = [
   {

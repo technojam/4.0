@@ -31,9 +31,9 @@ input[type=number]{
 @tailwind components;
 @tailwind utilities;
 /* Card Animation */
-.customRotate:hover .preserve-3d{
+/* .customRotate:hover .preserve-3d{
   transform: rotateY(180deg);
-}
+} */
 .perspective {
   perspective: 1000px;
 }

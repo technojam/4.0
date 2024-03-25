@@ -61,6 +61,7 @@ const App = () => {
         <Sponsors />
         <CommunityPartners/>
         <ImageSlider />
+        {/* <DigitalSwag /> */}
         {/* Card Section */}
         <h1
           id="themes"
