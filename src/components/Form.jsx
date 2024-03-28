@@ -210,7 +210,7 @@ export function Form() {
       <option value="IoT/Robotics/Drones">9. IoT/Robotics/Drones</option>
       <option value="AI/ML">10. AI/ML</option>
       <option value="Open Innovation">11. Open Innovation</option>
-      <option value="UI/UX">12. UI/UX</option>
+      <option value="Transport and Logistics">12. Transport and Logistics</option>
      
     </select>
               </div>
