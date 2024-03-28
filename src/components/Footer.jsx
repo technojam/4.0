@@ -48,10 +48,10 @@ const Footer = () => {
 
             <ul>
               <li className="hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#daa520] ">
-                <a href="#">Sponsorship Brochure</a>
+                <a href="https://drive.google.com/file/d/1h0uLpK0E8kUUQ9-2g8UL9ySlnHL84Cvr/view?usp=sharing">Sponsorship Brochure</a>
               </li>
               <li className="hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#daa520]">
-                <a href="#">Code Of Conduct</a>
+                <a href="https://docs.google.com/document/d/1TCLGJTBX8hFmCkcjS8MfHPS12GZqhAwwx5VFVyUrH6I/edit?usp=sharing">Code Of Conduct</a>
               </li>
             </ul>
           </div>
@@ -96,17 +96,21 @@ const Footer = () => {
             <div className=" w-12 bg-[#daa520] h-[1.5px] mb-2"></div>
 
             <ul>
+              <a href="https://www.instagram.com/p/B5ZB_tbnaVw/?img_index=1" target="_blank">
               <li className="hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#daa520]">
               Dexterix 2.0
               </li>
+              </a>
+              <a href="https://www.instagram.com/p/CgCTkF2MAM9/?img_index=1" target="_blank">
               <li className="hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#daa520]">
                 Dexterix 3.0
               </li>
-
+              </a>
+              <a href="https://www.instagram.com/p/CjNY8ypvmeX/?img_index=1" target="_blank">
               <li className="hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#daa520]">
                 NASA Space Apps Challenge 2022
               </li>
-              
+              </a>
             </ul>
           </div>
 
