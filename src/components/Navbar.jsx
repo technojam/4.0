@@ -19,11 +19,12 @@ const Navbar = () => {
         />
         {/* Page Navigation */}
         <Link
-          to="/digitalSwag"
-          className="font-medium text-l lg:text-xl px-4 w-44 lg:px-5 md:py-2 lg:py-3 border border-gradient-blue-red rounded-md"
-        >
-          Digital Swag
-        </Link>
+  to="/digitalSwag"
+  className="font-medium text-l lg:text-xl px-4 w-44 lg:px-5 md:py-2 lg:py-3 border border-gradient-blue-red"
+  style={{ borderRadius: '10px' }} // Adjust the border-radius value as needed
+>
+  Digital Swag
+</Link>
 
         <div className="hidden lg:flex text-xl items-center gap-8 font-Gugi_sans-serif mr-10">
           <a

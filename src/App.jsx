@@ -36,6 +36,7 @@ const App = () => {
       ref={comp}
       className="relative scroll-smooth w-screen min-h-screen font-Phudu overflow-x-hidden"
       style={style}
+      id="home"
     >
       {/* Background Sky */}
       <div className="sky bg-center fixed left-0 -z-20 w-0 h-screen">
