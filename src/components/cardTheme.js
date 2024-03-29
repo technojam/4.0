@@ -1,10 +1,11 @@
-import { GiAutoRepair,GiDeliveryDrone,GiArtificialIntelligence } from "react-icons/gi";
+import { GiAutoRepair,GiDeliveryDrone,GiArtificialIntelligence, } from "react-icons/gi";
 import { FcIdea } from "react-icons/fc";
 
 import {
   MdOutlineSecurity,
   MdHealthAndSafety,
   MdCastForEducation,
+  MdEmojiTransportation,
 } from "react-icons/md";
 import { SiWeb3Dotjs } from "react-icons/si";
 import { IoLogoDesignernews,IoEarthOutline } from "react-icons/io5";
@@ -80,10 +81,10 @@ const cardTheme =[{
     logo: FcIdea ,
 
 },{
-    title:" UI/UX",
-    info:" Unleash your creativity! This theme is open to any tech-driven idea that makes a positive impact on the world.",
+    title:" Transportaion & Logistics",
+    info:" Streamlining journeys: Crafting tech-forward solutions for transportation and logistics.",
     hueDeg:0,
-    logo: IoLogoDesignernews ,
+    logo: MdEmojiTransportation ,
 
 }]
 export default cardTheme;

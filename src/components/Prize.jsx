@@ -5,7 +5,7 @@ const Prize = () => {
   return (
     <div id="prize" className="w-screen overflow-x-hidden">
       <h1 className=" text-3xl self-center lg:text-4xl font-bold leading-9 text-[#daa520] pb-1 text-center mb-4">
-        Prize
+        Prizes
       </h1>
       {/* Prize Cards */}
       <div className="flex flex-wrap gap-10 lg:gap-28 md:gap-4 justify-center items-center  max-w-fit mx-auto">

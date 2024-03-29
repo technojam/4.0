@@ -182,12 +182,12 @@ const Timeline = ({ className }) => {
               <FaHome />
             </div>
             <h1 className="text-xl text-white rightBox resBox font-semibold pr-32">
-              10th March
+              29th March
             </h1>
           </div>
           <div className="flex lg:items-center gap-28 ml-12 items-start lg:flex-row flex-col-reverse">
             <h1 className="text-xl text-white resBox leftBox font-semibold">
-              1st April
+              7th April
             </h1>
             <div
               style={{
@@ -196,7 +196,7 @@ const Timeline = ({ className }) => {
               }}
               className="w-[260px] rightBox resBox rounded px-4 py-2 lg:p-3 flex justify-between items-center"
             >
-              <h6 className="font-bold text-xl hover:text-xl">Bootcamp</h6>
+              <h6 className="font-bold text-xl hover:text-xl">Mini Event</h6>
               <FaGift />
             </div>
           </div>
