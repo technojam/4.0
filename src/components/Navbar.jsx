@@ -15,12 +15,12 @@ const Navbar = () => {
         {/* Technojam Logo */}
         <LazyLoadImage className="w-[70px] ml-[10px] " src="/3d logo3-02 final.png" alt="" />
         {/* Page Navigation */}
-        <Link
+        {/* <Link
           to="/digitalSwag" // Link to Digital Swag page
           className="bg-[#daa520] rounded-md font-medium text-xl px-5 py-3 hover:bg-white ease-in-out duration-200 hover:scale-95 hover:text-[#daa520]"
         >
           Digital Swag
-        </Link>
+        </Link> */}
         <div className="hidden lg:flex text-xl items-center gap-8 font-Gugi_sans-serif mr-10">
           <a
             href="#about"
