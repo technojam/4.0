@@ -17,7 +17,7 @@ const Navbar = () => {
         {/* Page Navigation */}
         {/* <Link
           to="/digitalSwag" // Link to Digital Swag page
-          className="bg-[#daa520] rounded-md font-medium text-xl px-5 py-3 hover:bg-white ease-in-out duration-200 hover:scale-95 hover:text-[#daa520]"
+          className="bg-gradient-to-r from-blue-900 via-pink 900 to-red-900 rounded-md font-medium text-xl px-5 py-3 hover:bg-white ease-in-out duration-200 hover:scale-95 hover:text-[#daa520]"
         >
           Digital Swag
         </Link> */}
