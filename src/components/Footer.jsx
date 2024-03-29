@@ -48,7 +48,7 @@ const Footer = () => {
 
             <ul>
               <li className="hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#daa520] ">
-                <a href="https://drive.google.com/file/d/1h0uLpK0E8kUUQ9-2g8UL9ySlnHL84Cvr/view?usp=sharing">Sponsorship Brochure</a>
+                <a href="#">Sponsorship Brochure</a>
               </li>
               <li className="hover:pl-3 transition-all duration-150 ease-linear text-gray-400 cursor-pointer hover:text-[#daa520]">
                 <a href="https://docs.google.com/document/d/1TCLGJTBX8hFmCkcjS8MfHPS12GZqhAwwx5VFVyUrH6I/edit?usp=sharing">Code Of Conduct</a>

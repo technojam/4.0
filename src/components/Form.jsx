@@ -50,7 +50,7 @@ export function Form() {
           <h2 className="font-bold text-3xl text-center text-[#E9E3D5] border-gray-300 border-b-2 w-full pb-2">
             Register for Dexterix 4.0
           </h2>
-      <a href="home" className="relative bg-red-500 lg:p-2 border-2 rounded-xl left-[90%] -top-10">Go Home</a>
+      <a href="home" className="relative text-white lg:p-2 border-2 rounded-xl left-[90%] -top-10 border-gradient-blue-red">Go Home</a>
           <p className="text-[#f9f5ed] my-2 pt-6">
             <b>
               Thank you for your interest in participating in the Dexterix 4.0
