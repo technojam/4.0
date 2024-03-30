@@ -46,11 +46,11 @@ export function Form() {
       <div className="shooting-stars absolute bottom-20 right-72"></div>
       <div className="lg:p-10 bg-zinc-900">
         <div className="lg:w-10/12 w-[96%] mx-auto rounded-none md:rounded-2xl sm:rounded-xl p-4 md:p-8 bg-black">
-        <img src="/3d logo3-02 final.png" className="h-14 relative top-10 "/>
+        <img src="/3d logo3-02 final.png" className="h-10 sm:h-14 relative top-10 "/>
           <h2 className="font-bold text-3xl text-center text-[#E9E3D5] border-gray-300 border-b-2 w-full pb-2">
             Register for Dexterix 4.0
           </h2>
-      <a href="home" className="relative text-white lg:p-2 border-2 rounded-xl left-[90%] -top-10 border-gradient-blue-red">Go Home</a>
+      <a href="home" className="relative text-white lg:p-2 border-2 rounded-xl left-[80%] -top-10 border-gradient-blue-red">Go Home</a>
           <p className="text-[#f9f5ed] my-2 pt-6">
             <b>
               Thank you for your interest in participating in the Dexterix 4.0
