@@ -46,11 +46,19 @@ export function Form() {
       <div className="shooting-stars absolute bottom-20 right-72"></div>
       <div className="lg:p-10 bg-zinc-900">
         <div className="lg:w-10/12 w-[96%] mx-auto rounded-none md:rounded-2xl sm:rounded-xl p-4 md:p-8 bg-black">
-        <img src="/3d logo3-02 final.png" className="h-10 sm:h-14 relative top-10 "/>
-          <h2 className="font-bold text-3xl text-center text-[#E9E3D5] border-gray-300 border-b-2 w-full pb-2">
+          <img
+            src="/3d logo3-02 final.png"
+            className="h-10 sm:h-14 relative top-10 "
+          />
+          <h2 className="font-bold lg:text-3xl text-2xl text-center text-[#E9E3D5] border-gray-300 border-b-2 w-full lg:pb-2 pb-6">
             Register for Dexterix 4.0
           </h2>
-      <a href="home" className="relative text-white lg:p-2 border-2 rounded-xl left-[80%] -top-10 border-gradient-blue-red">Go Home</a>
+          <a
+            href="home"
+            className="relative text-white lg:p-2 border-2 rounded-xl left-[80%] lg:-top-10 -top-7 border-gradient-blue-red"
+          >
+            Go Home
+          </a>
           <p className="text-[#f9f5ed] my-2 pt-6">
             <b>
               Thank you for your interest in participating in the Dexterix 4.0
@@ -186,10 +194,10 @@ export function Form() {
                   Theme <span className="text-red-600 text-base">*</span>
                 </label>
                 <select
-      required
-      name="entry.200848220"
-      id="theme"
-      className={`
+                  required
+                  name="entry.200848220"
+                  id="theme"
+                  className={`
         flex w-full h-10 bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm file:border-0 file:bg-transparent
         file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
         focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -199,22 +207,33 @@ export function Form() {
         mt-1
         border-b border-zinc-700 focus:border-b-2 focus:border-bottom-outline-color focus:outline-none peer
       `}
-    >
-      <option value="">Select Theme</option>
-      <option value="Fintech">1. Fintech</option>
-      <option value="Sustainability">2. Sustainability</option>
-      <option value="Health and Wellness">3. Health and Wellness</option>
-      <option value="Web3 and Blockchain">4. Web3 and Blockchain</option>
-      <option value="Security and Cloud">5. Security and Cloud</option>
-      <option value="Education and Accessibility">6. Education and Accessibility</option>
-      <option value="Gaming/Entertainment">7. Gaming/Entertainment</option>
-      <option value="AR and VR">8. AR and VR</option>
-      <option value="IoT/Robotics/Drones">9. IoT/Robotics/Drones</option>
-      <option value="AI/ML">10. AI/ML</option>
-      <option value="Open Innovation">11. Open Innovation</option>
-      <option value="UI/UX">12. Transportaion & Logistics</option>
-     
-    </select>
+                >
+                  <option value="">Select Theme</option>
+                  <option value="Fintech">1. Fintech</option>
+                  <option value="Sustainability">2. Sustainability</option>
+                  <option value="Health and Wellness">
+                    3. Health and Wellness
+                  </option>
+                  <option value="Web3 and Blockchain">
+                    4. Web3 and Blockchain
+                  </option>
+                  <option value="Security and Cloud">
+                    5. Security and Cloud
+                  </option>
+                  <option value="Education and Accessibility">
+                    6. Education and Accessibility
+                  </option>
+                  <option value="Gaming/Entertainment">
+                    7. Gaming/Entertainment
+                  </option>
+                  <option value="AR and VR">8. AR and VR</option>
+                  <option value="IoT/Robotics/Drones">
+                    9. IoT/Robotics/Drones
+                  </option>
+                  <option value="AI/ML">10. AI/ML</option>
+                  <option value="Open Innovation">11. Open Innovation</option>
+                  <option value="UI/UX">12. Transportaion & Logistics</option>
+                </select>
               </div>
             </div>
 
