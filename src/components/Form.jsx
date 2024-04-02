@@ -1,10 +1,9 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 
 export function Form() {
-  const setGdriveURL = (url) => {
-    document.getElementById("gdriveURL").value = url;
-  };
+  const [gdriveURL, setGdriveURL] = useState("");
+
   const uploadFile = async (file) => {
     const formData = new FormData();
     formData.append("image", file);
@@ -26,15 +25,18 @@ export function Form() {
           setGdriveURL(data.url);
         });
       } else {
-        setGdriveURL();
+        setGdriveURL("");
       }
     } catch (error) {
       console.error("Error uploading file:", error);
     }
   };
+
   const handleFileChange = async (e) => {
+    console.log(e.target.files[0]);
     uploadFile(e.target.files[0]);
   };
+
 
   return (
     <div className="sky bg-center  w-auto h-3000 overflow-hidden">
@@ -184,10 +186,10 @@ export function Form() {
                   Theme <span className="text-red-600 text-base">*</span>
                 </label>
                 <select
-      required
-      name="entry.200848220"
-      id="theme"
-      className={`
+                  required
+                  name="entry.200848220"
+                  id="theme"
+                  className={`
         flex w-full h-10 bg-zinc-800 text-white shadow-input rounded-md px-3 py-2 text-sm file:border-0 file:bg-transparent
         file:text-sm file:font-medium placeholder:text-neutral-400 placeholder-text-neutral-600
         focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
@@ -197,22 +199,33 @@ export function Form() {
         mt-1
         border-b border-zinc-700 focus:border-b-2 focus:border-bottom-outline-color focus:outline-none peer
       `}
-    >
-      <option value="">Select Theme</option>
-      <option value="Fintech">1. Fintech</option>
-      <option value="Sustainability">2. Sustainability</option>
-      <option value="Health and Wellness">3. Health and Wellness</option>
-      <option value="Web3 and Blockchain">4. Web3 and Blockchain</option>
-      <option value="Security and Cloud">5. Security and Cloud</option>
-      <option value="Education and Accessibility">6. Education and Accessibility</option>
-      <option value="Gaming/Entertainment">7. Gaming/Entertainment</option>
-      <option value="AR and VR">8. AR and VR</option>
-      <option value="IoT/Robotics/Drones">9. IoT/Robotics/Drones</option>
-      <option value="AI/ML">10. AI/ML</option>
-      <option value="Open Innovation">11. Open Innovation</option>
-      <option value="UI/UX">12. Transportaion & Logistics</option>
-     
-    </select>
+                >
+                  <option value="">Select Theme</option>
+                  <option value="Fintech">1. Fintech</option>
+                  <option value="Sustainability">2. Sustainability</option>
+                  <option value="Health and Wellness">
+                    3. Health and Wellness
+                  </option>
+                  <option value="Web3 and Blockchain">
+                    4. Web3 and Blockchain
+                  </option>
+                  <option value="Security and Cloud">
+                    5. Security and Cloud
+                  </option>
+                  <option value="Education and Accessibility">
+                    6. Education and Accessibility
+                  </option>
+                  <option value="Gaming/Entertainment">
+                    7. Gaming/Entertainment
+                  </option>
+                  <option value="AR and VR">8. AR and VR</option>
+                  <option value="IoT/Robotics/Drones">
+                    9. IoT/Robotics/Drones
+                  </option>
+                  <option value="AI/ML">10. AI/ML</option>
+                  <option value="Open Innovation">11. Open Innovation</option>
+                  <option value="UI/UX">12. Transportaion & Logistics</option>
+                </select>
               </div>
             </div>
 
@@ -1195,6 +1208,9 @@ export function Form() {
                     Screenshot of payment{" "}
                     <span className="text-red-600 text-base">*</span>
                   </label>
+
+
+
                   <input
                     required
                     type="file"
@@ -1208,14 +1224,19 @@ export function Form() {
              mt-1
              border-b border-zinc-700  focus:border-b-2 focus:border-bottom-outline-color  focus:outline-none peer `}
                   />
+
+
+
+
                   <input
                     type="text"
                     name="entry.1147912076"
                     id="gdriveURL"
-                    accept="image/*"
+                    value={gdriveURL}
                     required
                     className="hidden"
                   />
+                  
                 </div>
               </div>
             </div>
