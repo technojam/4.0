@@ -1,10 +1,9 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 
 export function Form() {
-  const setGdriveURL = (url) => {
-    document.getElementById("gdriveURL").value = url;
-  };
+  const [gdriveURL, setGdriveURL] = useState("");
+
   const uploadFile = async (file) => {
     const formData = new FormData();
     formData.append("image", file);
@@ -26,15 +25,18 @@ export function Form() {
           setGdriveURL(data.url);
         });
       } else {
-        setGdriveURL();
+        setGdriveURL("");
       }
     } catch (error) {
       console.error("Error uploading file:", error);
     }
   };
+
   const handleFileChange = async (e) => {
+    console.log(e.target.files[0]);
     uploadFile(e.target.files[0]);
   };
+
 
   return (
     <div className="sky bg-center  w-auto h-3000 overflow-hidden">
@@ -1216,6 +1218,9 @@ export function Form() {
                     Screenshot of payment{" "}
                     <span className="text-red-600 text-base">*</span>
                   </label>
+
+
+
                   <input
                     required
                     type="file"
@@ -1229,14 +1234,19 @@ export function Form() {
              mt-1
              border-b border-zinc-700  focus:border-b-2 focus:border-bottom-outline-color  focus:outline-none peer `}
                   />
+
+
+
+
                   <input
                     type="text"
                     name="entry.1147912076"
                     id="gdriveURL"
-                    accept="image/*"
+                    value={gdriveURL}
                     required
                     className="hidden"
                   />
+                  
                 </div>
               </div>
             </div>
