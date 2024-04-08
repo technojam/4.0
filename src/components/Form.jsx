@@ -37,7 +37,6 @@ export function Form() {
     uploadFile(e.target.files[0]);
   };
 
-
   return (
     <div className="sky bg-center  w-auto h-3000 overflow-hidden">
       <div className="stars"></div>
@@ -1219,8 +1218,6 @@ export function Form() {
                     <span className="text-red-600 text-base">*</span>
                   </label>
 
-
-
                   <input
                     required
                     type="file"
@@ -1234,10 +1231,6 @@ export function Form() {
              mt-1
              border-b border-zinc-700  focus:border-b-2 focus:border-bottom-outline-color  focus:outline-none peer `}
                   />
-
-
-
-
                   <input
                     type="text"
                     name="entry.1147912076"
@@ -1246,7 +1239,6 @@ export function Form() {
                     required
                     className="hidden"
                   />
-                  
                 </div>
               </div>
             </div>
