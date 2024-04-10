@@ -44,6 +44,19 @@ input[type=number]{
   background-position: 80% 20%;
   transform: rotate3d(0.5, 1, 0, 30deg);
 }
+
+
+  /* Define custom gradient colors */
+  .border-gradient-blue-red {
+    border-color: #002bf9; /* Fallback color */
+    border-image: linear-gradient(90deg, rgba(0,43,249,1) 0%, rgba(255,0,0,1) 100%);
+    border-image-slice: 1;
+    border-radius: 50px; /* Adjust the border radius value as needed */
+  }
+
+
+
+
 .content-box {
   background-color: rgba(0, 0, 0, 0.811);
   border-radius: 0px 0px 10px 10px;
