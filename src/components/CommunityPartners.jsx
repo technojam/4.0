@@ -1,5 +1,5 @@
 import React from "react";
-import MovingCards2 from "./MovingCards2";
+import MovingCards from "./MovingCards";
 
 export function CommunityPartners() {
   const blurredStyle = {
@@ -14,8 +14,8 @@ export function CommunityPartners() {
       Community Partners
       </h1>
       <div style={blurredStyle} >
-        <MovingCards2 key={"communityPartners"} items={testimonials} direction="right" speed="fast" />
-        <MovingCards2 key={"communityPartnersSecond"} items={testimonials} direction="left" speed="fast" />
+        <MovingCards key={"communityPartners"} items={testimonials} direction="right" speed="fast" />
+        <MovingCards key={"communityPartnersSecond"} items={testimonials} direction="left" speed="fast" />
       </div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white text-4xl font-bold">
           REVEALING SOON
