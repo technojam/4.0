@@ -15,6 +15,7 @@ import Prize from "./components/Prize";
 import Navbar from "./components/Navbar";
 import GoToTop from "./components/GoToTop";
 import { CommunityPartners } from "./components/CommunityPartners";
+import Judges from "./components/Judges";
 
 const App = () => {
   // Gsap Animation
@@ -59,10 +60,10 @@ const App = () => {
         <Timeline />
         <TimerCounter />
         <Prize />
-        <Sponsors />
-        <CommunityPartners/>
+        {/* <Sponsors />
+        <CommunityPartners/> */}
         <ImageSlider />
-        {/* <DigitalSwag /> */}
+        <Judges/>
         {/* Card Section */}
         <h1
           id="themes"

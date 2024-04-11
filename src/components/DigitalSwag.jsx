@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import html2canvas from "html2canvas";
 import { BiDownload, BiImageAdd, BiShareAlt } from "react-icons/bi";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const DigitalSwag = () => {
   const [imageUrl, setImageUrl] = useState("/pic.png");
@@ -69,7 +70,7 @@ const DigitalSwag = () => {
     >
       <div
         ref={divRef}
-        className="bg-gradient-to-r from-blue-900 to-red-500 rounded-lg lg:w-full lg:h-screen p-4 lg:p-8 text-center"
+        className="bg-gradient-to-r from-blue-900 to-red-500 lg:w-full lg:h-screen p-4 lg:p-8 text-center"
       >
         <h1 className="lg:text-[4rem] text-[2rem] mb-6 mx-44 px-5 relative lg:left-48">
           Digital Swag
@@ -81,21 +82,20 @@ const DigitalSwag = () => {
           earum expedita.
         </p>
         <div
-          className="lg:absolute relative mb-10 bg-center bg-cover w-[300px] h-[500px] lg:w-[30vw] lg:h-[85vh]  lg:top-[30px] left-[19%] lg:left-5 border-2"
+          className="lg:absolute relative mb-10 bg-center bg-cover w-[300px] h-[500px] lg:w-[400px] lg:h-[700px]  lg:top-[30px] left-[19%] lg:left-5 border-2"
           id="download"
-          style={{ backgroundImage: `url('/Dexterix 4.0 temp.png')` }}
+          style={{ backgroundImage: `url('/swag.png')` }}
         >
-          <img
+          <LazyLoadImage
             src={imageUrl}
             alt="pic"
-            className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 lg:w-48 h-36 lg:h-48 border-4"
+            className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 lg:w-60 w-44 h-48w-44 lg:h-60 border-4"
             id="Pic"
           />
-          <div className="absolute bottom-32 lg:bottom-28 left-[50%] transform -translate-x-1/2 block w-[200px]   font-bold text-[#333]">
+          <div className="absolute bottom-28 lg:bottom-40 left-[50%] transform -translate-x-1/2 block w-[200px] font-bold text-[#333]">
             <p className=" text-lg text-white glowing-text py-2">{name}</p>
           </div>
         </div>
-
         <input
           type="text"
           value={name}
@@ -106,7 +106,7 @@ const DigitalSwag = () => {
         <div className="lg:flex flex-row mx-[28%] justify-center items-center gap-10 relative  lg:left-36">
           <label
             htmlFor="input-file"
-            className="block w-48  text-white p-3 rounded-md bg-black cursor-pointer mb-4 border-white border-2 border-dashed flex justify-center items-center gap-1"
+            className="w-48  text-white p-3 rounded-md bg-black cursor-pointer mb-4 border-white border-2 border-dashed flex justify-center items-center gap-1"
           >
             <BiImageAdd />
             Upload Image
@@ -120,7 +120,7 @@ const DigitalSwag = () => {
           />
           <button
             onClick={handleDownload}
-            className=" w-48 bg-black text-white p-3 rounded-md cursor-pointer mb-4 text-center flex justify-center items-center gap-1 border-2"
+            className="w-48 bg-black text-white p-3 rounded-md cursor-pointer mb-4 text-center flex justify-center items-center gap-1 border-2"
           >
             <BiDownload className="text-2" />
             Download

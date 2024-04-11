@@ -258,7 +258,7 @@ const Timeline = ({ className }) => {
                 background:
                   "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
               }}
-              className="w-[280px] rightBox resBox rounded px-4 py-2 lg:p-3 flex justify-between items-center"
+              className="w-[310px] rightBox resBox rounded px-4 py-2 lg:p-3 flex justify-between items-center"
             >
               <h6 className="font-bold text-xl hover:text-xl">Hackathon Commences</h6>
               <FaHourglassStart />
