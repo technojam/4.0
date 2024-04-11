@@ -60,8 +60,8 @@ const App = () => {
         <Timeline />
         <TimerCounter />
         <Prize />
-        <Sponsors />
-        <CommunityPartners/>
+        {/* <Sponsors />
+        <CommunityPartners/> */}
         <ImageSlider />
         <Judges/>
         {/* Card Section */}
