@@ -63,8 +63,8 @@ const App = () => {
         {/* <Sponsors />
         <CommunityPartners/> */}
         <ImageSlider />
-        <Judges heading={"Judges"} lists={judgesList} />
-        <Judges heading={"Mentors"} lists={mentorList} />
+        {/* <Judges heading={"Judges"} lists={judgesList} />
+        <Judges heading={"Mentors"} lists={mentorList} /> */}
         {/* Card Section */}
         <h1
           id="themes"
