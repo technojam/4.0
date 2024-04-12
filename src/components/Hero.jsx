@@ -82,10 +82,9 @@ const Hero = () => {
         </ul>
         <div className="flex md:flex-row flex-col items-center gap-5">
           <Link
-            to="/register"
-            className="bg-[#daa520] rounded-md font-medium text-xl px-5 py-3 hover:bg-gray-300 ease-in-out duration-200 hover:scale-95 hover:text-[#daa520]"
+            className="bg-[#daa520] rounded-md font-medium text-xl px-5 py-3"
           >
-            Register
+            Registrations Closed
           </Link>
           <Link
             to="https://discord.gg/BcpQxnUWpc"
