@@ -10,12 +10,12 @@ import ChatBox from "./components/ChatBox";
 import ImageSlider from "./components/ImageSlider";
 import About from "./components/About";
 import Footer from "./components/Footer";
-import { Sponsors } from "./components/Sponsors";
 import Prize from "./components/Prize";
 import Navbar from "./components/Navbar";
 import GoToTop from "./components/GoToTop";
-import { CommunityPartners } from "./components/CommunityPartners";
 import Judges from "./components/Judges";
+import { judgesList } from "./components/judgeList";
+import { mentorList } from "./components/mentorList";
 
 const App = () => {
   // Gsap Animation
@@ -63,7 +63,8 @@ const App = () => {
         {/* <Sponsors />
         <CommunityPartners/> */}
         <ImageSlider />
-        <Judges/>
+        {/* <Judges heading={"Judges"} lists={judgesList} />
+        <Judges heading={"Mentors"} lists={mentorList} /> */}
         {/* Card Section */}
         <h1
           id="themes"
@@ -79,7 +80,6 @@ const App = () => {
         <Footer />
         <ChatBox />
       </div>
-      
       {/* Scroll To Top Button */}
       <div className="d-block">
         <GoToTop />
