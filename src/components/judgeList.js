@@ -1,0 +1,92 @@
+export const judgesList = [
+  {
+    name: "Shivansh Srivastava",
+    contact: 3646378,
+    imgUrl:"",
+    desc: "Full Stack Developer @softify | Ex- Software Dev @ neuralsift @EmissionX",
+  },
+  {
+    name: "Abhimanyu Dwivedi",
+    contact: 3646378,
+    imgUrl:"",
+    desc: "Cloud Engineer @Brightly | Certified Kubernetes Administrator(CKA)",
+  },
+  {
+    name: "Sakshi Gupta",
+    contact: 3646378,
+    imgUrl:"",
+    desc: "Software Engineer of Brightly Software",
+  },
+  {
+    name: "Ayush Kumar",
+    contact: 3646378,
+    imgUrl:"",
+    desc: "DevRel @ TechLatest.Net | GitHub Campus Expert | AWS Community Builder",
+  },
+  {
+    name: "Rohit Yadav",
+    contact: 3646378,
+    imgUrl:"",
+    desc: "Microsoft MVP - Azure-AI, Community Builder and Mentor",
+  },
+  {
+    name: "Chhavi Garg",
+    contact: 3646378,
+    imgUrl:"",
+    desc: "AR Creator & Trainer | Educated 80,000+ Students in AR",
+  },
+  {
+    name: "Rohan Kumar",
+    contact: 3646378,
+    imgUrl:"",
+    desc: "SDE @ BigPluto Labs | GSoC'22 @Sugarlabs",
+  },
+  {
+    name: "Piyush Chandra",
+    contact: 3646378,
+    imgUrl:"",
+    desc: "Salesforce Developer | SDE Ex-Egon Zehnder",
+  },
+  {
+    name: "Hitesh Garg",
+    contact: 3646378,
+    imgUrl:"",
+    desc: "Product Manager @ Quickblocks | Mobile App Engineer",
+  },
+  {
+    name: "Himanshu Singh",
+    contact: 3646378,
+    imgUrl:"",
+    desc: "",
+  },
+  {
+    name: "Sarthak Agarwal",
+    contact: 3646378,
+    imgUrl:"",
+    desc: "Engineering @ VectorShift | Ex-Amazon UK, CRED, GSoC, Oppia & Atom EI",
+  },
+  {
+    name: "Shreyansh Deep",
+    contact: 3646378,
+    imgUrl:"",
+    desc: "SDE @ India Today",
+  },
+  {
+    name: "Rajat Kumar Rai",
+    contact: 3646378,
+    imgUrl:"",
+    desc: "DevOps Engineer @ RedHat",
+  },
+  {
+    name: "Rahul Chauhan",
+    contact: 3646378,
+    imgUrl:"",
+    desc: "",
+  },
+  {
+    name: "Saurav Das",
+    contact: 3646378,
+    imgUrl:"",
+    desc: "Organizer @ GDG Siliguri",
+  },
+];

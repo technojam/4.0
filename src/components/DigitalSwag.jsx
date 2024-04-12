@@ -8,20 +8,13 @@ const DigitalSwag = () => {
   const [name, setName] = useState("");
   const divRef = useRef(null);
   const [files, setFile] = useState([]);
-
   const handleImageChange = (event) => {
     const file = event.target.files[0];
     if (file) {
       setImageUrl(URL.createObjectURL(file));
       setFile([file, ...files]);
-      console.log(file);
     }
   };
-
-  const handleNameChange = (event) => {
-    setName(event.target.value);
-  };
-
   const handleDownload = async () => {
     try {
       const canvas = await html2canvas(
@@ -40,8 +33,7 @@ const DigitalSwag = () => {
       console.error("Error generating canvas:", error);
     }
   };
-
-  const handleShare = async (imageDataUrl, fileName) => {
+  const handleShare = async () => {
     try {
       const canvas = await html2canvas(
         divRef.current.querySelector("#download")
@@ -62,51 +54,47 @@ const DigitalSwag = () => {
       console.error("Error sharing image:", error);
     }
   };
-
   return (
     <div
-      className="flex justify-center items-center w-screen min-h-screen"
-      id="pop"
+      ref={divRef}
+      className="flex flex-col-reverse lg:flex-row py-8 lg:py-0 justify-around gap-4 lg:gap-0 items-center min-h-screen bg-gradient-to-r from-blue-900 to-red-500"
     >
+      {/* Left Section */}
       <div
-        ref={divRef}
-        className="bg-gradient-to-r from-blue-900 to-red-500 lg:w-full lg:h-screen p-4 lg:p-8 text-center"
+        className="relative bg-center bg-cover w-[300px] h-[500px] lg:w-[400px] lg:h-[700px] border-2"
+        id="download"
+        style={{ backgroundImage: `url('/swag.png')` }}
       >
-        <h1 className="lg:text-[4rem] text-[2rem] mb-6 mx-44 px-5 relative lg:left-48">
-          Digital Swag
-        </h1>
-        <p className="relative mb-10 lg:right-10 lg:text-[2rem] lg:mx-[200px] lg:left-[200px] lg:px-5 px-[100px] text-[10px]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sint
-          placeat ad a, eaque nesciunt beatae nostrum ducimus cum similique.
-          Labore, vel doloremque. Necessitatibus rem commodi recusandae, esse
-          earum expedita.
-        </p>
-        <div
-          className="lg:absolute relative mb-10 bg-center bg-cover w-[300px] h-[500px] lg:w-[400px] lg:h-[700px]  lg:top-[30px] left-[19%] lg:left-5 border-2"
-          id="download"
-          style={{ backgroundImage: `url('/swag.png')` }}
-        >
-          <LazyLoadImage
-            src={imageUrl}
-            alt="pic"
-            className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 lg:w-60 w-44 h-48w-44 lg:h-60 border-4"
-            id="Pic"
-          />
-          <div className="absolute bottom-28 lg:bottom-40 left-[50%] transform -translate-x-1/2 block w-[200px] font-bold text-[#333]">
-            <p className=" text-lg text-white glowing-text py-2">{name}</p>
-          </div>
+        <LazyLoadImage
+          src={imageUrl}
+          alt="pic"
+          className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 lg:w-60 w-44 h-48w-44 lg:h-60 border-4"
+          id="Pic"
+        />
+        <div className="absolute text-white text-center bottom-28 lg:bottom-40 left-[50%] transform -translate-x-1/2 block w-[200px] font-bold">
+          {name}
         </div>
+      </div>
+      {/* Right Section */}
+      <div className="flex flex-col items-center justify-center lg:gap-10 gap-4 w-[90%] lg:w-2/3">
+        <h1 className="lg:text-[4rem] md:text-3xl text-2xl">Digital Swag</h1>
+        <h2 className="lg:text-[2rem] md:text-lg text-center text-[10px] font-Phudu">
+          Ready to rock Dexterix 4.0? Show the world your excitement with our
+          exclusive digital badge! Personalize your Dexterix 4.0 Badge with your
+          name and photo. Download it and spread the word on social media using
+          #Dexterix .
+        </h2>
         <input
           type="text"
           value={name}
-          onChange={handleNameChange}
+          onChange={(e) => setName(e.target.value)}
           placeholder="Enter your name"
-          className="block w-[250px] lg:w-[400px] bg-gray-200 text-gray-800 p-3 rounded-md mb-4 mx-[23%] lg:mx-[45%] outline-none text-center border-black border-2"
+          className=" bg-gray-200 text-gray-800 lg:p-3 p-1 md:p-2 rounded-md outline-none text-center border-black border-2"
         />
-        <div className="lg:flex flex-row mx-[28%] justify-center items-center gap-10 relative  lg:left-36">
+        <div className="flex flex-col lg:flex-row justify-center items-center lg:gap-10 gap-3">
           <label
             htmlFor="input-file"
-            className="w-48  text-white p-3 rounded-md bg-black cursor-pointer mb-4 border-white border-2 border-dashed flex justify-center items-center gap-1"
+            className="w-48 text-white lg:p-3 p-1 md:p-2 rounded-md bg-black cursor-pointer border-white border-2 border-dashed flex justify-center items-center gap-1"
           >
             <BiImageAdd />
             Upload Image
@@ -120,14 +108,14 @@ const DigitalSwag = () => {
           />
           <button
             onClick={handleDownload}
-            className="w-48 bg-black text-white p-3 rounded-md cursor-pointer mb-4 text-center flex justify-center items-center gap-1 border-2"
+            className="w-48 bg-black text-white lg:p-3 p-1 md:p-2 rounded-md cursor-pointer text-center flex justify-center items-center gap-1 border-2"
           >
             <BiDownload className="text-2" />
             Download
           </button>
           <button
             onClick={handleShare}
-            className="w-48 bg-black text-white p-3 rounded-md cursor-pointer mb-4 text-center flex justify-center items-center gap-1 border-2"
+            className="w-48 bg-black text-white lg:p-3 p-1 md:p-2 rounded-md cursor-pointer text-center flex justify-center items-center gap-1 border-2"
           >
             <BiShareAlt className="text-2" />
             Share

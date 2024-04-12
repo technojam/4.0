@@ -2,12 +2,10 @@ import React from "react";
 import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-// import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(false);
-  // const navigate = useNavigate();
   return (
     <>
       <nav className="px-5 w-screen z-30 text-white gap-8 absolute top-0 left-0 h-[11vh] bg-transparent flex items-center justify-between navbar">
@@ -18,14 +16,13 @@ const Navbar = () => {
           alt=""
         />
         {/* Page Navigation */}
-        {/* <Link
-  to="/digitalSwag"
-  className="font-medium text-l lg:text-xl px-4 w-44 lg:px-5 md:py-2 lg:py-3 border border-gradient-blue-red"
-  style={{ borderRadius: '10px' }} // Adjust the border-radius value as needed
->
-  Digital Swag
-</Link> */}
-
+        <Link
+          to="/digitalSwag"
+          className="font-medium text-l lg:text-xl px-4 w-44 lg:px-5 md:py-2 lg:py-3 border border-gradient-blue-red"
+          style={{ borderRadius: "10px" }}
+        >
+          Digital Swag
+        </Link>
         <div className="hidden lg:flex text-xl items-center gap-8 font-Gugi_sans-serif mr-10">
           <a
             href="#about"
