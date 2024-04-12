@@ -10,7 +10,7 @@ const Prize = () => {
       {/* Prize Cards */}
       <div className="flex flex-wrap gap-10 lg:gap-28 md:gap-4 justify-center items-center  max-w-fit mx-auto">
         {/*Second Prize */}
-        <div className="hover:scale-110 duration-300">
+        <div className="hover:scale-110 hidden md:block duration-300">
           <LazyLoadImage
             src="/silver.jpeg"
             className="bg-cover rounded-lg w-[180px] lg:w-[200px] h-[250px] lg:h-[300px]"
@@ -31,6 +31,17 @@ const Prize = () => {
             🏆1st Prize🏆
             <br />
             ₹21000
+          </h2>
+        </div>
+        <div className="hover:scale-110 md:hidden duration-300">
+          <LazyLoadImage
+            src="/silver.jpeg"
+            className="bg-cover rounded-lg w-[180px] lg:w-[200px] h-[250px] lg:h-[300px]"
+          />
+          <h2 className="bg-gradient-to-r text-center font-semibold lg:font-bold lg:text-2xl text-xl text-white py-1 from-[#FFF1A5] via-[#C87D4C] to-[#533636] rounded-md">
+            🏆2nd Prize🏆
+            <br />
+            ₹15000
           </h2>
         </div>
         {/* Third Prize */}

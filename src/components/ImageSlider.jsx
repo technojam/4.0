@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function ImageSlider() {
   const slides = [
@@ -66,10 +67,7 @@ function ImageSlider() {
       <h1 className="text-[#daa520] text-3xl md:text-4xl font-Phudu font-medium flex justify-center mb-5">
         Our Past Events
       </h1>
-      <div
-        style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className="w-full h-full  rounded-2xl bg-center bg-cover duration-500"
-      ></div>
+      <LazyLoadImage src={`${slides[currentIndex].url}`} className="w-full h-full rounded-2xl object-cover duration-500" />
       <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 mt-16 bg-black/20 text-[#daa520] cursor-pointer">
         <BsChevronCompactLeft onClick={prevSlide} size={30} />
       </div>

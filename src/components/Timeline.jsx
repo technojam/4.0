@@ -214,7 +214,7 @@ const Timeline = ({ className }) => {
               <FaWalking />
             </div>
             <h1 className="text-xl text-white rightBox font-semibold pr-36">
-              10th April
+              12th April
             </h1>
           </div>
           <div className="flex lg:items-center resBox gap-28 ml-12 items-start lg:flex-row flex-col-reverse">
@@ -231,6 +231,119 @@ const Timeline = ({ className }) => {
               <h6 className="font-bold text-xl hover:text-xl">Dexterix 4.0</h6>
               <FaHourglassStart />
             </div>
+          </div>
+          <div className="flex lg:items-center gap-28 ml-12 items-start lg:flex-row flex-col">
+            <div
+              style={{
+                background:
+                  "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
+              }}
+              className="w-[260px] leftBox resBox rounded px-4 py-2 lg:p-3 flex justify-between items-center"
+            >
+              <h6 className="font-bold text-xl hover:text-xl">
+                Check In
+              </h6>
+              <FaWalking />
+            </div>
+            <h1 className="text-xl text-white rightBox font-semibold pr-48">
+              9 AM
+            </h1>
+          </div>
+          <div className="flex lg:items-center resBox gap-28 ml-12 items-start lg:flex-row flex-col-reverse">
+            <h1 className="text-xl text-white leftBox font-semibold">
+              11 AM
+            </h1>
+            <div
+              style={{
+                background:
+                  "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
+              }}
+              className="w-[310px] rightBox resBox rounded px-4 py-2 lg:p-3 flex justify-between items-center"
+            >
+              <h6 className="font-bold text-xl hover:text-xl">Hackathon Commences</h6>
+              <FaHourglassStart />
+            </div>
+          </div>
+          <div className="flex lg:items-center gap-28 ml-12 items-start lg:flex-row flex-col">
+            <div
+              style={{
+                background:
+                  "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
+              }}
+              className="w-[260px] leftBox resBox rounded px-4 py-2 lg:p-3 flex justify-between items-center"
+            >
+              <h6 className="font-bold text-xl hover:text-xl">
+                Round 1 Evaluation
+              </h6>
+              <FaWalking />
+            </div>
+            <h1 className="text-xl text-white rightBox font-semibold pr-48">
+              2 PM
+            </h1>
+          </div>
+          <div className="flex lg:items-center resBox gap-28 ml-12 items-start lg:flex-row flex-col-reverse">
+            <h1 className="text-xl text-white leftBox font-semibold">
+              6 PM
+            </h1>
+            <div
+              style={{
+                background:
+                  "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
+              }}
+              className="w-[280px] rightBox resBox rounded px-4 py-2 lg:p-3 flex justify-between items-center"
+            >
+              <h6 className="font-bold text-xl hover:text-xl">Round 2 Evaluation</h6>
+              <FaHourglassStart />
+            </div>
+          </div>
+          <div className="flex lg:items-center gap-28 ml-12 items-start lg:flex-row flex-col">
+            <div
+              style={{
+                background:
+                  "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
+              }}
+              className="w-[350px] leftBox resBox rounded px-4 py-2 lg:p-3 flex justify-between items-center"
+            >
+              <h6 className="font-bold text-xl hover:text-xl">
+                Round 2 Result & Elimination
+              </h6>
+              <FaWalking />
+            </div>
+            <h1 className="text-xl text-white rightBox font-semibold pr-48">
+              2 PM
+            </h1>
+          </div>
+          <div className="flex lg:items-center resBox gap-28 ml-12 items-start lg:flex-row flex-col-reverse">
+            <h1 className="text-xl text-white leftBox font-semibold">
+              14 April 10 AM
+            </h1>
+            <div
+              style={{
+                background:
+                  "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
+              }}
+              className="w-[280px] rightBox resBox rounded px-4 py-2 lg:p-3 flex justify-between items-center"
+            >
+              <h6 className="font-bold text-xl hover:text-xl">Final Evaluation</h6>
+              <FaHourglassStart />
+            </div>
+          </div>
+          <div className="flex lg:items-center gap-28 ml-12 items-start lg:flex-row flex-col">
+            <div
+              style={{
+                background:
+                  "linear-gradient(90deg, hsla(177, 87%, 79%, .7) 0%, hsla(235, 89%, 70%, .7) 100%)",
+              }}
+              className="w-[320px] leftBox resBox rounded px-4 py-2 lg:p-3 flex justify-between items-center"
+            >
+              <h6 className="font-bold text-xl hover:text-xl">
+                Winner Announcement
+              </h6>
+              <FaWalking />
+            </div>
+            <h1 className="text-xl text-white rightBox font-semibold pr-48">
+              12 PM
+            </h1>
           </div>
         </div>
       </div>
