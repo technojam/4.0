@@ -80,9 +80,10 @@ const Hero = () => {
             </a>
           </li>
         </ul>
-        <div className="flex md:flex-row  justify-center items-center mr-28 gap-5">
+        <div className="flex md:flex-row  justify-center items-center lg:mr-28 gap-5">
           <Link to = "https://www.instagram.com/ar/345957361822810/"
-            className="bg-[#daa520] rounded-md font-medium text-xl px-5 py-3"
+           className="bg-gradient-to-r from-[#6ba4ad] to-[#505aaf] rounded-md font-medium text-xl px-5 py-3"
+
           >
             Try Filter
           </Link>
