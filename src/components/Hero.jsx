@@ -80,20 +80,14 @@ const Hero = () => {
             </a>
           </li>
         </ul>
-        <div className="flex md:flex-row flex-col items-center gap-5">
-          <Link
-            className="bg-[#daa520] rounded-md font-medium text-xl px-5 py-3"
+        <div className="flex md:flex-row  justify-center items-center lg:mr-28 gap-5">
+          <Link to = "https://www.instagram.com/ar/345957361822810/"
+           className="bg-gradient-to-r from-[#6ba4ad] to-[#505aaf] rounded-md font-medium text-xl px-5 py-3"
+
           >
-            Registrations Closed
+            Try Filter
           </Link>
-          <Link
-            to="https://discord.gg/BcpQxnUWpc"
-            target="_blank"
-            className="bg-[#7289da] flex items-center gap-5 rounded-md font-medium text-xl px-5 py-3 hover:bg-gray-300 ease-in-out duration-200 hover:scale-95 hover:text-[#7289da]"
-          >
-            <FaDiscord />
-            <h1>Join Discord</h1>
-          </Link>
+          
         </div>
       </div>
     </div>
